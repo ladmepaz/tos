@@ -8,7 +8,22 @@ import pandas as pd
 
 
 DEFAULT_INPUT = Path("data/raw/bibfusion/All_Citation.csv")
+DEFAULT_ARTICLES = Path("data/raw/bibfusion/All_Articles.csv")
 DEFAULT_OUTPUT = Path("outputs/graphs/citation_network.gexf")
+ARTICLE_COLUMNS = [
+    "SR",
+    "title",
+    "author",
+    "author_full_names",
+    "orcid",
+    "abstract",
+    "year",
+    "journal",
+    "source_title",
+    "country",
+    "doi",
+    "__doi_norm",
+]
 
 
 def load_citation_edges(citation_csv: Path) -> pd.DataFrame:
@@ -21,6 +36,15 @@ def load_citation_edges(citation_csv: Path) -> pd.DataFrame:
     return df
 
 
+def load_article_metadata(articles_csv: Path) -> pd.DataFrame:
+    """Load the subset of article metadata used to enrich graph nodes."""
+    df = pd.read_csv(articles_csv, usecols=ARTICLE_COLUMNS)
+    df["SR"] = df["SR"].astype(str).str.strip()
+    df = df[df["SR"] != ""]
+    df = df.drop_duplicates(subset=["SR"], keep="first")
+    return df
+
+
 def build_citation_network(citation_df: pd.DataFrame) -> nx.DiGraph:
     """Create a directed citation graph where SR cites SR_ref."""
     graph = nx.from_pandas_edgelist(
@@ -30,6 +54,25 @@ def build_citation_network(citation_df: pd.DataFrame) -> nx.DiGraph:
         create_using=nx.DiGraph(),
     )
     return graph
+
+
+def enrich_network_with_article_data(
+    graph: nx.DiGraph, article_df: pd.DataFrame
+) -> nx.DiGraph:
+    """Attach article metadata to graph nodes using SR as the identifier."""
+    enriched_graph = graph.copy()
+    article_df = article_df.where(pd.notna(article_df), "")
+    node_attributes = article_df.set_index("SR").to_dict(orient="index")
+
+    nx.set_node_attributes(enriched_graph, False, "has_article_metadata")
+    relevant_attributes = {}
+    for node, attrs in node_attributes.items():
+        if node in enriched_graph:
+            attrs["has_article_metadata"] = True
+            relevant_attributes[node] = attrs
+
+    nx.set_node_attributes(enriched_graph, relevant_attributes)
+    return enriched_graph
 
 
 def prune_terminal_single_cited_nodes(graph: nx.DiGraph) -> nx.DiGraph:
@@ -71,6 +114,12 @@ def parse_args() -> argparse.Namespace:
         help="Path to All_Citation.csv",
     )
     parser.add_argument(
+        "--articles",
+        type=Path,
+        default=DEFAULT_ARTICLES,
+        help="Path to All_Articles.csv",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=DEFAULT_OUTPUT,
@@ -82,10 +131,12 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     citation_df = load_citation_edges(args.input)
+    article_df = load_article_metadata(args.articles)
     raw_graph = build_citation_network(citation_df)
     graph_without_self_loops = remove_self_loops(raw_graph)
     pruned_graph = prune_terminal_single_cited_nodes(graph_without_self_loops)
-    graph = keep_giant_component(pruned_graph)
+    giant_component_graph = keep_giant_component(pruned_graph)
+    graph = enrich_network_with_article_data(giant_component_graph, article_df)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     nx.write_gexf(graph, args.output)
 
@@ -100,6 +151,10 @@ def main() -> None:
     print(f"Edges after pruning: {pruned_graph.number_of_edges():,}")
     print(f"Nodes in giant component: {graph.number_of_nodes():,}")
     print(f"Edges in giant component: {graph.number_of_edges():,}")
+    print(
+        "Nodes enriched with article metadata: "
+        f"{sum(1 for _, attrs in graph.nodes(data=True) if attrs.get('has_article_metadata')):,}"
+    )
     print(f"Is directed: {graph.is_directed()}")
     print(f"Saved to: {args.output.resolve()}")
 
