@@ -20,8 +20,8 @@ from sap import (
 )
 
 
-DEFAULT_INPUT = Path("data/raw/bibfusion/All_Citation.csv")
-DEFAULT_ARTICLES = Path("data/raw/bibfusion/All_Articles.csv")
+DEFAULT_INPUT = Path("data/processed/bibfusion/All_Citation_tidy.csv")
+DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT = Path("outputs/graphs/citation_network.gexf")
 ARTICLE_COLUMNS = [
     "SR",
