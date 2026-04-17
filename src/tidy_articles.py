@@ -26,6 +26,7 @@ ARTICLE_REPLACEMENTS = {
 
 MULTI_DOI_CANONICAL_IDS = {
     "NARVER JC, 1990, J MARKETING",
+    "FORNELL C, 1981, J MARKETING RES",
 }
 
 PREFERRED_SOURCE_ROWS = {
@@ -308,6 +309,18 @@ def split_semicolon_values(value: Any) -> list[str]:
     return [part.strip() for part in str(value).split(";") if part.strip()]
 
 
+def canonicalize_article_sr(row: pd.Series) -> str | None:
+    """Resolve article-level exceptions that cannot be handled by SR alone."""
+    sr = str(row.get("SR", "")).strip()
+    doi_norm = str(row.get("__doi_norm", "")).strip().lower()
+    doi = str(row.get("doi", "")).strip().lower()
+
+    if doi_norm == "10.1038/srep42717" or doi == "10.1038/srep42717":
+        return None
+
+    return ARTICLE_REPLACEMENTS.get(sr, sr)
+
+
 def coalesce_article_group(group: pd.DataFrame) -> pd.Series:
     """Merge duplicate article rows, preferring the canonical SR row."""
     canonical_sr = group["SR_canonical"].iloc[0]
@@ -358,7 +371,8 @@ def tidy_article_metadata(article_df: pd.DataFrame) -> pd.DataFrame:
     tidy_df = article_df.copy()
     tidy_df["SR"] = tidy_df["SR"].astype(str).str.strip()
     tidy_df = tidy_df[~tidy_df["SR"].str.startswith("ANONYMOUS", na=False)]
-    tidy_df["SR_canonical"] = tidy_df["SR"].replace(ARTICLE_REPLACEMENTS)
+    tidy_df["SR_canonical"] = tidy_df.apply(canonicalize_article_sr, axis=1)
+    tidy_df = tidy_df[tidy_df["SR_canonical"].notna()]
 
     merged_rows = [
         coalesce_article_group(group)

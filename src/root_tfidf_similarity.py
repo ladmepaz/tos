@@ -22,6 +22,9 @@ from sap import Sap
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs/root_tfidf")
+EXCLUDED_ROOT_NODE_IDS = {
+    "FORNELL C, 1981, J MARKETING RES",
+}
 TOKEN_PATTERN = re.compile(r"[a-z][a-z]+")
 STOPWORDS = {
     "about",
@@ -111,7 +114,7 @@ def extract_root_records(graph) -> list[dict]:
     roots = [
         (node, attrs)
         for node, attrs in graph.nodes(data=True)
-        if attrs.get("ToS") == "root"
+        if attrs.get("ToS") == "root" and node not in EXCLUDED_ROOT_NODE_IDS
     ]
     roots = sorted(roots, key=lambda item: item[1].get("sap_rank", 0), reverse=True)
 
@@ -362,7 +365,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--min-similarity",
         type=float,
-        default=0.08,
+        default=0.12,
         help="Minimum cosine similarity to connect two roots in the subtopic graph.",
     )
     return parser.parse_args()
