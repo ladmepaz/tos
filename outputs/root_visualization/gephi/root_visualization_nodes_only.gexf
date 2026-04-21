@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-21">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="subtopic_id" type="string" />
+      <attribute id="1" title="subtopic_label" type="string" />
+      <attribute id="2" title="cluster_order" type="long" />
+      <attribute id="3" title="cluster_strength" type="double" />
+      <attribute id="4" title="cluster_cohesion" type="double" />
+      <attribute id="5" title="cluster_separation" type="double" />
+      <attribute id="6" title="cluster_support" type="double" />
+      <attribute id="7" title="is_representative" type="boolean" />
+      <attribute id="8" title="root_anchor_score" type="double" />
+      <attribute id="9" title="sap_rank" type="double" />
+      <attribute id="10" title="year" type="long" />
+      <attribute id="11" title="journal" type="string" />
+      <attribute id="12" title="source_title" type="string" />
+      <attribute id="13" title="has_article_metadata" type="boolean" />
+      <attribute id="14" title="citations_received" type="double" />
+      <attribute id="15" title="citation_velocity" type="double" />
+      <attribute id="16" title="citation_velocity_score" type="double" />
+      <attribute id="17" title="global_size_score" type="double" />
+      <attribute id="18" title="local_size_score" type="double" />
+      <attribute id="19" title="final_root_size_score" type="double" />
+      <attribute id="20" title="color" type="string" />
+    </attributes>
+    <nodes>
+      <node id="MILLER D, 1983, MANAGE SCI" label="THE CORRELATES OF ENTREPRENEURSHIP IN THREE TYPES OF FIRMS">
+        <viz:color r="255" g="245" b="204" a="1.0" />
+        <viz:size value="9.286728676598104" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.465968" />
+          <attvalue for="9" value="21836642848.0" />
+          <attvalue for="10" value="1983" />
+          <attvalue for="11" value="MANAGEMENT SCIENCE" />
+          <attvalue for="12" value="MANAGE SCI" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="26.0" />
+          <attvalue for="15" value="0.5909090909090909" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0348859713756791" />
+          <attvalue for="18" value="0.0999353583923968" />
+          <attvalue for="19" value="0.0804205422873815" />
+          <attvalue for="20" value="#FFF5CC" />
+        </attvalues>
+      </node>
+      <node id="MATSUNO K, 2002, J MARKETING" label="THE EFFECTS OF ENTREPRENEURIAL PROCLIVITY AND MARKET ORIENTATION ON BUSINESS PERFORMANCE">
+        <viz:color r="249" g="242" b="186" a="1.0" />
+        <viz:size value="8.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.456568" />
+          <attvalue for="9" value="19307962597.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="24.0" />
+          <attvalue for="15" value="0.96" />
+          <attvalue for="16" value="0.1132508777434914" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0" />
+          <attvalue for="20" value="#F9F2BA" />
+        </attvalues>
+      </node>
+      <node id="LUMPKIN GT, 1996, ACAD MANAGE REV" label="CLARIFYING THE ENTREPRENEURIAL ORIENTATION CONSTRUCT AND LINKING IT TO PERFORMANCE">
+        <viz:color r="241" g="238" b="164" a="1.0" />
+        <viz:size value="18.906369131100952" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.43641" />
+          <attvalue for="9" value="18814634470.0" />
+          <attvalue for="10" value="1996" />
+          <attvalue for="11" value="ACADEMY OF MANAGEMENT REVIEW" />
+          <attvalue for="12" value="ACAD MANAGE REV" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="47.0" />
+          <attvalue for="15" value="1.5161290322580645" />
+          <attvalue for="16" value="0.2488319515051877" />
+          <attvalue for="17" value="0.2956950352005068" />
+          <attvalue for="18" value="0.8470565144766538" />
+          <attvalue for="19" value="0.6816480706938096" />
+          <attvalue for="20" value="#F1EEA4" />
+        </attvalues>
+      </node>
+      <node id="NARVER JC, 1990, J MARKETING" label="THE EFFECT OF A MARKET ORIENTATION ON BUSINESS PROFITABILITY">
+        <viz:color r="242" g="239" b="167" a="1.0" />
+        <viz:size value="20.87560976712322" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.218826" />
+          <attvalue for="9" value="3173543676.0" />
+          <attvalue for="10" value="1990" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="53.0" />
+          <attvalue for="15" value="1.4324324324324325" />
+          <attvalue for="16" value="0.2304688251116061" />
+          <attvalue for="17" value="0.349085368150671" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="0.8047256104452012" />
+          <attvalue for="20" value="#F2EFA7" />
+        </attvalues>
+      </node>
+      <node id="KOHLI AK, 1990, J MARKETING" label="MARKET ORIENTATION: THE CONSTRUCT, RESEARCH PROPOSITIONS, AND MANAGERIAL IMPLICATIONS">
+        <viz:color r="252" g="244" b="197" a="1.0" />
+        <viz:size value="9.89476736687789" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.182162" />
+          <attvalue for="9" value="2310578269.0" />
+          <attvalue for="10" value="1990" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="27.0" />
+          <attvalue for="15" value="0.7297297297297297" />
+          <attvalue for="16" value="0.045411092939269" />
+          <attvalue for="17" value="0.0513712030567566" />
+          <attvalue for="18" value="0.1471594278754874" />
+          <attvalue for="19" value="0.1184229604298681" />
+          <attvalue for="20" value="#FCF4C5" />
+        </attvalues>
+      </node>
+      <node id="MORRIS MH, 2002, J MARKET THEORY PRAC" label="ENTREPRENEURIAL MARKETING: A CONSTRUCT FOR INTEGRATING EMERGING ENTREPRENEURSHIP AND MARKETING PERSPECTIVES">
+        <viz:color r="199" g="217" b="42" a="1.0" />
+        <viz:size value="24.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.766667" />
+          <attvalue for="9" value="40268174438.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="THE JOURNAL OF MARKETING THEORY AND PRACTICE" />
+          <attvalue for="12" value="J MARKET THEORY PRAC" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="226.0" />
+          <attvalue for="15" value="9.04" />
+          <attvalue for="16" value="1.0" />
+          <attvalue for="17" value="1.0" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="1.0" />
+          <attvalue for="20" value="#C7D92A" />
+        </attvalues>
+      </node>
+      <node id="COLLINSON E, 2001, MANAGEMENT DECISION" label="ENTREPRENEURIAL MARKETING – A HISTORICAL PERSPECTIVE ON DEVELOPMENT AND PRACTICE">
+        <viz:color r="225" g="230" b="118" a="1.0" />
+        <viz:size value="16.695413288829613" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.720364" />
+          <attvalue for="9" value="38429612973.0" />
+          <attvalue for="10" value="2001" />
+          <attvalue for="11" value="MANAGEMENT DECISION" />
+          <attvalue for="12" value="MANAGEMENT DECISION" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="84.0" />
+          <attvalue for="15" value="3.230769230769231" />
+          <attvalue for="16" value="0.5309088353068729" />
+          <attvalue for="17" value="0.5547299522925357" />
+          <attvalue for="18" value="0.5386347783772714" />
+          <attvalue for="19" value="0.5434633305518507" />
+          <attvalue for="20" value="#E1E676" />
+        </attvalues>
+      </node>
+      <node id="STOKES D, 2000, J RES MARKETING ENTR" label="PUTTING ENTREPRENEURSHIP INTO MARKETING: THE PROCESSES OF ENTREPRENEURIAL MARKETING">
+        <viz:color r="225" g="230" b="117" a="1.0" />
+        <viz:size value="17.120455655518143" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.4993" />
+          <attvalue for="9" value="23496391859.0" />
+          <attvalue for="10" value="2000" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARKETING ENTR" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="89.0" />
+          <attvalue for="15" value="3.2962962962962963" />
+          <attvalue for="16" value="0.539251523819364" />
+          <attvalue for="17" value="0.5806395132816163" />
+          <attvalue for="18" value="0.5654808921219987" />
+          <attvalue for="19" value="0.5700284784698839" />
+          <attvalue for="20" value="#E1E675" />
+        </attvalues>
+      </node>
+      <node id="BARNEY J, 1991, J MANAGE" label="FIRM RESOURCES AND SUSTAINED COMPETITIVE ADVANTAGE">
+        <viz:color r="242" g="238" b="165" a="1.0" />
+        <viz:size value="13.321845485917985" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.373228" />
+          <attvalue for="9" value="17479986438.0" />
+          <attvalue for="10" value="1991" />
+          <attvalue for="11" value="JOURNAL OF MANAGEMENT" />
+          <attvalue for="12" value="J MANAGE" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="53.0" />
+          <attvalue for="15" value="1.4722222222222223" />
+          <attvalue for="16" value="0.2392762530808157" />
+          <attvalue for="17" value="0.349085368150671" />
+          <attvalue for="18" value="0.3255567606066751" />
+          <attvalue for="19" value="0.3326153428698739" />
+          <attvalue for="20" value="#F2EEA5" />
+        </attvalues>
+      </node>
+      <node id="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" label="Marketing and entrepreneurship in SMEs : an innovative approach">
+        <viz:color r="251" g="243" b="193" a="1.0" />
+        <viz:size value="8.16745266260326" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.248723" />
+          <attvalue for="9" value="8091780732.0" />
+          <attvalue for="10" value="1995" />
+          <attvalue for="11" value="" />
+          <attvalue for="12" value="MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="26.0" />
+          <attvalue for="15" value="0.8125" />
+          <attvalue for="16" value="0.0707829976100261" />
+          <attvalue for="17" value="0.0348859713756791" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0104657914127037" />
+          <attvalue for="20" value="#FBF3C1" />
+        </attvalues>
+      </node>
+      <node id="BJERKE B, 2002, ENTREPRENEURIAL MARK" label="Entrepreneurial Marketing: The Growth of Small Firms in the New Economic Era">
+        <viz:color r="239" g="237" b="157" a="1.0" />
+        <viz:size value="11.798949800264571" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.188979" />
+          <attvalue for="9" value="3634812307.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="" />
+          <attvalue for="12" value="ENTREPRENEURIAL MARK" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="43.0" />
+          <attvalue for="15" value="1.72" />
+          <attvalue for="16" value="0.2911222750780789" />
+          <attvalue for="17" value="0.2562533077731255" />
+          <attvalue for="18" value="0.2293691002637115" />
+          <attvalue for="19" value="0.2374343625165357" />
+          <attvalue for="20" value="#EFED9D" />
+        </attvalues>
+      </node>
+      <node id="SARASVATHY SD, 2001, ACAD MANAGE REV" label="CAUSATION AND EFFECTUATION: TOWARD A THEORETICAL SHIFT FROM ECONOMIC INEVITABILITY TO ENTREPRENEURIAL CONTINGENCY">
+        <viz:color r="237" g="236" b="151" a="1.0" />
+        <viz:size value="20.751243874375632" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.237716" />
+          <attvalue for="9" value="8160153812.0" />
+          <attvalue for="10" value="2001" />
+          <attvalue for="11" value="ACADEMY OF MANAGEMENT REVIEW" />
+          <attvalue for="12" value="ACAD MANAGE REV" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="50.0" />
+          <attvalue for="15" value="1.9230769230769231" />
+          <attvalue for="16" value="0.3302071340238184" />
+          <attvalue for="17" value="0.3231758071615902" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="0.796952742148477" />
+          <attvalue for="20" value="#EDEC97" />
+        </attvalues>
+      </node>
+      <node id="READ S, 2009, J MARKETING" label="MARKETING UNDER UNCERTAINTY: THE LOGIC OF AN EFFECTUAL APPROACH">
+        <viz:color r="243" g="239" b="168" a="1.0" />
+        <viz:size value="8.701469967217312" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.187713" />
+          <attvalue for="9" value="3912055722.0" />
+          <attvalue for="10" value="2009" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="25.0" />
+          <attvalue for="15" value="1.3888888888888888" />
+          <attvalue for="16" value="0.2206638643180888" />
+          <attvalue for="17" value="0.0177785104801134" />
+          <attvalue for="18" value="0.05501188543864" />
+          <attvalue for="19" value="0.043841872951082" />
+          <attvalue for="20" value="#F3EFA8" />
+        </attvalues>
+      </node>
+      <node id="GILMORE A, 2011, J RES MARK ENTREP" label="ENTREPRENEURIAL AND SME MARKETING">
+        <viz:color r="236" g="235" b="148" a="1.0" />
+        <viz:size value="12.965496787602042" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.137593" />
+          <attvalue for="9" value="494678154.0" />
+          <attvalue for="10" value="2011" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARK ENTREP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="32.0" />
+          <attvalue for="15" value="2.0" />
+          <attvalue for="16" value="0.3443068399123339" />
+          <attvalue for="17" value="0.1258487758607118" />
+          <attvalue for="18" value="0.3894127378098773" />
+          <attvalue for="19" value="0.3103435492251276" />
+          <attvalue for="20" value="#ECEB94" />
+        </attvalues>
+      </node>
+      <node id="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" label="ACADEMIC ROOTS: THE PAST AND PRESENT OF ENTREPRENEURIAL MARKETING">
+        <viz:color r="230" g="233" b="133" a="1.0" />
+        <viz:size value="17.27872636678546" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.130928" />
+          <attvalue for="9" value="597888821.0" />
+          <attvalue for="10" value="2011" />
+          <attvalue for="11" value="JOURNAL OF SMALL BUSINESS &amp; ENTREPRENEURSHIP" />
+          <attvalue for="12" value="JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="41.0" />
+          <attvalue for="15" value="2.5625" />
+          <attvalue for="16" value="0.4375885610672291" />
+          <attvalue for="17" value="0.2351660679193347" />
+          <attvalue for="18" value="0.7276722536404155" />
+          <attvalue for="19" value="0.5799203979240912" />
+          <attvalue for="20" value="#E6E985" />
+        </attvalues>
+      </node>
+      <node id="HANSEN DJ, 2010, J RES MARK ENTREP" label="THE MARKETING/ENTREPRENEURSHIP INTERFACE: A REPORT ON THE “CHARLESTON SUMMIT”">
+        <viz:color r="242" g="239" b="167" a="1.0" />
+        <viz:size value="8.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.130381" />
+          <attvalue for="9" value="467715403.0" />
+          <attvalue for="10" value="2010" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARK ENTREP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="24.0" />
+          <attvalue for="15" value="1.411764705882353" />
+          <attvalue for="16" value="0.2258370240933824" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0" />
+          <attvalue for="20" value="#F2EFA7" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges />
+  </graph>
+</gexf>
