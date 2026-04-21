@@ -29,6 +29,8 @@ def build_gephi_nodes(nodes_df: pd.DataFrame) -> pd.DataFrame:
             "global_size_score": nodes_df["global_size_score"].round(6),
             "local_size_score": nodes_df["local_size_score"].round(6),
             "final_root_size_score": nodes_df["final_root_size_score"].round(6),
+            "compressed_root_size_score": nodes_df["compressed_root_size_score"].round(6),
+            "visual_size_level": nodes_df["visual_size_level"],
             "subtopic_id": nodes_df["subtopic_id"],
             "subtopic_label": nodes_df["subtopic_label"],
             "cluster_order": nodes_df["cluster_order"],

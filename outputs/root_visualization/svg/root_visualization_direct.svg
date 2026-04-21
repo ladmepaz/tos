@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="820" viewBox="0 0 1300 820">
+<rect width="1300" height="820" fill="#F7F2EA" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.cluster-title { font-size: 20px; font-weight: 600; letter-spacing: 0.5px; }
+.node-label { font-size: 18px; }
+</style>
+<g id="subtopic_2">
+<text class="cluster-title" x="250.0" y="335.0" text-anchor="middle">Cluster 1</text>
+<g>
+<title>THE CORRELATES OF ENTREPRENEURSHIP IN THREE TYPES OF FIRMS
+Subtopic: subtopic_2
+Citations: 26
+Citation velocity: 0.59
+Size level: 15.0</title>
+<circle cx="250.0" cy="445.0" r="30.00" fill="#C4AE97" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="250.0" y="503.0" text-anchor="middle">MILLER D 1983</text>
+</g>
+<g>
+<title>THE EFFECTS OF ENTREPRENEURIAL PROCLIVITY AND MARKET ORIENTATION ON BUSINESS PERFORMANCE
+Subtopic: subtopic_2
+Citations: 24
+Citation velocity: 0.96
+Size level: 15.0</title>
+<circle cx="130.0" cy="535.0" r="30.00" fill="#B69D86" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="130.0" y="593.0" text-anchor="middle">MATSUNO K 2002</text>
+</g>
+<g>
+<title>CLARIFYING THE ENTREPRENEURIAL ORIENTATION CONSTRUCT AND LINKING IT TO PERFORMANCE
+Subtopic: subtopic_2
+Citations: 47
+Citation velocity: 1.52
+Size level: 19.5</title>
+<circle cx="370.0" cy="535.0" r="39.00" fill="#A48972" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="370.0" y="602.0" text-anchor="middle">LUMPKIN GT 1996</text>
+</g>
+<g>
+<title>THE EFFECT OF A MARKET ORIENTATION ON BUSINESS PROFITABILITY
+Subtopic: subtopic_2
+Citations: 53
+Citation velocity: 1.43
+Size level: 21.0</title>
+<circle cx="168.0" cy="645.0" r="42.00" fill="#A68C75" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="168.0" y="715.0" text-anchor="middle">NARVER JC 1990</text>
+</g>
+<g>
+<title>MARKET ORIENTATION: THE CONSTRUCT, RESEARCH PROPOSITIONS, AND MANAGERIAL IMPLICATIONS
+Subtopic: subtopic_2
+Citations: 27
+Citation velocity: 0.73
+Size level: 16.5</title>
+<circle cx="332.0" cy="645.0" r="33.00" fill="#BEA790" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="332.0" y="706.0" text-anchor="middle">KOHLI AK 1990</text>
+</g>
+</g>
+<g id="subtopic_1">
+<text class="cluster-title" x="650.0" y="155.0" text-anchor="middle">Cluster 2</text>
+<g>
+<title>ENTREPRENEURIAL MARKETING: A CONSTRUCT FOR INTEGRATING EMERGING ENTREPRENEURSHIP AND MARKETING PERSPECTIVES
+Subtopic: subtopic_1
+Citations: 226
+Citation velocity: 9.04
+Size level: 21.0</title>
+<circle cx="650.0" cy="255.0" r="42.00" fill="#441A03" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="650.0" y="325.0" text-anchor="middle">MORRIS MH 2002</text>
+</g>
+<g>
+<title>ENTREPRENEURIAL MARKETING – A HISTORICAL PERSPECTIVE ON DEVELOPMENT AND PRACTICE
+Subtopic: subtopic_1
+Citations: 84
+Citation velocity: 3.23
+Size level: 19.5</title>
+<circle cx="525.0" cy="330.0" r="39.00" fill="#805F48" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="525.0" y="397.0" text-anchor="middle">COLLINSON E 2001</text>
+</g>
+<g>
+<title>PUTTING ENTREPRENEURSHIP INTO MARKETING: THE PROCESSES OF ENTREPRENEURIAL MARKETING
+Subtopic: subtopic_1
+Citations: 89
+Citation velocity: 3.30
+Size level: 19.5</title>
+<circle cx="775.0" cy="330.0" r="39.00" fill="#7F5E47" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="775.0" y="397.0" text-anchor="middle">STOKES D 2000</text>
+</g>
+<g>
+<title>FIRM RESOURCES AND SUSTAINED COMPETITIVE ADVANTAGE
+Subtopic: subtopic_1
+Citations: 53
+Citation velocity: 1.47
+Size level: 18.0</title>
+<circle cx="510.0" cy="455.0" r="36.00" fill="#A58B74" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="510.0" y="519.0" text-anchor="middle">BARNEY J 1991</text>
+</g>
+<g>
+<title>Marketing and entrepreneurship in SMEs : an innovative approach
+Subtopic: subtopic_1
+Citations: 26
+Citation velocity: 0.81
+Size level: 15.0</title>
+<circle cx="650.0" cy="485.0" r="30.00" fill="#BBA48D" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="650.0" y="543.0" text-anchor="middle">CARSON D 1995</text>
+</g>
+<g>
+<title>Entrepreneurial Marketing: The Growth of Small Firms in the New Economic Era
+Subtopic: subtopic_1
+Citations: 43
+Citation velocity: 1.72
+Size level: 16.5</title>
+<circle cx="790.0" cy="455.0" r="33.00" fill="#9F836C" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="790.0" y="516.0" text-anchor="middle">BJERKE B 2002</text>
+</g>
+</g>
+<g id="subtopic_3">
+<text class="cluster-title" x="1050.0" y="335.0" text-anchor="middle">Cluster 3</text>
+<g>
+<title>CAUSATION AND EFFECTUATION: TOWARD A THEORETICAL SHIFT FROM ECONOMIC INEVITABILITY TO ENTREPRENEURIAL CONTINGENCY
+Subtopic: subtopic_3
+Citations: 50
+Citation velocity: 1.92
+Size level: 21.0</title>
+<circle cx="1050.0" cy="445.0" r="42.00" fill="#9A7D66" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="1050.0" y="515.0" text-anchor="middle">SARASVATHY SD 2001</text>
+</g>
+<g>
+<title>MARKETING UNDER UNCERTAINTY: THE LOGIC OF AN EFFECTUAL APPROACH
+Subtopic: subtopic_3
+Citations: 25
+Citation velocity: 1.39
+Size level: 15.0</title>
+<circle cx="930.0" cy="535.0" r="30.00" fill="#A88D76" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="930.0" y="593.0" text-anchor="middle">READ S 2009</text>
+</g>
+<g>
+<title>ENTREPRENEURIAL AND SME MARKETING
+Subtopic: subtopic_3
+Citations: 32
+Citation velocity: 2.00
+Size level: 18.0</title>
+<circle cx="1170.0" cy="535.0" r="36.00" fill="#987B64" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="1170.0" y="599.0" text-anchor="middle">GILMORE A 2011</text>
+</g>
+<g>
+<title>ACADEMIC ROOTS: THE PAST AND PRESENT OF ENTREPRENEURIAL MARKETING
+Subtopic: subtopic_3
+Citations: 41
+Citation velocity: 2.56
+Size level: 19.5</title>
+<circle cx="968.0" cy="645.0" r="39.00" fill="#8C6D56" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="968.0" y="712.0" text-anchor="middle">HILLS G 2011</text>
+</g>
+<g>
+<title>THE MARKETING/ENTREPRENEURSHIP INTERFACE: A REPORT ON THE “CHARLESTON SUMMIT”
+Subtopic: subtopic_3
+Citations: 24
+Citation velocity: 1.41
+Size level: 15.0</title>
+<circle cx="1132.0" cy="645.0" r="30.00" fill="#A78D76" stroke="#5B4538" stroke-width="6" />
+<text class="node-label" x="1132.0" y="703.0" text-anchor="middle">HANSEN DJ 2010</text>
+</g>
+</g>
+</svg>

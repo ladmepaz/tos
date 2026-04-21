@@ -25,8 +25,9 @@ from root_tfidf_similarity import (
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs/root_visualization")
-ROOT_COLOR_LOW = "#FFF5CC"
-ROOT_COLOR_HIGH = "#C7D92A"
+ROOT_COLOR_LOW = "#C4AE97"
+ROOT_COLOR_HIGH = "#441A03"
+ROOT_SIZE_LEVELS = [15.0, 16.5, 18.0, 19.5, 21.0]
 
 
 def normalize_series(values: pd.Series) -> pd.Series:
@@ -63,8 +64,20 @@ def compute_root_sizes(
         (local_weight * sized_df["local_size_score"])
         + (global_weight * sized_df["global_size_score"])
     )
-    sized_df["size"] = min_size + (
-        sized_df["final_root_size_score"] * (max_size - min_size)
+    sized_df["compressed_root_size_score"] = (
+        0.5 * sized_df["final_root_size_score"]
+        + 0.5 * sized_df["final_root_size_score"].apply(math.sqrt)
+    )
+    # Use discrete editorial size classes instead of a fully continuous scale.
+    rank_fraction = normalize_series(sized_df["compressed_root_size_score"])
+    level_edges = [0.2, 0.4, 0.6, 0.8]
+    sized_df["visual_size_level"] = rank_fraction.apply(
+        lambda value: 1
+        + sum(value > edge for edge in level_edges)
+    )
+    size_levels = ROOT_SIZE_LEVELS
+    sized_df["size"] = sized_df["visual_size_level"].apply(
+        lambda level: size_levels[int(level) - 1]
     )
     return sized_df
 
@@ -146,8 +159,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-clusters", type=int, default=3)
     parser.add_argument("--local-weight", type=float, default=0.70)
     parser.add_argument("--global-weight", type=float, default=0.30)
-    parser.add_argument("--min-size", type=float, default=8.0)
-    parser.add_argument("--max-size", type=float, default=24.0)
+    parser.add_argument("--min-size", type=float, default=14.0)
+    parser.add_argument("--max-size", type=float, default=22.0)
     parser.add_argument("--current-year", type=int, default=date.today().year)
     return parser.parse_args()
 
