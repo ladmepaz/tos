@@ -13,8 +13,10 @@ DEFAULT_OUTPUT = Path("outputs/root_visualization/svg/root_visualization_direct.
 CANVAS_WIDTH = 1300
 CANVAS_HEIGHT = 820
 BACKGROUND_COLOR = "#F7F2EA"
-STROKE_COLOR = "#5B4538"
 LABEL_COLOR = "#4A413B"
+PX_PER_MM = 96.0 / 25.4
+MIN_DIAMETER_MM = 6.0
+MAX_DIAMETER_MM = 25.0
 
 
 def parse_args() -> argparse.Namespace:
@@ -23,7 +25,6 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--diameter-scale", type=float, default=4.0)
     return parser.parse_args()
 
 
@@ -68,13 +69,24 @@ def cluster_caption(row: pd.Series) -> str:
     return f"Cluster {int(row['cluster_order'])}"
 
 
-def build_svg(nodes_df: pd.DataFrame, diameter_scale: float) -> str:
+def size_to_radius_px(size_value: float, min_size: float, max_size: float) -> float:
+    if math.isclose(min_size, max_size):
+        diameter_mm = (MIN_DIAMETER_MM + MAX_DIAMETER_MM) / 2.0
+    else:
+        normalized = (float(size_value) - min_size) / (max_size - min_size)
+        diameter_mm = MIN_DIAMETER_MM + (normalized * (MAX_DIAMETER_MM - MIN_DIAMETER_MM))
+    return (diameter_mm * PX_PER_MM) / 2.0
+
+
+def build_svg(nodes_df: pd.DataFrame) -> str:
     ordered_clusters = (
         nodes_df[["subtopic_id", "cluster_order", "subtopic_label"]]
         .drop_duplicates()
         .sort_values("cluster_order")
         .reset_index(drop=True)
     )
+    min_size = float(nodes_df["size"].min())
+    max_size = float(nodes_df["size"].max())
     centers = build_cluster_centers(len(ordered_clusters))
     center_map = {
         row.subtopic_id: centers[index]
@@ -108,7 +120,7 @@ def build_svg(nodes_df: pd.DataFrame, diameter_scale: float) -> str:
         for (_, node_row), (offset_x, offset_y) in zip(cluster_nodes.iterrows(), slots):
             cx = center_x + offset_x
             cy = center_y + offset_y
-            radius = (float(node_row["size"]) * diameter_scale) / 2.0
+            radius = size_to_radius_px(float(node_row["size"]), min_size, max_size)
             label = short_label(str(node_row["node_id"]))
             title = str(node_row["title"]) if isinstance(node_row["title"], str) else str(node_row["node_id"])
             tooltip = (
@@ -120,8 +132,9 @@ def build_svg(nodes_df: pd.DataFrame, diameter_scale: float) -> str:
             )
             lines.append("<g>")
             lines.append(f"<title>{html.escape(tooltip)}</title>")
+            fill_color = html.escape(str(node_row["color"]))
             lines.append(
-                f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{radius:.2f}" fill="{html.escape(str(node_row["color"]))}" stroke="{STROKE_COLOR}" stroke-width="6" />'
+                f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{radius:.2f}" fill="{fill_color}" stroke="{fill_color}" stroke-width="6" />'
             )
             lines.append(
                 f'<text class="node-label" x="{cx:.1f}" y="{cy + radius + 28:.1f}" text-anchor="middle">{html.escape(label)}</text>'
@@ -138,7 +151,7 @@ def main() -> None:
     args = parse_args()
     nodes_df = pd.read_csv(args.input)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    svg = build_svg(nodes_df, args.diameter_scale)
+    svg = build_svg(nodes_df)
     args.output.write_text(svg, encoding="utf-8")
     print(f"Nodes: {len(nodes_df):,}")
     print(f"Saved SVG: {args.output.resolve()}")

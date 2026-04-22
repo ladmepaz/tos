@@ -27,7 +27,7 @@ DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs/root_visualization")
 ROOT_COLOR_LOW = "#C4AE97"
 ROOT_COLOR_HIGH = "#441A03"
-ROOT_SIZE_LEVELS = [15.0, 16.5, 18.0, 19.5, 21.0]
+ROOT_SIZE_LEVELS = [14.0, 18.0, 22.0, 26.0, 30.0]
 
 
 def normalize_series(values: pd.Series) -> pd.Series:
