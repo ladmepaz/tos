@@ -7,7 +7,12 @@ import networkx as nx
 import pandas as pd
 
 from root_cocitation_similarity import compute_root_citers
-from root_combined_similarity import build_combined_outputs, detect_subtopics
+from root_combined_similarity import (
+    DEFAULT_NTF_SIMILARITY,
+    build_combined_outputs,
+    detect_subtopics,
+    load_ntf_similarity_lookup,
+)
 from root_structural_similarity import compute_root_influence_sets
 from root_tfidf_similarity import (
     build_sap_graph,
@@ -211,6 +216,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--w-text", type=float, default=0.45)
     parser.add_argument("--w-cocitation", type=float, default=0.35)
     parser.add_argument("--w-structural", type=float, default=0.20)
+    parser.add_argument("--w-ntf", type=float, default=0.0)
+    parser.add_argument("--ntf-similarity", type=Path, default=DEFAULT_NTF_SIMILARITY)
     parser.add_argument("--cohesion-weight", type=float, default=0.45)
     parser.add_argument("--separation-weight", type=float, default=0.25)
     parser.add_argument("--support-weight", type=float, default=0.30)
@@ -225,10 +232,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    w_text, w_cocitation, w_structural = normalize_weights(
+    w_text, w_cocitation, w_structural, w_ntf = normalize_weights(
         args.w_text,
         args.w_cocitation,
         args.w_structural,
+        args.w_ntf,
     )
     cohesion_weight, separation_weight, support_weight = normalize_weights(
         args.cohesion_weight,
@@ -241,6 +249,7 @@ def main() -> None:
     tfidf_vectors = compute_tfidf_vectors(records)
     root_citers = compute_root_citers(graph, records)
     influence_sets = compute_root_influence_sets(graph, records)
+    ntf_similarity_lookup = load_ntf_similarity_lookup(args.ntf_similarity)
     root_df, matrix_df, edges_df = build_combined_outputs(
         records,
         tfidf_vectors,
@@ -249,6 +258,8 @@ def main() -> None:
         w_text,
         w_cocitation,
         w_structural,
+        w_ntf,
+        ntf_similarity_lookup,
     )
     _, subtopics_df, summary_df = detect_subtopics(
         records,

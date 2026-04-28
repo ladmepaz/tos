@@ -19,6 +19,40 @@ from root_tfidf_similarity import (
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs/root_combined")
+DEFAULT_NTF_SIMILARITY = Path("outputs/root_ntf/root_ntf_similarity_pairs.csv")
+
+
+def normalize_weights(*weights: float) -> list[float]:
+    """Normalize positive weights so they sum to 1."""
+    weight_sum = sum(weights)
+    if weight_sum <= 0:
+        raise ValueError("At least one weight must be positive.")
+    return [weight / weight_sum for weight in weights]
+
+
+def load_ntf_similarity_lookup(path: Path | None) -> dict[tuple[str, str], float]:
+    """Load pairwise NTF topic similarity keyed by sorted root ids."""
+    if path is None or not path.exists():
+        return {}
+
+    pairs_df = pd.read_csv(path)
+    required_columns = {
+        "source_root_id",
+        "target_root_id",
+        "ntf_topic_similarity",
+    }
+    missing_columns = required_columns - set(pairs_df.columns)
+    if missing_columns:
+        raise ValueError(
+            f"Missing NTF similarity columns in {path}: {sorted(missing_columns)}"
+        )
+
+    return {
+        tuple(sorted((row.source_root_id, row.target_root_id))): float(
+            row.ntf_topic_similarity
+        )
+        for row in pairs_df.itertuples(index=False)
+    }
 
 
 def aggregate_top_terms(
@@ -41,11 +75,14 @@ def build_combined_outputs(
     w_text: float,
     w_cocitation: float,
     w_structural: float,
+    w_ntf: float = 0.0,
+    ntf_similarity_lookup: dict[tuple[str, str], float] | None = None,
 ):
     """Build root table, combined matrix, and pairwise outputs."""
     root_ids = [record["root_id"] for record in records]
     node_by_root_id = {record["root_id"]: record["node_id"] for record in records}
     title_by_root_id = {record["root_id"]: record["title"] for record in records}
+    ntf_similarity_lookup = ntf_similarity_lookup or {}
 
     matrix_rows = []
     edge_rows = []
@@ -61,10 +98,16 @@ def build_combined_outputs(
             structural_similarity = overlap_cosine(
                 influence_sets[source_id], influence_sets[target_id]
             )
+            ntf_topic_similarity = (
+                1.0
+                if source_id == target_id
+                else ntf_similarity_lookup.get(tuple(sorted((source_id, target_id))), 0.0)
+            )
             combined_similarity = (
                 (w_text * text_similarity)
                 + (w_cocitation * co_citation_similarity)
                 + (w_structural * structural_similarity)
+                + (w_ntf * ntf_topic_similarity)
             )
             matrix_row[target_id] = round(combined_similarity, 6)
             if source_id < target_id:
@@ -79,6 +122,7 @@ def build_combined_outputs(
                         "text_similarity": round(text_similarity, 6),
                         "co_citation_similarity": round(co_citation_similarity, 6),
                         "structural_similarity": round(structural_similarity, 6),
+                        "ntf_topic_similarity": round(ntf_topic_similarity, 6),
                         "combined_similarity": round(combined_similarity, 6),
                     }
                 )
@@ -226,6 +270,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--w-text", type=float, default=0.45)
     parser.add_argument("--w-cocitation", type=float, default=0.35)
     parser.add_argument("--w-structural", type=float, default=0.20)
+    parser.add_argument("--w-ntf", type=float, default=0.0)
+    parser.add_argument(
+        "--ntf-similarity",
+        type=Path,
+        default=None,
+        help="Optional root_ntf_similarity_pairs.csv file.",
+    )
     parser.add_argument(
         "--min-similarity",
         type=float,
@@ -237,13 +288,13 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    weight_sum = args.w_text + args.w_cocitation + args.w_structural
-    if weight_sum <= 0:
-        raise ValueError("At least one weight must be positive.")
-
-    w_text = args.w_text / weight_sum
-    w_cocitation = args.w_cocitation / weight_sum
-    w_structural = args.w_structural / weight_sum
+    w_text, w_cocitation, w_structural, w_ntf = normalize_weights(
+        args.w_text,
+        args.w_cocitation,
+        args.w_structural,
+        args.w_ntf,
+    )
+    ntf_similarity_lookup = load_ntf_similarity_lookup(args.ntf_similarity)
 
     graph = build_sap_graph(args.citations, args.articles)
     records = extract_root_records(graph)
@@ -258,6 +309,8 @@ def main() -> None:
         w_text,
         w_cocitation,
         w_structural,
+        w_ntf,
+        ntf_similarity_lookup,
     )
     similarity_graph, subtopics_df, summary_df = detect_subtopics(
         records,
@@ -282,7 +335,8 @@ def main() -> None:
     )
     print(
         "Weights used: "
-        f"text={w_text:.2f}, co_citation={w_cocitation:.2f}, structural={w_structural:.2f}"
+        f"text={w_text:.2f}, co_citation={w_cocitation:.2f}, "
+        f"structural={w_structural:.2f}, ntf={w_ntf:.2f}"
     )
     print(f"Saved root papers: {(args.output_dir / 'root_papers.csv').resolve()}")
     print(
