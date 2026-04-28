@@ -18,6 +18,8 @@ ARTICLE_REPLACEMENTS = {
     "KRAUS SASCHA, 2010, INTERNATIONAL JOURNAL OF ENTREPRENEURSHIP AND INNOVATION MANAGEMENT": "KRAUS S, 2010, INT J ENTREPRENEURSHIP INNOV MANAGE",
     "JONES R, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP": "JONES R, 2011, J SMALL BUS ENTREP",
     "LUMPKIN G, 1996, ACAD MANAGE REV": "LUMPKIN GT, 1996, ACAD MANAGE REV",
+    "MILES M, 2006, EUR J MARK": "MILES MP, 2006, EUR J MARKETING",
+    "MORRISH S, 2010, J STRATEG MARK": "MORRISH SC, 2011, J RES MARK ENTREP",
     "WHALEN P, 2015, J STRATEGIC MARKETIN": "WHALEN P, 2016, J STRATEG MARK",
     "MORRIS M, 2002": "MORRIS MH, 2002, J MARKET THEORY PRAC",
     "NARVER J, 1990, J MARKETING": "NARVER JC, 1990, J MARKETING",
@@ -44,6 +46,46 @@ MANUAL_ARTICLE_METADATA = {
             "firmly placed on the small firm operating within the new economic era and "
             "consequently, the book argues that an understanding of entrepreneurial "
             "marketing is essential in order to achieve small firm growth in this era."
+        ),
+    },
+    "MORRISH SC, 2011, J RES MARK ENTREP": {
+        "title": "Entrepreneurial marketing: a strategy for the twenty-first century?",
+        "abstract": (
+            "Purpose The purpose of this paper is to present the author's view of the "
+            "role of entrepreneurial marketing (EM) as a strategy to address the "
+            "dynamic marketing environment of recent times. Design/methodology/approach "
+            "The author reflects on some significant marketing changes and provides some "
+            "contemporary example of companies that have successfully adopted EM "
+            "approaches and challenged traditional marketing wisdom. Findings EM is best "
+            "conceived not as a nexus between marketing and entrepreneurship, but as an "
+            "augmented process, where both the entrepreneur and the customer are the core "
+            "actors, co-creating value within the marketing environment. Originality/value "
+            "While this is an opinion piece, the paper provides evidence of how EM can be "
+            "adopted and applied by entrepreneurial firms and challenges marketers to "
+            "create and control their own-marketing environment."
+        ),
+    },
+    "MILES MP, 2006, EUR J MARKETING": {
+        "title": (
+            "Large firms, entrepreneurial marketing processes, and the cycle of "
+            "competitive advantage"
+        ),
+        "abstract": (
+            "Purpose - The paper aims to explore how large firms might leverage "
+            "entrepreneurial marketing processes to gain and renew competitive "
+            "advantage. Design/methodology/approach - The paper applies past research "
+            "on entrepreneurial marketing and entrepreneurship with examples from a "
+            "long-term case study of firms in New Zealand, Sweden, the UK, and the USA "
+            "to illustrate how entrepreneurial marketing processes can be strategically "
+            "employed by large firms to create or discover, assess, and exploit "
+            "entrepreneurial opportunities more effectively and efficiently. Findings - "
+            "The paper offers insight into how large firms leverage entrepreneurial "
+            "marketing processes to gain advantage. The findings suggest that, in free "
+            "and open markets, entrepreneurial marketing processes can be strategically "
+            "employed to create superior value for the firm's customers and owners. "
+            "Originality/value - The paper contributes to the work of both academics "
+            "working at the marketing/entrepreneurship interface and executives seeking "
+            "to leverage marketing to create competitive advantage."
         ),
     },
     "CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH": {
@@ -382,6 +424,12 @@ def tidy_article_metadata(article_df: pd.DataFrame) -> pd.DataFrame:
     for sr, overrides in MANUAL_ARTICLE_METADATA.items():
         match_mask = merged_df["SR"] == sr
         if not match_mask.any():
+            new_row = pd.Series({column: "" for column in article_df.columns})
+            new_row["SR"] = sr
+            for column, value in overrides.items():
+                if column in new_row.index:
+                    new_row[column] = value
+            merged_df = pd.concat([merged_df, new_row.to_frame().T], ignore_index=True)
             continue
         for column, value in overrides.items():
             merged_df.loc[match_mask, column] = value
