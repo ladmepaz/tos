@@ -1,0 +1,1433 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-22">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="21" title="text_similarity" type="double" />
+      <attribute id="22" title="co_citation_similarity" type="double" />
+      <attribute id="23" title="structural_similarity" type="double" />
+      <attribute id="24" title="combined_similarity" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="subtopic_id" type="string" />
+      <attribute id="1" title="subtopic_label" type="string" />
+      <attribute id="2" title="cluster_order" type="long" />
+      <attribute id="3" title="cluster_strength" type="double" />
+      <attribute id="4" title="cluster_cohesion" type="double" />
+      <attribute id="5" title="cluster_separation" type="double" />
+      <attribute id="6" title="cluster_support" type="double" />
+      <attribute id="7" title="is_representative" type="boolean" />
+      <attribute id="8" title="root_anchor_score" type="double" />
+      <attribute id="9" title="sap_rank" type="double" />
+      <attribute id="10" title="year" type="long" />
+      <attribute id="11" title="journal" type="string" />
+      <attribute id="12" title="source_title" type="string" />
+      <attribute id="13" title="has_article_metadata" type="boolean" />
+      <attribute id="14" title="citations_received" type="double" />
+      <attribute id="15" title="citation_velocity" type="double" />
+      <attribute id="16" title="citation_velocity_score" type="double" />
+      <attribute id="17" title="global_size_score" type="double" />
+      <attribute id="18" title="local_size_score" type="double" />
+      <attribute id="19" title="final_root_size_score" type="double" />
+      <attribute id="20" title="color" type="string" />
+    </attributes>
+    <nodes>
+      <node id="MILLER D, 1983, MANAGE SCI" label="THE CORRELATES OF ENTREPRENEURSHIP IN THREE TYPES OF FIRMS">
+        <viz:color r="196" g="174" b="151" a="1.0" />
+        <viz:size value="15.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.465968" />
+          <attvalue for="9" value="21836642848.0" />
+          <attvalue for="10" value="1983" />
+          <attvalue for="11" value="MANAGEMENT SCIENCE" />
+          <attvalue for="12" value="MANAGE SCI" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="26.0" />
+          <attvalue for="15" value="0.5909090909090909" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0348859713756791" />
+          <attvalue for="18" value="0.0999353583923968" />
+          <attvalue for="19" value="0.0804205422873815" />
+          <attvalue for="20" value="#C4AE97" />
+        </attvalues>
+      </node>
+      <node id="MATSUNO K, 2002, J MARKETING" label="THE EFFECTS OF ENTREPRENEURIAL PROCLIVITY AND MARKET ORIENTATION ON BUSINESS PERFORMANCE">
+        <viz:color r="182" g="157" b="134" a="1.0" />
+        <viz:size value="15.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.456568" />
+          <attvalue for="9" value="19307962597.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="24.0" />
+          <attvalue for="15" value="0.96" />
+          <attvalue for="16" value="0.1132508777434914" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0" />
+          <attvalue for="20" value="#B69D86" />
+        </attvalues>
+      </node>
+      <node id="LUMPKIN GT, 1996, ACAD MANAGE REV" label="CLARIFYING THE ENTREPRENEURIAL ORIENTATION CONSTRUCT AND LINKING IT TO PERFORMANCE">
+        <viz:color r="164" g="137" b="114" a="1.0" />
+        <viz:size value="19.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.43641" />
+          <attvalue for="9" value="18814634470.0" />
+          <attvalue for="10" value="1996" />
+          <attvalue for="11" value="ACADEMY OF MANAGEMENT REVIEW" />
+          <attvalue for="12" value="ACAD MANAGE REV" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="47.0" />
+          <attvalue for="15" value="1.5161290322580645" />
+          <attvalue for="16" value="0.2488319515051877" />
+          <attvalue for="17" value="0.2956950352005068" />
+          <attvalue for="18" value="0.8470565144766538" />
+          <attvalue for="19" value="0.6816480706938096" />
+          <attvalue for="20" value="#A48972" />
+        </attvalues>
+      </node>
+      <node id="NARVER JC, 1990, J MARKETING" label="THE EFFECT OF A MARKET ORIENTATION ON BUSINESS PROFITABILITY">
+        <viz:color r="166" g="140" b="117" a="1.0" />
+        <viz:size value="21.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.218826" />
+          <attvalue for="9" value="3173543676.0" />
+          <attvalue for="10" value="1990" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="53.0" />
+          <attvalue for="15" value="1.4324324324324325" />
+          <attvalue for="16" value="0.2304688251116061" />
+          <attvalue for="17" value="0.349085368150671" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="0.8047256104452012" />
+          <attvalue for="20" value="#A68C75" />
+        </attvalues>
+      </node>
+      <node id="KOHLI AK, 1990, J MARKETING" label="MARKET ORIENTATION: THE CONSTRUCT, RESEARCH PROPOSITIONS, AND MANAGERIAL IMPLICATIONS">
+        <viz:color r="190" g="167" b="144" a="1.0" />
+        <viz:size value="16.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_2" />
+          <attvalue for="1" value="orientation; market; performance; construct; effects" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0.65958" />
+          <attvalue for="4" value="0.392505" />
+          <attvalue for="5" value="0.73181" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.182162" />
+          <attvalue for="9" value="2310578269.0" />
+          <attvalue for="10" value="1990" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="27.0" />
+          <attvalue for="15" value="0.7297297297297297" />
+          <attvalue for="16" value="0.045411092939269" />
+          <attvalue for="17" value="0.0513712030567566" />
+          <attvalue for="18" value="0.1471594278754874" />
+          <attvalue for="19" value="0.1184229604298681" />
+          <attvalue for="20" value="#BEA790" />
+        </attvalues>
+      </node>
+      <node id="MORRIS MH, 2002, J MARKET THEORY PRAC" label="ENTREPRENEURIAL MARKETING: A CONSTRUCT FOR INTEGRATING EMERGING ENTREPRENEURSHIP AND MARKETING PERSPECTIVES">
+        <viz:color r="68" g="26" b="3" a="1.0" />
+        <viz:size value="21.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.766667" />
+          <attvalue for="9" value="40268174438.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="THE JOURNAL OF MARKETING THEORY AND PRACTICE" />
+          <attvalue for="12" value="J MARKET THEORY PRAC" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="226.0" />
+          <attvalue for="15" value="9.04" />
+          <attvalue for="16" value="1.0" />
+          <attvalue for="17" value="1.0" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="1.0" />
+          <attvalue for="20" value="#441A03" />
+        </attvalues>
+      </node>
+      <node id="COLLINSON E, 2001, MANAGEMENT DECISION" label="ENTREPRENEURIAL MARKETING – A HISTORICAL PERSPECTIVE ON DEVELOPMENT AND PRACTICE">
+        <viz:color r="128" g="95" b="72" a="1.0" />
+        <viz:size value="19.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.720364" />
+          <attvalue for="9" value="38429612973.0" />
+          <attvalue for="10" value="2001" />
+          <attvalue for="11" value="MANAGEMENT DECISION" />
+          <attvalue for="12" value="MANAGEMENT DECISION" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="84.0" />
+          <attvalue for="15" value="3.230769230769231" />
+          <attvalue for="16" value="0.5309088353068729" />
+          <attvalue for="17" value="0.5547299522925357" />
+          <attvalue for="18" value="0.5386347783772714" />
+          <attvalue for="19" value="0.5434633305518507" />
+          <attvalue for="20" value="#805F48" />
+        </attvalues>
+      </node>
+      <node id="STOKES D, 2000, J RES MARKETING ENTR" label="PUTTING ENTREPRENEURSHIP INTO MARKETING: THE PROCESSES OF ENTREPRENEURIAL MARKETING">
+        <viz:color r="127" g="94" b="71" a="1.0" />
+        <viz:size value="19.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.4993" />
+          <attvalue for="9" value="23496391859.0" />
+          <attvalue for="10" value="2000" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARKETING ENTR" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="89.0" />
+          <attvalue for="15" value="3.2962962962962963" />
+          <attvalue for="16" value="0.539251523819364" />
+          <attvalue for="17" value="0.5806395132816163" />
+          <attvalue for="18" value="0.5654808921219987" />
+          <attvalue for="19" value="0.5700284784698839" />
+          <attvalue for="20" value="#7F5E47" />
+        </attvalues>
+      </node>
+      <node id="BARNEY J, 1991, J MANAGE" label="FIRM RESOURCES AND SUSTAINED COMPETITIVE ADVANTAGE">
+        <viz:color r="165" g="139" b="116" a="1.0" />
+        <viz:size value="18.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.373228" />
+          <attvalue for="9" value="17479986438.0" />
+          <attvalue for="10" value="1991" />
+          <attvalue for="11" value="JOURNAL OF MANAGEMENT" />
+          <attvalue for="12" value="J MANAGE" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="53.0" />
+          <attvalue for="15" value="1.4722222222222223" />
+          <attvalue for="16" value="0.2392762530808157" />
+          <attvalue for="17" value="0.349085368150671" />
+          <attvalue for="18" value="0.3255567606066751" />
+          <attvalue for="19" value="0.3326153428698739" />
+          <attvalue for="20" value="#A58B74" />
+        </attvalues>
+      </node>
+      <node id="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" label="Marketing and entrepreneurship in SMEs : an innovative approach">
+        <viz:color r="187" g="164" b="141" a="1.0" />
+        <viz:size value="15.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.248723" />
+          <attvalue for="9" value="8091780732.0" />
+          <attvalue for="10" value="1995" />
+          <attvalue for="11" value="" />
+          <attvalue for="12" value="MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="26.0" />
+          <attvalue for="15" value="0.8125" />
+          <attvalue for="16" value="0.0707829976100261" />
+          <attvalue for="17" value="0.0348859713756791" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0104657914127037" />
+          <attvalue for="20" value="#BBA48D" />
+        </attvalues>
+      </node>
+      <node id="BJERKE B, 2002, ENTREPRENEURIAL MARK" label="Entrepreneurial Marketing: The Growth of Small Firms in the New Economic Era">
+        <viz:color r="159" g="131" b="108" a="1.0" />
+        <viz:size value="16.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_1" />
+          <attvalue for="1" value="marketing; historical; perspective; entrepreneurial; discusses" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0.637169" />
+          <attvalue for="4" value="0.349804" />
+          <attvalue for="5" value="0.71903" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.188979" />
+          <attvalue for="9" value="3634812307.0" />
+          <attvalue for="10" value="2002" />
+          <attvalue for="11" value="" />
+          <attvalue for="12" value="ENTREPRENEURIAL MARK" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="43.0" />
+          <attvalue for="15" value="1.72" />
+          <attvalue for="16" value="0.2911222750780789" />
+          <attvalue for="17" value="0.2562533077731255" />
+          <attvalue for="18" value="0.2293691002637115" />
+          <attvalue for="19" value="0.2374343625165357" />
+          <attvalue for="20" value="#9F836C" />
+        </attvalues>
+      </node>
+      <node id="SARASVATHY SD, 2001, ACAD MANAGE REV" label="CAUSATION AND EFFECTUATION: TOWARD A THEORETICAL SHIFT FROM ECONOMIC INEVITABILITY TO ENTREPRENEURIAL CONTINGENCY">
+        <viz:color r="154" g="125" b="102" a="1.0" />
+        <viz:size value="21.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="true" />
+          <attvalue for="8" value="0.237716" />
+          <attvalue for="9" value="8160153812.0" />
+          <attvalue for="10" value="2001" />
+          <attvalue for="11" value="ACADEMY OF MANAGEMENT REVIEW" />
+          <attvalue for="12" value="ACAD MANAGE REV" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="50.0" />
+          <attvalue for="15" value="1.9230769230769231" />
+          <attvalue for="16" value="0.3302071340238184" />
+          <attvalue for="17" value="0.3231758071615902" />
+          <attvalue for="18" value="1.0" />
+          <attvalue for="19" value="0.796952742148477" />
+          <attvalue for="20" value="#9A7D66" />
+        </attvalues>
+      </node>
+      <node id="READ S, 2009, J MARKETING" label="MARKETING UNDER UNCERTAINTY: THE LOGIC OF AN EFFECTUAL APPROACH">
+        <viz:color r="168" g="141" b="118" a="1.0" />
+        <viz:size value="15.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.187713" />
+          <attvalue for="9" value="3912055722.0" />
+          <attvalue for="10" value="2009" />
+          <attvalue for="11" value="JOURNAL OF MARKETING" />
+          <attvalue for="12" value="J MARKETING" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="25.0" />
+          <attvalue for="15" value="1.3888888888888888" />
+          <attvalue for="16" value="0.2206638643180888" />
+          <attvalue for="17" value="0.0177785104801134" />
+          <attvalue for="18" value="0.05501188543864" />
+          <attvalue for="19" value="0.043841872951082" />
+          <attvalue for="20" value="#A88D76" />
+        </attvalues>
+      </node>
+      <node id="GILMORE A, 2011, J RES MARK ENTREP" label="ENTREPRENEURIAL AND SME MARKETING">
+        <viz:color r="152" g="123" b="100" a="1.0" />
+        <viz:size value="18.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.137593" />
+          <attvalue for="9" value="494678154.0" />
+          <attvalue for="10" value="2011" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARK ENTREP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="32.0" />
+          <attvalue for="15" value="2.0" />
+          <attvalue for="16" value="0.3443068399123339" />
+          <attvalue for="17" value="0.1258487758607118" />
+          <attvalue for="18" value="0.3894127378098773" />
+          <attvalue for="19" value="0.3103435492251276" />
+          <attvalue for="20" value="#987B64" />
+        </attvalues>
+      </node>
+      <node id="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" label="ACADEMIC ROOTS: THE PAST AND PRESENT OF ENTREPRENEURIAL MARKETING">
+        <viz:color r="140" g="109" b="86" a="1.0" />
+        <viz:size value="19.5" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.130928" />
+          <attvalue for="9" value="597888821.0" />
+          <attvalue for="10" value="2011" />
+          <attvalue for="11" value="JOURNAL OF SMALL BUSINESS &amp; ENTREPRENEURSHIP" />
+          <attvalue for="12" value="JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="41.0" />
+          <attvalue for="15" value="2.5625" />
+          <attvalue for="16" value="0.4375885610672291" />
+          <attvalue for="17" value="0.2351660679193347" />
+          <attvalue for="18" value="0.7276722536404155" />
+          <attvalue for="19" value="0.5799203979240912" />
+          <attvalue for="20" value="#8C6D56" />
+        </attvalues>
+      </node>
+      <node id="HANSEN DJ, 2010, J RES MARK ENTREP" label="THE MARKETING/ENTREPRENEURSHIP INTERFACE: A REPORT ON THE “CHARLESTON SUMMIT”">
+        <viz:color r="167" g="141" b="118" a="1.0" />
+        <viz:size value="15.0" />
+        <attvalues>
+          <attvalue for="0" value="subtopic_3" />
+          <attvalue for="1" value="marketing; entrepreneurial; causation; toward; shift" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0.610399" />
+          <attvalue for="4" value="0.310734" />
+          <attvalue for="5" value="0.733703" />
+          <attvalue for="6" value="0.957143" />
+          <attvalue for="7" value="false" />
+          <attvalue for="8" value="0.130381" />
+          <attvalue for="9" value="467715403.0" />
+          <attvalue for="10" value="2010" />
+          <attvalue for="11" value="JOURNAL OF RESEARCH IN MARKETING AND ENTREPRENEURSHIP" />
+          <attvalue for="12" value="J RES MARK ENTREP" />
+          <attvalue for="13" value="true" />
+          <attvalue for="14" value="24.0" />
+          <attvalue for="15" value="1.411764705882353" />
+          <attvalue for="16" value="0.2258370240933824" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0.0" />
+          <attvalue for="19" value="0.0" />
+          <attvalue for="20" value="#A78D76" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="NARVER JC, 1990, J MARKETING" id="0" weight="0.36861">
+        <attvalues>
+          <attvalue for="21" value="0.048514" />
+          <attvalue for="22" value="0.457957" />
+          <attvalue for="23" value="0.932466" />
+          <attvalue for="24" value="0.36861" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="MATSUNO K, 2002, J MARKETING" id="1" weight="0.367036">
+        <attvalues>
+          <attvalue for="21" value="0.029546" />
+          <attvalue for="22" value="0.440352" />
+          <attvalue for="23" value="0.998082" />
+          <attvalue for="24" value="0.367036" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="LUMPKIN GT, 1996, ACAD MANAGE REV" id="2" weight="0.357271">
+        <attvalues>
+          <attvalue for="21" value="0.018292" />
+          <attvalue for="22" value="0.429097" />
+          <attvalue for="23" value="0.99428" />
+          <attvalue for="24" value="0.357271" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="MORRIS MH, 2002, J MARKET THEORY PRAC" id="3" weight="0.330386">
+        <attvalues>
+          <attvalue for="21" value="0.035052" />
+          <attvalue for="22" value="0.339182" />
+          <attvalue for="23" value="0.979495" />
+          <attvalue for="24" value="0.330386" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="KOHLI AK, 1990, J MARKETING" id="4" weight="0.313336">
+        <attvalues>
+          <attvalue for="21" value="0.027943" />
+          <attvalue for="22" value="0.339683" />
+          <attvalue for="23" value="0.909363" />
+          <attvalue for="24" value="0.313336" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="5" weight="0.304276">
+        <attvalues>
+          <attvalue for="21" value="0.082162" />
+          <attvalue for="22" value="0.239259" />
+          <attvalue for="23" value="0.917811" />
+          <attvalue for="24" value="0.304276" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="BARNEY J, 1991, J MANAGE" id="6" weight="0.303451">
+        <attvalues>
+          <attvalue for="21" value="0.02377" />
+          <attvalue for="22" value="0.269386" />
+          <attvalue for="23" value="0.992344" />
+          <attvalue for="24" value="0.303451" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="STOKES D, 2000, J RES MARKETING ENTR" id="7" weight="0.296315">
+        <attvalues>
+          <attvalue for="21" value="0.042909" />
+          <attvalue for="22" value="0.228671" />
+          <attvalue for="23" value="0.984855" />
+          <attvalue for="24" value="0.296315" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="8" weight="0.283946">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.256776" />
+          <attvalue for="23" value="0.970371" />
+          <attvalue for="24" value="0.283946" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="9" weight="0.26725">
+        <attvalues>
+          <attvalue for="21" value="0.048947" />
+          <attvalue for="22" value="0.153846" />
+          <attvalue for="23" value="0.956888" />
+          <attvalue for="24" value="0.26725" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="10" weight="0.266731">
+        <attvalues>
+          <attvalue for="21" value="0.048652" />
+          <attvalue for="22" value="0.240192" />
+          <attvalue for="23" value="0.803851" />
+          <attvalue for="24" value="0.266731" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="READ S, 2009, J MARKETING" id="11" weight="0.246419">
+        <attvalues>
+          <attvalue for="21" value="0.06239" />
+          <attvalue for="22" value="0.11767" />
+          <attvalue for="23" value="0.885796" />
+          <attvalue for="24" value="0.246419" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="12" weight="0.243884">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.16641" />
+          <attvalue for="23" value="0.9282" />
+          <attvalue for="24" value="0.243884" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="13" weight="0.242801">
+        <attvalues>
+          <attvalue for="21" value="0.045796" />
+          <attvalue for="22" value="0.183769" />
+          <attvalue for="23" value="0.789367" />
+          <attvalue for="24" value="0.242801" />
+        </attvalues>
+      </edge>
+      <edge source="MILLER D, 1983, MANAGE SCI" target="GILMORE A, 2011, J RES MARK ENTREP" id="14" weight="0.193406">
+        <attvalues>
+          <attvalue for="21" value="0.035064" />
+          <attvalue for="22" value="0.034669" />
+          <attvalue for="23" value="0.827466" />
+          <attvalue for="24" value="0.193406" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="NARVER JC, 1990, J MARKETING" id="15" weight="0.513536">
+        <attvalues>
+          <attvalue for="21" value="0.39864" />
+          <attvalue for="22" value="0.420579" />
+          <attvalue for="23" value="0.934725" />
+          <attvalue for="24" value="0.513536" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="LUMPKIN GT, 1996, ACAD MANAGE REV" id="16" weight="0.439075">
+        <attvalues>
+          <attvalue for="21" value="0.233613" />
+          <attvalue for="22" value="0.387069" />
+          <attvalue for="23" value="0.992374" />
+          <attvalue for="24" value="0.439075" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="KOHLI AK, 1990, J MARKETING" id="17" weight="0.369418">
+        <attvalues>
+          <attvalue for="21" value="0.173111" />
+          <attvalue for="22" value="0.31427" />
+          <attvalue for="23" value="0.907619" />
+          <attvalue for="24" value="0.369418" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="STOKES D, 2000, J RES MARKETING ENTR" id="18" weight="0.331386">
+        <attvalues>
+          <attvalue for="21" value="0.095906" />
+          <attvalue for="22" value="0.259645" />
+          <attvalue for="23" value="0.986762" />
+          <attvalue for="24" value="0.331386" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="MORRIS MH, 2002, J MARKET THEORY PRAC" id="19" weight="0.31801">
+        <attvalues>
+          <attvalue for="21" value="0.038184" />
+          <attvalue for="22" value="0.298719" />
+          <attvalue for="23" value="0.981376" />
+          <attvalue for="24" value="0.31801" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="READ S, 2009, J MARKETING" id="20" weight="0.316437">
+        <attvalues>
+          <attvalue for="21" value="0.11783" />
+          <attvalue for="22" value="0.244949" />
+          <attvalue for="23" value="0.88841" />
+          <attvalue for="24" value="0.316437" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="BARNEY J, 1991, J MANAGE" id="21" weight="0.295369">
+        <attvalues>
+          <attvalue for="21" value="0.041717" />
+          <attvalue for="22" value="0.224309" />
+          <attvalue for="23" value="0.990442" />
+          <attvalue for="24" value="0.295369" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="22" weight="0.27988">
+        <attvalues>
+          <attvalue for="21" value="0.028763" />
+          <attvalue for="22" value="0.23094" />
+          <attvalue for="23" value="0.930538" />
+          <attvalue for="24" value="0.27988" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="23" weight="0.273178">
+        <attvalues>
+          <attvalue for="21" value="0.053693" />
+          <attvalue for="22" value="0.155902" />
+          <attvalue for="23" value="0.97225" />
+          <attvalue for="24" value="0.273178" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="24" weight="0.247055">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.160128" />
+          <attvalue for="23" value="0.955053" />
+          <attvalue for="24" value="0.247055" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="25" weight="0.242407">
+        <attvalues>
+          <attvalue for="21" value="0.034703" />
+          <attvalue for="22" value="0.124515" />
+          <attvalue for="23" value="0.916051" />
+          <attvalue for="24" value="0.242407" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="26" weight="0.229402">
+        <attvalues>
+          <attvalue for="21" value="0.055978" />
+          <attvalue for="22" value="0.125" />
+          <attvalue for="23" value="0.80231" />
+          <attvalue for="24" value="0.229402" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="27" weight="0.228255">
+        <attvalues>
+          <attvalue for="21" value="0.082692" />
+          <attvalue for="22" value="0.095637" />
+          <attvalue for="23" value="0.787853" />
+          <attvalue for="24" value="0.228255" />
+        </attvalues>
+      </edge>
+      <edge source="MATSUNO K, 2002, J MARKETING" target="GILMORE A, 2011, J RES MARK ENTREP" id="28" weight="0.222038">
+        <attvalues>
+          <attvalue for="21" value="0.042164" />
+          <attvalue for="22" value="0.108253" />
+          <attvalue for="23" value="0.825879" />
+          <attvalue for="24" value="0.222038" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="NARVER JC, 1990, J MARKETING" id="29" weight="0.401656">
+        <attvalues>
+          <attvalue for="21" value="0.120294" />
+          <attvalue for="22" value="0.46083" />
+          <attvalue for="23" value="0.931164" />
+          <attvalue for="24" value="0.401656" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="MORRIS MH, 2002, J MARKET THEORY PRAC" id="30" weight="0.395745">
+        <attvalues>
+          <attvalue for="21" value="0.135517" />
+          <attvalue for="22" value="0.397815" />
+          <attvalue for="23" value="0.977638" />
+          <attvalue for="24" value="0.395745" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="BARNEY J, 1991, J MANAGE" id="31" weight="0.378059">
+        <attvalues>
+          <attvalue for="21" value="0.041496" />
+          <attvalue for="22" value="0.46083" />
+          <attvalue for="23" value="0.990478" />
+          <attvalue for="24" value="0.378059" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="KOHLI AK, 1990, J MARKETING" id="32" weight="0.363001">
+        <attvalues>
+          <attvalue for="21" value="0.16279" />
+          <attvalue for="22" value="0.308789" />
+          <attvalue for="23" value="0.908347" />
+          <attvalue for="24" value="0.363001" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="33" weight="0.312502">
+        <attvalues>
+          <attvalue for="21" value="0.028794" />
+          <attvalue for="22" value="0.302388" />
+          <attvalue for="23" value="0.968546" />
+          <attvalue for="24" value="0.312502" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="STOKES D, 2000, J RES MARKETING ENTR" id="34" weight="0.291471">
+        <attvalues>
+          <attvalue for="21" value="0.020093" />
+          <attvalue for="22" value="0.247387" />
+          <attvalue for="23" value="0.979222" />
+          <attvalue for="24" value="0.291471" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="GILMORE A, 2011, J RES MARK ENTREP" id="35" weight="0.286298">
+        <attvalues>
+          <attvalue for="21" value="0.029893" />
+          <attvalue for="22" value="0.309426" />
+          <attvalue for="23" value="0.822733" />
+          <attvalue for="24" value="0.286298" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="36" weight="0.284432">
+        <attvalues>
+          <attvalue for="21" value="0.036177" />
+          <attvalue for="22" value="0.244686" />
+          <attvalue for="23" value="0.912561" />
+          <attvalue for="24" value="0.284432" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="37" weight="0.265105">
+        <attvalues>
+          <attvalue for="21" value="0.050593" />
+          <attvalue for="22" value="0.165027" />
+          <attvalue for="23" value="0.922891" />
+          <attvalue for="24" value="0.265105" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="38" weight="0.254254">
+        <attvalues>
+          <attvalue for="21" value="0.039005" />
+          <attvalue for="22" value="0.227803" />
+          <attvalue for="23" value="0.784852" />
+          <attvalue for="24" value="0.254254" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="39" weight="0.244899">
+        <attvalues>
+          <attvalue for="21" value="0.026891" />
+          <attvalue for="22" value="0.208422" />
+          <attvalue for="23" value="0.799253" />
+          <attvalue for="24" value="0.244899" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="40" weight="0.238645">
+        <attvalues>
+          <attvalue for="21" value="0.018473" />
+          <attvalue for="22" value="0.114426" />
+          <attvalue for="23" value="0.951415" />
+          <attvalue for="24" value="0.238645" />
+        </attvalues>
+      </edge>
+      <edge source="LUMPKIN GT, 1996, ACAD MANAGE REV" target="READ S, 2009, J MARKETING" id="41" weight="0.215853">
+        <attvalues>
+          <attvalue for="21" value="0.020168" />
+          <attvalue for="22" value="0.087519" />
+          <attvalue for="23" value="0.880729" />
+          <attvalue for="24" value="0.215853" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="KOHLI AK, 1990, J MARKETING" id="42" weight="0.432113">
+        <attvalues>
+          <attvalue for="21" value="0.141603" />
+          <attvalue for="22" value="0.502266" />
+          <attvalue for="23" value="0.96299" />
+          <attvalue for="24" value="0.432113" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="MORRIS MH, 2002, J MARKET THEORY PRAC" id="43" weight="0.357737">
+        <attvalues>
+          <attvalue for="21" value="0.021307" />
+          <attvalue for="22" value="0.465992" />
+          <attvalue for="23" value="0.925259" />
+          <attvalue for="24" value="0.357737" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="BARNEY J, 1991, J MANAGE" id="44" weight="0.310071">
+        <attvalues>
+          <attvalue for="21" value="0.013847" />
+          <attvalue for="22" value="0.339623" />
+          <attvalue for="23" value="0.924862" />
+          <attvalue for="24" value="0.310071" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="45" weight="0.293773">
+        <attvalues>
+          <attvalue for="21" value="0.012481" />
+          <attvalue for="22" value="0.299745" />
+          <attvalue for="23" value="0.916231" />
+          <attvalue for="24" value="0.293773" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="READ S, 2009, J MARKETING" id="46" weight="0.281488">
+        <attvalues>
+          <attvalue for="21" value="0.08122" />
+          <attvalue for="22" value="0.192305" />
+          <attvalue for="23" value="0.888164" />
+          <attvalue for="24" value="0.281488" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="47" weight="0.281039">
+        <attvalues>
+          <attvalue for="21" value="0.020444" />
+          <attvalue for="22" value="0.251367" />
+          <attvalue for="23" value="0.919304" />
+          <attvalue for="24" value="0.281039" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="STOKES D, 2000, J RES MARKETING ENTR" id="48" weight="0.278565">
+        <attvalues>
+          <attvalue for="21" value="0.084733" />
+          <attvalue for="22" value="0.160162" />
+          <attvalue for="23" value="0.92189" />
+          <attvalue for="24" value="0.278565" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="49" weight="0.277622">
+        <attvalues>
+          <attvalue for="21" value="0.063597" />
+          <attvalue for="22" value="0.235973" />
+          <attvalue for="23" value="0.832066" />
+          <attvalue for="24" value="0.277622" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="GILMORE A, 2011, J RES MARK ENTREP" id="50" weight="0.265083">
+        <attvalues>
+          <attvalue for="21" value="0.044365" />
+          <attvalue for="22" value="0.218539" />
+          <attvalue for="23" value="0.843152" />
+          <attvalue for="24" value="0.265083" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="51" weight="0.256777">
+        <attvalues>
+          <attvalue for="21" value="0.063177" />
+          <attvalue for="22" value="0.168232" />
+          <attvalue for="23" value="0.847333" />
+          <attvalue for="24" value="0.256777" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="52" weight="0.250451">
+        <attvalues>
+          <attvalue for="21" value="0.014047" />
+          <attvalue for="22" value="0.161632" />
+          <attvalue for="23" value="0.937793" />
+          <attvalue for="24" value="0.250451" />
+        </attvalues>
+      </edge>
+      <edge source="NARVER JC, 1990, J MARKETING" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="53" weight="0.22762">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.13598" />
+          <attvalue for="23" value="0.900136" />
+          <attvalue for="24" value="0.22762" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="MORRIS MH, 2002, J MARKET THEORY PRAC" id="54" weight="0.355546">
+        <attvalues>
+          <attvalue for="21" value="0.145309" />
+          <attvalue for="22" value="0.32004" />
+          <attvalue for="23" value="0.890716" />
+          <attvalue for="24" value="0.355546" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="55" weight="0.318861">
+        <attvalues>
+          <attvalue for="21" value="0.04937" />
+          <attvalue for="22" value="0.322832" />
+          <attvalue for="23" value="0.918267" />
+          <attvalue for="24" value="0.318861" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="56" weight="0.304926">
+        <attvalues>
+          <attvalue for="21" value="0.06454" />
+          <attvalue for="22" value="0.300557" />
+          <attvalue for="23" value="0.853442" />
+          <attvalue for="24" value="0.304926" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="57" weight="0.300528">
+        <attvalues>
+          <attvalue for="21" value="0.062895" />
+          <attvalue for="22" value="0.274986" />
+          <attvalue for="23" value="0.879898" />
+          <attvalue for="24" value="0.300528" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="STOKES D, 2000, J RES MARKETING ENTR" id="58" weight="0.281026">
+        <attvalues>
+          <attvalue for="21" value="0.083978" />
+          <attvalue for="22" value="0.183597" />
+          <attvalue for="23" value="0.894886" />
+          <attvalue for="24" value="0.281026" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="59" weight="0.273348">
+        <attvalues>
+          <attvalue for="21" value="0.047084" />
+          <attvalue for="22" value="0.188713" />
+          <attvalue for="23" value="0.930553" />
+          <attvalue for="24" value="0.273348" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="GILMORE A, 2011, J RES MARK ENTREP" id="60" weight="0.266213">
+        <attvalues>
+          <attvalue for="21" value="0.103315" />
+          <attvalue for="22" value="0.136083" />
+          <attvalue for="23" value="0.86046" />
+          <attvalue for="24" value="0.266213" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="READ S, 2009, J MARKETING" id="61" weight="0.258657">
+        <attvalues>
+          <attvalue for="21" value="0.089789" />
+          <attvalue for="22" value="0.11547" />
+          <attvalue for="23" value="0.88919" />
+          <attvalue for="24" value="0.258657" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="62" weight="0.255362">
+        <attvalues>
+          <attvalue for="21" value="0.028606" />
+          <attvalue for="22" value="0.188982" />
+          <attvalue for="23" value="0.881725" />
+          <attvalue for="24" value="0.255362" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="BARNEY J, 1991, J MANAGE" id="63" weight="0.250465">
+        <attvalues>
+          <attvalue for="21" value="0.032474" />
+          <attvalue for="22" value="0.15861" />
+          <attvalue for="23" value="0.901691" />
+          <attvalue for="24" value="0.250465" />
+        </attvalues>
+      </edge>
+      <edge source="KOHLI AK, 1990, J MARKETING" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="64" weight="0.237779">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.163299" />
+          <attvalue for="23" value="0.903121" />
+          <attvalue for="24" value="0.237779" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="STOKES D, 2000, J RES MARKETING ENTR" id="65" weight="0.512891">
+        <attvalues>
+          <attvalue for="21" value="0.278293" />
+          <attvalue for="22" value="0.549978" />
+          <attvalue for="23" value="0.975834" />
+          <attvalue for="24" value="0.512891" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="COLLINSON E, 2001, MANAGEMENT DECISION" id="66" weight="0.472615">
+        <attvalues>
+          <attvalue for="21" value="0.184125" />
+          <attvalue for="22" value="0.551594" />
+          <attvalue for="23" value="0.983501" />
+          <attvalue for="24" value="0.472615" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="67" weight="0.39541">
+        <attvalues>
+          <attvalue for="21" value="0.225905" />
+          <attvalue for="22" value="0.394764" />
+          <attvalue for="23" value="0.777924" />
+          <attvalue for="24" value="0.39541" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="BARNEY J, 1991, J MANAGE" id="68" weight="0.378626">
+        <attvalues>
+          <attvalue for="21" value="0.064938" />
+          <attvalue for="22" value="0.43858" />
+          <attvalue for="23" value="0.979502" />
+          <attvalue for="24" value="0.378626" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="GILMORE A, 2011, J RES MARK ENTREP" id="69" weight="0.365792">
+        <attvalues>
+          <attvalue for="21" value="0.20371" />
+          <attvalue for="22" value="0.317493" />
+          <attvalue for="23" value="0.815001" />
+          <attvalue for="24" value="0.365792" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="70" weight="0.365446">
+        <attvalues>
+          <attvalue for="21" value="0.112737" />
+          <attvalue for="22" value="0.385474" />
+          <attvalue for="23" value="0.898991" />
+          <attvalue for="24" value="0.365446" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="71" weight="0.35376">
+        <attvalues>
+          <attvalue for="21" value="0.156494" />
+          <attvalue for="22" value="0.273954" />
+          <attvalue for="23" value="0.937267" />
+          <attvalue for="24" value="0.35376" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="72" weight="0.344069">
+        <attvalues>
+          <attvalue for="21" value="0.051425" />
+          <attvalue for="22" value="0.395103" />
+          <attvalue for="23" value="0.913208" />
+          <attvalue for="24" value="0.344069" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="73" weight="0.322139">
+        <attvalues>
+          <attvalue for="21" value="0.133586" />
+          <attvalue for="22" value="0.298719" />
+          <attvalue for="23" value="0.787368" />
+          <attvalue for="24" value="0.322139" />
+        </attvalues>
+      </edge>
+      <edge source="MORRIS MH, 2002, J MARKET THEORY PRAC" target="READ S, 2009, J MARKETING" id="74" weight="0.315297">
+        <attvalues>
+          <attvalue for="21" value="0.095868" />
+          <attvalue for="22" value="0.27938" />
+          <attvalue for="23" value="0.871864" />
+          <attvalue for="24" value="0.315297" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="STOKES D, 2000, J RES MARKETING ENTR" id="75" weight="0.425214">
+        <attvalues>
+          <attvalue for="21" value="0.156191" />
+          <attvalue for="22" value="0.451055" />
+          <attvalue for="23" value="0.985293" />
+          <attvalue for="24" value="0.425214" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="76" weight="0.354081">
+        <attvalues>
+          <attvalue for="21" value="0.077096" />
+          <attvalue for="22" value="0.399335" />
+          <attvalue for="23" value="0.898101" />
+          <attvalue for="24" value="0.354081" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="77" weight="0.339703">
+        <attvalues>
+          <attvalue for="21" value="0.172491" />
+          <attvalue for="22" value="0.306719" />
+          <attvalue for="23" value="0.773654" />
+          <attvalue for="24" value="0.339703" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="78" weight="0.327594">
+        <attvalues>
+          <attvalue for="21" value="0.075575" />
+          <attvalue for="22" value="0.299572" />
+          <attvalue for="23" value="0.943677" />
+          <attvalue for="24" value="0.327594" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="GILMORE A, 2011, J RES MARK ENTREP" id="79" weight="0.32188">
+        <attvalues>
+          <attvalue for="21" value="0.128038" />
+          <attvalue for="22" value="0.289319" />
+          <attvalue for="23" value="0.815005" />
+          <attvalue for="24" value="0.32188" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="80" weight="0.295037">
+        <attvalues>
+          <attvalue for="21" value="0.03597" />
+          <attvalue for="22" value="0.277746" />
+          <attvalue for="23" value="0.908195" />
+          <attvalue for="24" value="0.295037" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="READ S, 2009, J MARKETING" id="81" weight="0.286828">
+        <attvalues>
+          <attvalue for="21" value="0.065331" />
+          <attvalue for="22" value="0.24004" />
+          <attvalue for="23" value="0.867078" />
+          <attvalue for="24" value="0.286828" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="BARNEY J, 1991, J MANAGE" id="82" weight="0.267516">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.209822" />
+          <attvalue for="23" value="0.970392" />
+          <attvalue for="24" value="0.267516" />
+        </attvalues>
+      </edge>
+      <edge source="COLLINSON E, 2001, MANAGEMENT DECISION" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="83" weight="0.241064">
+        <attvalues>
+          <attvalue for="21" value="0.083743" />
+          <attvalue for="22" value="0.133631" />
+          <attvalue for="23" value="0.783045" />
+          <attvalue for="24" value="0.241064" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="GILMORE A, 2011, J RES MARK ENTREP" id="84" weight="0.342783">
+        <attvalues>
+          <attvalue for="21" value="0.26496" />
+          <attvalue for="22" value="0.168645" />
+          <attvalue for="23" value="0.822625" />
+          <attvalue for="24" value="0.342783" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="85" weight="0.340881">
+        <attvalues>
+          <attvalue for="21" value="0.256156" />
+          <attvalue for="22" value="0.198653" />
+          <attvalue for="23" value="0.780414" />
+          <attvalue for="24" value="0.340881" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="READ S, 2009, J MARKETING" id="86" weight="0.329211">
+        <attvalues>
+          <attvalue for="21" value="0.175571" />
+          <attvalue for="22" value="0.212" />
+          <attvalue for="23" value="0.880021" />
+          <attvalue for="24" value="0.329211" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="87" weight="0.323756">
+        <attvalues>
+          <attvalue for="21" value="0.180604" />
+          <attvalue for="22" value="0.145518" />
+          <attvalue for="23" value="0.957762" />
+          <attvalue for="24" value="0.323756" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="88" weight="0.308285">
+        <attvalues>
+          <attvalue for="21" value="0.129091" />
+          <attvalue for="22" value="0.193978" />
+          <attvalue for="23" value="0.911506" />
+          <attvalue for="24" value="0.308285" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="89" weight="0.305827">
+        <attvalues>
+          <attvalue for="21" value="0.025101" />
+          <attvalue for="22" value="0.314803" />
+          <attvalue for="23" value="0.921751" />
+          <attvalue for="24" value="0.305827" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="BARNEY J, 1991, J MANAGE" id="90" weight="0.295162">
+        <attvalues>
+          <attvalue for="21" value="0.027357" />
+          <attvalue for="22" value="0.247523" />
+          <attvalue for="23" value="0.981089" />
+          <attvalue for="24" value="0.295162" />
+        </attvalues>
+      </edge>
+      <edge source="STOKES D, 2000, J RES MARKETING ENTR" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="91" weight="0.272641">
+        <attvalues>
+          <attvalue for="21" value="0.118022" />
+          <attvalue for="22" value="0.173097" />
+          <attvalue for="23" value="0.794733" />
+          <attvalue for="24" value="0.272641" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="92" weight="0.264733">
+        <attvalues>
+          <attvalue for="21" value="0.0516" />
+          <attvalue for="22" value="0.167578" />
+          <attvalue for="23" value="0.914301" />
+          <attvalue for="24" value="0.264733" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="93" weight="0.263585">
+        <attvalues>
+          <attvalue for="21" value="0.019351" />
+          <attvalue for="22" value="0.278878" />
+          <attvalue for="23" value="0.786348" />
+          <attvalue for="24" value="0.263585" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="94" weight="0.2567">
+        <attvalues>
+          <attvalue for="21" value="0.008401" />
+          <attvalue for="22" value="0.194257" />
+          <attvalue for="23" value="0.924651" />
+          <attvalue for="24" value="0.2567" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="95" weight="0.251673">
+        <attvalues>
+          <attvalue for="21" value="0.02891" />
+          <attvalue for="22" value="0.224309" />
+          <attvalue for="23" value="0.800777" />
+          <attvalue for="24" value="0.251673" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="GILMORE A, 2011, J RES MARK ENTREP" id="96" weight="0.249504">
+        <attvalues>
+          <attvalue for="21" value="0.018121" />
+          <attvalue for="22" value="0.218539" />
+          <attvalue for="23" value="0.824302" />
+          <attvalue for="24" value="0.249504" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="READ S, 2009, J MARKETING" id="97" weight="0.217764">
+        <attvalues>
+          <attvalue for="21" value="0.006269" />
+          <attvalue for="22" value="0.109888" />
+          <attvalue for="23" value="0.882408" />
+          <attvalue for="24" value="0.217764" />
+        </attvalues>
+      </edge>
+      <edge source="BARNEY J, 1991, J MANAGE" target="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" id="98" weight="0.204046">
+        <attvalues>
+          <attvalue for="21" value="0.008825" />
+          <attvalue for="22" value="0.026939" />
+          <attvalue for="23" value="0.953229" />
+          <attvalue for="24" value="0.204046" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="BJERKE B, 2002, ENTREPRENEURIAL MARK" id="99" weight="0.393341">
+        <attvalues>
+          <attvalue for="21" value="0.102013" />
+          <attvalue for="22" value="0.448611" />
+          <attvalue for="23" value="0.952105" />
+          <attvalue for="24" value="0.393341" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="GILMORE A, 2011, J RES MARK ENTREP" id="100" weight="0.320084">
+        <attvalues>
+          <attvalue for="21" value="0.223256" />
+          <attvalue for="22" value="0.138675" />
+          <attvalue for="23" value="0.855412" />
+          <attvalue for="24" value="0.320084" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="101" weight="0.28291">
+        <attvalues>
+          <attvalue for="21" value="0.148904" />
+          <attvalue for="22" value="0.153141" />
+          <attvalue for="23" value="0.811518" />
+          <attvalue for="24" value="0.28291" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="102" weight="0.254465">
+        <attvalues>
+          <attvalue for="21" value="0.102603" />
+          <attvalue for="22" value="0.120096" />
+          <attvalue for="23" value="0.831298" />
+          <attvalue for="24" value="0.254465" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="READ S, 2009, J MARKETING" id="103" weight="0.248537">
+        <attvalues>
+          <attvalue for="21" value="0.090506" />
+          <attvalue for="22" value="0.078446" />
+          <attvalue for="23" value="0.901768" />
+          <attvalue for="24" value="0.248537" />
+        </attvalues>
+      </edge>
+      <edge source="CARSON D, 1995, MARKETING AND ENTREPRENEURSHIP IN SMES - AN INNOVATIVE APPROACH" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="104" weight="0.234296">
+        <attvalues>
+          <attvalue for="21" value="0.0" />
+          <attvalue for="22" value="0.138675" />
+          <attvalue for="23" value="0.9288" />
+          <attvalue for="24" value="0.234296" />
+        </attvalues>
+      </edge>
+      <edge source="BJERKE B, 2002, ENTREPRENEURIAL MARK" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="105" weight="0.373792">
+        <attvalues>
+          <attvalue for="21" value="0.192498" />
+          <attvalue for="22" value="0.333428" />
+          <attvalue for="23" value="0.852341" />
+          <attvalue for="24" value="0.373792" />
+        </attvalues>
+      </edge>
+      <edge source="BJERKE B, 2002, ENTREPRENEURIAL MARK" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="106" weight="0.317237">
+        <attvalues>
+          <attvalue for="21" value="0.123229" />
+          <attvalue for="22" value="0.249029" />
+          <attvalue for="23" value="0.873116" />
+          <attvalue for="24" value="0.317237" />
+        </attvalues>
+      </edge>
+      <edge source="BJERKE B, 2002, ENTREPRENEURIAL MARK" target="SARASVATHY SD, 2001, ACAD MANAGE REV" id="107" weight="0.310248">
+        <attvalues>
+          <attvalue for="21" value="0.107932" />
+          <attvalue for="22" value="0.215666" />
+          <attvalue for="23" value="0.930978" />
+          <attvalue for="24" value="0.310248" />
+        </attvalues>
+      </edge>
+      <edge source="BJERKE B, 2002, ENTREPRENEURIAL MARK" target="GILMORE A, 2011, J RES MARK ENTREP" id="108" weight="0.290496">
+        <attvalues>
+          <attvalue for="21" value="0.101672" />
+          <attvalue for="22" value="0.188707" />
+          <attvalue for="23" value="0.893479" />
+          <attvalue for="24" value="0.290496" />
+        </attvalues>
+      </edge>
+      <edge source="BJERKE B, 2002, ENTREPRENEURIAL MARK" target="READ S, 2009, J MARKETING" id="109" weight="0.263821">
+        <attvalues>
+          <attvalue for="21" value="0.037505" />
+          <attvalue for="22" value="0.182998" />
+          <attvalue for="23" value="0.914471" />
+          <attvalue for="24" value="0.263821" />
+        </attvalues>
+      </edge>
+      <edge source="SARASVATHY SD, 2001, ACAD MANAGE REV" target="READ S, 2009, J MARKETING" id="110" weight="0.38691">
+        <attvalues>
+          <attvalue for="21" value="0.017498" />
+          <attvalue for="22" value="0.537401" />
+          <attvalue for="23" value="0.954727" />
+          <attvalue for="24" value="0.38691" />
+        </attvalues>
+      </edge>
+      <edge source="SARASVATHY SD, 2001, ACAD MANAGE REV" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="111" weight="0.260455">
+        <attvalues>
+          <attvalue for="21" value="0.018237" />
+          <attvalue for="22" value="0.23094" />
+          <attvalue for="23" value="0.857098" />
+          <attvalue for="24" value="0.260455" />
+        </attvalues>
+      </edge>
+      <edge source="SARASVATHY SD, 2001, ACAD MANAGE REV" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="112" weight="0.257289">
+        <attvalues>
+          <attvalue for="21" value="0.062649" />
+          <attvalue for="22" value="0.17669" />
+          <attvalue for="23" value="0.836276" />
+          <attvalue for="24" value="0.257289" />
+        </attvalues>
+      </edge>
+      <edge source="SARASVATHY SD, 2001, ACAD MANAGE REV" target="GILMORE A, 2011, J RES MARK ENTREP" id="113" weight="0.257084">
+        <attvalues>
+          <attvalue for="21" value="0.021285" />
+          <attvalue for="22" value="0.2" />
+          <attvalue for="23" value="0.887529" />
+          <attvalue for="24" value="0.257084" />
+        </attvalues>
+      </edge>
+      <edge source="READ S, 2009, J MARKETING" target="GILMORE A, 2011, J RES MARK ENTREP" id="114" weight="0.36183">
+        <attvalues>
+          <attvalue for="21" value="0.198414" />
+          <attvalue for="22" value="0.247487" />
+          <attvalue for="23" value="0.929615" />
+          <attvalue for="24" value="0.36183" />
+        </attvalues>
+      </edge>
+      <edge source="READ S, 2009, J MARKETING" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="115" weight="0.296543">
+        <attvalues>
+          <attvalue for="21" value="0.076598" />
+          <attvalue for="22" value="0.244949" />
+          <attvalue for="23" value="0.88171" />
+          <attvalue for="24" value="0.296543" />
+        </attvalues>
+      </edge>
+      <edge source="READ S, 2009, J MARKETING" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="116" weight="0.249458">
+        <attvalues>
+          <attvalue for="21" value="0.10184" />
+          <attvalue for="22" value="0.093704" />
+          <attvalue for="23" value="0.85417" />
+          <attvalue for="24" value="0.249458" />
+        </attvalues>
+      </edge>
+      <edge source="GILMORE A, 2011, J RES MARK ENTREP" target="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" id="117" weight="0.360091">
+        <attvalues>
+          <attvalue for="21" value="0.20306" />
+          <attvalue for="22" value="0.248471" />
+          <attvalue for="23" value="0.908745" />
+          <attvalue for="24" value="0.360091" />
+        </attvalues>
+      </edge>
+      <edge source="GILMORE A, 2011, J RES MARK ENTREP" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="118" weight="0.323771">
+        <attvalues>
+          <attvalue for="21" value="0.169833" />
+          <attvalue for="22" value="0.180422" />
+          <attvalue for="23" value="0.92099" />
+          <attvalue for="24" value="0.323771" />
+        </attvalues>
+      </edge>
+      <edge source="HILLS G, 2011, JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP" target="HANSEN DJ, 2010, J RES MARK ENTREP" id="119" weight="0.353911">
+        <attvalues>
+          <attvalue for="21" value="0.133933" />
+          <attvalue for="22" value="0.318788" />
+          <attvalue for="23" value="0.910327" />
+          <attvalue for="24" value="0.353911" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
