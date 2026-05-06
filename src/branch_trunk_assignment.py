@@ -64,6 +64,52 @@ def extract_branch_records(graph: nx.DiGraph) -> list[dict]:
     return records
 
 
+def extract_branch_records_from_members(
+    graph: nx.DiGraph,
+    branch_members_csv: Path,
+) -> list[dict]:
+    """Extract branch records from an experimental branch-member table."""
+    members_df = pd.read_csv(branch_members_csv)
+    required_columns = {"branch_label", "branch_rank", "node_id"}
+    missing_columns = required_columns - set(members_df.columns)
+    if missing_columns:
+        raise ValueError(
+            f"Missing branch-member columns in {branch_members_csv}: "
+            f"{sorted(missing_columns)}"
+        )
+
+    records = []
+    members_df = members_df.sort_values(["branch_label", "branch_rank"])
+    for row in members_df.itertuples(index=False):
+        node_id = str(row.node_id)
+        if node_id not in graph:
+            continue
+        attrs = graph.nodes[node_id]
+        title = attrs.get("title") or ""
+        abstract = attrs.get("abstract") or ""
+        tokens = tokenize(f"{title} {abstract}".strip())
+        branch_label = str(row.branch_label)
+        branch_rank = int(row.branch_rank)
+        records.append(
+            {
+                "branch_id": f"{branch_label}_{branch_rank:02d}",
+                "node_id": node_id,
+                "ToS": branch_label,
+                "sap_rank": attrs.get("sap_rank", 0),
+                "title": title,
+                "abstract": abstract,
+                "year": attrs.get("year") or "",
+                "journal": attrs.get("journal") or "",
+                "source_title": attrs.get("source_title") or "",
+                "doi": attrs.get("doi") or "",
+                "has_article_metadata": attrs.get("has_article_metadata", False),
+                "token_count": len(tokens),
+                "tokens": tokens,
+            }
+        )
+    return records
+
+
 def load_main_trunk_subtopics(path: Path) -> pd.DataFrame:
     """Load the three trunk subtopics used as branch parents."""
     subtopics_df = pd.read_csv(path)
@@ -324,6 +370,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--citations", type=Path, default=DEFAULT_CITATIONS)
     parser.add_argument("--articles", type=Path, default=DEFAULT_ARTICLES)
     parser.add_argument("--trunk-subtopics", type=Path, default=DEFAULT_TRUNK_SUBTOPICS)
+    parser.add_argument(
+        "--branch-members",
+        type=Path,
+        default=None,
+        help=(
+            "Optional branch-member CSV from an experimental detector. "
+            "When omitted, the script uses SAP baseline branch labels from the graph."
+        ),
+    )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--w-path", type=float, default=0.40)
     parser.add_argument("--w-text", type=float, default=0.35)
@@ -340,7 +395,10 @@ def main() -> None:
         args.w_references,
     )
     graph = build_sap_graph(args.citations, args.articles)
-    branch_records = extract_branch_records(graph)
+    if args.branch_members is None:
+        branch_records = extract_branch_records(graph)
+    else:
+        branch_records = extract_branch_records_from_members(graph, args.branch_members)
     trunk_subtopics_df = load_main_trunk_subtopics(args.trunk_subtopics)
     trunk_subtopic_records = build_trunk_subtopic_records(graph, trunk_subtopics_df)
     assignments_df, scores_df, summary_df = build_assignment_outputs(
