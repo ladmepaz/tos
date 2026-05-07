@@ -24,6 +24,9 @@ from trunk_visualization_metrics import normalize_series
 
 
 DEFAULT_OUTPUT_DIR = Path("outputs/branch_emergence")
+DEFAULT_REFERENCE_NOVELTY = Path(
+    "outputs/branch_reference_novelty/branch_reference_novelty_scores.csv"
+)
 
 
 def safe_ratio(numerator: float, denominator: float) -> float:
@@ -201,12 +204,52 @@ def build_raw_emergence_indicators(
     return indicators_df
 
 
+def load_reference_novelty(path: Path | None) -> pd.DataFrame | None:
+    """Load optional branch-level reference novelty scores."""
+    if path is None or not path.exists():
+        return None
+    novelty_df = pd.read_csv(path)
+    required_columns = {
+        "branch_label",
+        "paper_count",
+        "supported_paper_count",
+        "recent_mean_reference_novelty",
+        "branch_reference_novelty_score",
+    }
+    missing_columns = required_columns - set(novelty_df.columns)
+    if missing_columns:
+        raise ValueError(
+            f"Missing reference novelty columns in {path}: {sorted(missing_columns)}"
+        )
+
+    novelty_df = novelty_df.copy()
+    novelty_df["reference_novelty_support_share"] = (
+        novelty_df["supported_paper_count"] / novelty_df["paper_count"].clip(lower=1)
+    )
+    novelty_df["reference_novelty_effective_score"] = (
+        novelty_df["branch_reference_novelty_score"]
+        * novelty_df["reference_novelty_support_share"]
+    )
+    return novelty_df[
+        [
+            "branch_label",
+            "supported_paper_count",
+            "unsupported_paper_count",
+            "recent_mean_reference_novelty",
+            "branch_reference_novelty_score",
+            "reference_novelty_support_share",
+            "reference_novelty_effective_score",
+        ]
+    ]
+
+
 def score_emergence_dimensions(
     indicators_df: pd.DataFrame,
     w_ng: float,
     w_pc: float,
     w_si: float,
     w_ur: float,
+    w_rn: float,
     min_semantic_coherence: float,
     min_recent_paper_share: float,
     min_recent_growth_rate: float,
@@ -266,12 +309,20 @@ def score_emergence_dimensions(
         + (0.40 * scored_df["assignment_confidence_score"])
         + (0.20 * scored_df["removal_impact_score"])
     )
+    if "reference_novelty_effective_score" not in scored_df:
+        scored_df["reference_novelty_effective_score"] = 0.0
+    if "reference_novelty_support_share" not in scored_df:
+        scored_df["reference_novelty_support_share"] = 0.0
+    scored_df["reference_novelty_score"] = normalize_series(
+        scored_df["reference_novelty_effective_score"].fillna(0)
+    )
 
     scored_df["branch_emergence_score"] = (
         (w_ng * scored_df["novelty_growth_score"])
         + (w_pc * scored_df["persistence_coherence_score"])
         + (w_si * scored_df["scientific_impact_score"])
         + (w_ur * scored_df["uncertainty_reduction_score"])
+        + (w_rn * scored_df["reference_novelty_score"])
     )
     scored_df["passes_semantic_guardrail"] = (
         scored_df["semantic_coherence"] >= min_semantic_coherence
@@ -341,6 +392,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--w-pc", type=float, default=0.25)
     parser.add_argument("--w-si", type=float, default=0.25)
     parser.add_argument("--w-ur", type=float, default=0.15)
+    parser.add_argument("--w-rn", type=float, default=0.0)
+    parser.add_argument(
+        "--reference-novelty",
+        type=Path,
+        default=None,
+        help="Optional branch_reference_novelty_scores.csv file.",
+    )
     parser.add_argument("--min-semantic-coherence", type=float, default=0.05)
     parser.add_argument("--min-recent-paper-share", type=float, default=0.25)
     parser.add_argument("--min-recent-growth-rate", type=float, default=0.0)
@@ -350,11 +408,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    w_ng, w_pc, w_si, w_ur = normalize_weights(
+    w_ng, w_pc, w_si, w_ur, w_rn = normalize_weights(
         args.w_ng,
         args.w_pc,
         args.w_si,
         args.w_ur,
+        args.w_rn,
     )
     graph = build_sap_graph(args.citations, args.articles)
     branch_members_df = pd.read_csv(args.branch_members)
@@ -373,12 +432,20 @@ def main() -> None:
         args.recent_window_years,
         args.top_terms,
     )
+    reference_novelty_df = load_reference_novelty(args.reference_novelty)
+    if reference_novelty_df is not None:
+        raw_indicators_df = raw_indicators_df.merge(
+            reference_novelty_df,
+            on="branch_label",
+            how="left",
+        )
     emergence_scores_df = score_emergence_dimensions(
         raw_indicators_df,
         w_ng,
         w_pc,
         w_si,
         w_ur,
+        w_rn,
         args.min_semantic_coherence,
         args.min_recent_paper_share,
         args.min_recent_growth_rate,
@@ -402,7 +469,8 @@ def main() -> None:
     print(f"Branches: {len(emergence_scores_df):,}")
     print(
         "Weights used: "
-        f"NG={w_ng:.2f}, PC={w_pc:.2f}, SI={w_si:.2f}, UR={w_ur:.2f}"
+        f"NG={w_ng:.2f}, PC={w_pc:.2f}, SI={w_si:.2f}, "
+        f"UR={w_ur:.2f}, RN={w_rn:.2f}"
     )
     print(f"Saved outputs: {args.output_dir.resolve()}")
 

@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="820" viewBox="0 0 1360 820">
+<rect width="1360" height="820" fill="#F7F2EA" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.node-label { font-size: 15px; font-weight: 600; }
+.branch-label { font-size: 18px; font-weight: 600; letter-spacing: 0.4px; }
+</style>
+<g id="branch_1">
+<text class="branch-label" x="85.0" y="712.0">Branch 1</text>
+<g>
+<title>ENTREPRENEURIAL MARKETING AND ORGANIZATIONAL ENTREPRENEURSHIP PERFORMANCE OF SMALL AND MEDIUM ENTERPRISES: A SYSTEMATIC REVIEW
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 0.40
+Core score: 0.845</title>
+<circle cx="85.0" cy="585.0" r="36.73" fill="#A98F78" stroke="#A98F78" stroke-width="3" />
+</g>
+<g>
+<title>HOW ENTREPRENEURIAL MARKETING FACILITATES DIRECT SELLERS&#x27; ENTREPRENEURIAL PROCESS: A DYNAMIC ADJUSTMENT PERSPECTIVE
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.786</title>
+<circle cx="155.0" cy="533.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>A CONCEPTUAL REVIEW ON ENTREPRENEURIAL MARKETING AND BUSINESS SUSTAINABILITY IN SMALL AND MEDIUM ENTERPRISES
+Branch: branch_1
+Role: core
+Citations: 5
+Citation velocity: 1.25
+Core score: 0.780</title>
+<circle cx="225.0" cy="481.0" r="43.76" fill="#84634C" stroke="#84634C" stroke-width="3" />
+</g>
+<g>
+<title>THE INNOVATIVE ENTREPRENEURIAL MARKETING JOURNEY AND SUSTAINABLE DEVELOPMENT OF SOUTHEAST ASIAN IMMIGRANTS
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.832</title>
+<circle cx="295.0" cy="429.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>MARKETING AND ENTREPRENEURSHIP: CHALLENGES AND OPPORTUNITIES
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.832</title>
+<circle cx="365.0" cy="377.0" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>COOPETITION AND THE MARKETING/ENTREPRENEURSHIP INTERFACE IN AN INTERNATIONAL ARENA
+Branch: branch_1
+Role: core
+Citations: 8
+Citation velocity: 4.00
+Core score: 0.803</title>
+<circle cx="435.0" cy="325.0" r="47.24" fill="#441A03" stroke="#441A03" stroke-width="3" />
+</g>
+<g>
+<title>EXAMINING THE FORMATION OF ENTREPRENEURIAL RESOURCES IN EMERGING MARKET INTERNATIONAL NEW VENTURES
+Branch: branch_1
+Role: peripheral
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.670</title>
+<circle cx="189.0" cy="628.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+</g>
+<g>
+<title>ANTECEDENTS OF IMMIGRANTS’ ENTREPRENEURIAL INTENTION FORMATION PROCESS: AN EMPIRICAL STUDY OF IMMIGRANT ENTREPRENEURS IN CANADA
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.644</title>
+<circle cx="259.0" cy="419.2" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+</g>
+<g>
+<title>RELATIONAL SELLING: PAST, PRESENT AND FUTURE
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.22
+Core score: 0.388</title>
+<circle cx="329.0" cy="524.0" r="36.73" fill="#B49C85" stroke="#B49C85" stroke-width="3" />
+</g>
+<g>
+<title>THE COMPLEMENTARITY OF STRATEGIC ORIENTATIONS: A META‐ANALYTIC SYNTHESIS AND THEORY EXTENSION
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.309</title>
+<circle cx="399.0" cy="315.2" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+</g>
+<g>
+<title>QUALITATIVE RESEARCH IN MARKETING: WHAT CAN ACADEMICS DO BETTER?
+Branch: branch_1
+Role: background_methodological
+Citations: 5
+Citation velocity: 0.83
+Core score: 0.430</title>
+<circle cx="259.0" cy="636.0" r="43.76" fill="#94765F" stroke="#94765F" stroke-width="3" />
+</g>
+<g>
+<title>NWANKWO CA, 2022, ACADEMY OF STRATEGIC MANAGEMENT JOURNAL
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.300</title>
+<circle cx="329.0" cy="614.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+</g>
+<g>
+<title>LI E, 2021, SUSTAINABILITY-BASEL
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="399.0" cy="256.8" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>CRESWELL JOHNW, 2018, JOURNAL OF INVESTIGATIVE SURGERY : THE OFFICIAL JOURNAL OF THE ACADEMY OF SURGICAL RESEARCH
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="469.0" cy="510.0" r="39.86" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>REZAEI R, 2017, J AGR SCI TECH-IRAN
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.000</title>
+<circle cx="539.0" cy="152.8" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+</g>
+<g id="branch_2">
+<text class="branch-label" x="455.0" y="666.0">Branch 2</text>
+<g>
+<title>ENTREPRENEURIAL MARKETING LEARNING STYLES USED BY ENTREPRENEURIAL TEAMS
+Branch: branch_2
+Role: core
+Citations: 1
+Citation velocity: 0.17
+Core score: 0.200</title>
+<circle cx="455.0" cy="590.0" r="31.51" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>MEDIATING EFFECT OF ABSORPTIVE CAPACITY ON THE RELATIONSHIP BETWEEN KNOWLEDGE SHARING AND ENTREPRENEURIAL ORIENTATION AND THE MODERATING ROLE OF OPPORTUNITY RECOGNITION
+Branch: branch_2
+Role: core
+Citations: 3
+Citation velocity: 1.00
+Core score: 0.660</title>
+<circle cx="521.0" cy="541.0" r="39.86" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>DOES ETHICAL CLIMATE OF THE ORGANIZATION FOSTER ENTREPRENEURIAL MARKETING? THE ROLE OF WORK ENGAGEMENT AND EFFECTIVE KNOWLEDGE TRANSFER
+Branch: branch_2
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.898</title>
+<circle cx="587.0" cy="492.0" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>THE INTERSECTION OF RESPONSIBLE LEADERSHIP AND ENTREPRENEURIAL MARKETING: THE ROLES OF ETHICAL CLIMATE, EFFECTIVE KNOWLEDGE TRANSFER AND PERSON-ORGANIZATION FIT
+Branch: branch_2
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.758</title>
+<circle cx="653.0" cy="443.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND TURNOVER INTENTIONS IN HEALTH-CARE PROFESSIONALS: THE MEDIATING ROLE OF BURNOUT
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.613</title>
+<circle cx="555.0" cy="446.0" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+</g>
+<g>
+<title>PEER KNOWLEDGE SHARING AND ORGANIZATIONAL PERFORMANCE: THE ROLE OF LEADERSHIP SUPPORT AND KNOWLEDGE MANAGEMENT SUCCESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.513</title>
+<circle cx="621.0" cy="553.8" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>SOCIAL DILEMMAS IN KNOWLEDGE SHARING: AN EXAMINATION OF THE INTERPLAY BETWEEN KNOWLEDGE SHARING CULTURE AND PERFORMANCE CLIMATE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.466</title>
+<circle cx="687.0" cy="348.0" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>INFORMATION SYSTEMS CAPABILITIES VALUE CREATION THROUGH CIRCULAR ECONOMY PRACTICES IN UNCERTAIN ENVIRONMENTS: A CONDITIONAL MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.67
+Core score: 0.423</title>
+<circle cx="753.0" cy="455.8" r="36.73" fill="#9B7F68" stroke="#9B7F68" stroke-width="3" />
+</g>
+<g>
+<title>ARTIFICIAL INTELLIGENCE (AI) AND ITS IMPLICATIONS FOR MARKET KNOWLEDGE IN B2B MARKETING
+Branch: branch_2
+Role: peripheral
+Citations: 3
+Citation velocity: 0.38
+Core score: 0.347</title>
+<circle cx="819.0" cy="250.0" r="39.86" fill="#AB917A" stroke="#AB917A" stroke-width="3" />
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND EMPLOYEES’ TURNOVER INTENTION. EXPLORE THE MEDIATING ROLES OF ETHICAL CLIMATE AND CORPORATE IMAGE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.337</title>
+<circle cx="885.0" cy="357.8" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>JOINT IMPACT OF ETHICAL CLIMATE AND EXTERNAL WORK LOCUS OF CONTROL ON JOB MEANINGFULNESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.288</title>
+<circle cx="951.0" cy="152.0" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+</g>
+<g>
+<title>PSYCHOSOCIAL WORK ENVIRONMENT, WORK ENGAGEMENT, AND EMPLOYEE COMMITMENT: A MODERATED, MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.271</title>
+<circle cx="1017.0" cy="259.8" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>THE IMPACT OF TIME PRESSURE ON KNOWLEDGE TRANSFER EFFECTIVENESS IN TEAMS: TRUST AS A CRITICAL BUT FRAGILE MEDIATOR
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.260</title>
+<circle cx="1083.0" cy="54.0" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>MODEL SETTING AND INTERPRETATION OF RESULTS IN RESEARCH USING STRUCTURAL EQUATION MODELING: A CHECKLIST WITH GUIDING QUESTIONS FOR REPORTING
+Branch: branch_2
+Role: background_methodological
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.185</title>
+<circle cx="621.0" cy="337.0" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>FACTORS AFFECTING TRUST IN HIGH-VULNERABILITY HUMAN-ROBOT INTERACTION CONTEXTS: A STRUCTURAL EQUATION MODELLING APPROACH
+Branch: branch_2
+Role: background_methodological
+Citations: 4
+Citation velocity: 0.57
+Core score: 0.115</title>
+<circle cx="687.0" cy="543.8" r="42.07" fill="#A0846D" stroke="#A0846D" stroke-width="3" />
+</g>
+</g>
+<g id="branch_3">
+<text class="branch-label" x="830.0" y="712.0">Branch 3</text>
+<g>
+<title>ENTREPRENEURIAL MARKETING OF NONPROFIT ARTS ORGANISATIONS
+Branch: branch_3
+Role: core
+Citations: 3
+Citation velocity: 0.21
+Core score: 0.471</title>
+<circle cx="830.0" cy="585.0" r="39.86" fill="#B59C85" stroke="#B59C85" stroke-width="3" />
+</g>
+<g>
+<title>THE ART OF ENTREPRENEURIAL MARKET CREATION
+Branch: branch_3
+Role: core
+Citations: 8
+Citation velocity: 0.62
+Core score: 0.527</title>
+<circle cx="900.0" cy="533.0" r="47.24" fill="#9E826B" stroke="#9E826B" stroke-width="3" />
+</g>
+<g>
+<title>THE ARTIST AS MARKETER AND ENTREPRENEUR
+Branch: branch_3
+Role: core
+Citations: 2
+Citation velocity: 0.17
+Core score: 0.231</title>
+<circle cx="970.0" cy="481.0" r="36.73" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>THE MUSEUM OF OLD AND NEW ART: LEVERAGING ENTREPRENEURIAL MARKETING TO CREATE A UNIQUE ARTS AND VACATION VENTURE
+Branch: branch_3
+Role: core
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.630</title>
+<circle cx="1040.0" cy="429.0" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+<g>
+<title>ART COLLECTING AS CONSUMPTION AND ENTREPRENEURIAL MARKETING AS STRATEGY
+Branch: branch_3
+Role: core
+Citations: 1
+Citation velocity: 0.17
+Core score: 0.443</title>
+<circle cx="1110.0" cy="377.0" r="31.51" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>ASSESSING THE NOTION OF ART AS A PRODUCT: ENTREPRENEURIAL MARKETING INSIGHTS FROM THE VISUAL ARTS
+Branch: branch_3
+Role: core
+Citations: 4
+Citation velocity: 1.00
+Core score: 0.807</title>
+<circle cx="1180.0" cy="325.0" r="42.07" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>THE SYSTEMIC CREATION OF VALUE THROUGH CIRCULATION IN COLLABORATIVE CONSUMER NETWORKS
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.18
+Core score: 0.394</title>
+<circle cx="934.0" cy="628.0" r="36.73" fill="#B79F88" stroke="#B79F88" stroke-width="3" />
+</g>
+<g>
+<title>UNDER CONSTRUCTION: TOWARDS A FRAMEWORK FOR CULTURAL VALUE
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.15
+Core score: 0.361</title>
+<circle cx="1004.0" cy="419.2" r="36.73" fill="#B9A18A" stroke="#B9A18A" stroke-width="3" />
+</g>
+<g>
+<title>IT&#x27;S A MUSEUM, BUT NOT AS WE KNOW IT: ISSUES FOR LOCAL RESIDENTS ACCESSING THE MUSEUM OF OLD AND NEW ART
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.353</title>
+<circle cx="1074.0" cy="524.0" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+<g>
+<title>CROWDFUNDING ACTS AS A FUNDING SUBSTITUTE AND A LEGITIMATING SIGNAL FOR NONPROFIT PERFORMING ARTS ORGANIZATIONS
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.350</title>
+<circle cx="1144.0" cy="315.2" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>EFFECTS OF FORMAL INSTITUTIONS ON THE PERFORMANCE OF THE TOURISM SECTOR IN THE PHILIPPINES: THE MEDIATING ROLE OF ENTREPRENEURIAL ORIENTATION
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.14
+Core score: 0.338</title>
+<circle cx="1214.0" cy="420.0" r="36.73" fill="#B9A28B" stroke="#B9A28B" stroke-width="3" />
+</g>
+<g>
+<title>THE PLACE IDENTITY – PERFORMANCE RELATIONSHIP AMONG TOURISM ENTREPRENEURS: A STRUCTURAL EQUATION MODELLING ANALYSIS
+Branch: branch_3
+Role: background_methodological
+Citations: 2
+Citation velocity: 0.13
+Core score: 0.311</title>
+<circle cx="1004.0" cy="636.0" r="36.73" fill="#BAA28B" stroke="#BAA28B" stroke-width="3" />
+</g>
+<g>
+<title>LEHMAN K, 2020, HDB ENTREPRENEURSHIP
+Branch: branch_3
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.000</title>
+<circle cx="1074.0" cy="614.0" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>FROST V, 2014, THEGUARDIAN
+Branch: branch_3
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.15
+Core score: 0.000</title>
+<circle cx="1144.0" cy="256.8" r="36.73" fill="#B9A18A" stroke="#B9A18A" stroke-width="3" />
+</g>
+<g>
+<title>KIRCHNER TA, 2013, SOCIAL BUSINESS
+Branch: branch_3
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.21
+Core score: 0.000</title>
+<circle cx="1214.0" cy="510.0" r="39.86" fill="#B59C85" stroke="#B59C85" stroke-width="3" />
+</g>
+</g>
+</svg>
