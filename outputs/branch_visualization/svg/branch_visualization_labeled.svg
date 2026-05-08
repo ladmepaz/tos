@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="820" viewBox="0 0 1360 820">
-<rect width="1360" height="820" fill="#F7F2EA" />
+<svg xmlns="http://www.w3.org/2000/svg" width="1360.0" height="820.0" viewBox="0 0 1360.0 820.0">
+<rect width="1360.0" height="820.0" fill="#F7F2EA" />
 <style>
 text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
 .node-label { font-size: 15px; font-weight: 600; }

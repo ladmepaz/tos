@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 1</text>
+<g>
+<title>ANTECEDENTS OF IMMIGRANTS’ ENTREPRENEURIAL INTENTION FORMATION PROCESS: AN EMPIRICAL STUDY OF IMMIGRANT ENTREPRENEURS IN CANADA
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.644</title>
+<circle cx="250.0" cy="160.0" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+<text class="core-label" x="299.7" y="166.0">MAYUTO R 2023</text>
+</g>
+<g>
+<title>EXAMINING THE FORMATION OF ENTREPRENEURIAL RESOURCES IN EMERGING MARKET INTERNATIONAL NEW VENTURES
+Branch: branch_1
+Role: peripheral
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.670</title>
+<circle cx="105.0" cy="335.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+<text class="core-label" x="157.9" y="341.0">BUCCIERI D 2022</text>
+</g>
+<g>
+<title>THE COMPLEMENTARITY OF STRATEGIC ORIENTATIONS: A META‐ANALYTIC SYNTHESIS AND THEORY EXTENSION
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.309</title>
+<circle cx="430.0" cy="305.0" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+<text class="core-label" x="479.7" y="311.0">SCHWEIGER SA 2019</text>
+</g>
+<g>
+<title>RELATIONAL SELLING: PAST, PRESENT AND FUTURE
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.22
+Core score: 0.388</title>
+<circle cx="250.0" cy="485.0" r="36.73" fill="#B49C85" stroke="#B49C85" stroke-width="3" />
+<text class="core-label" x="299.7" y="491.0">ARLI D 2018</text>
+</g>
+<text class="core-footer" x="48" y="595">Peripheral papers</text>
+</svg>

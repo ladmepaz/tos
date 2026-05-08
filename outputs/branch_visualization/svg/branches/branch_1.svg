@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="599.5" height="635.7" viewBox="0 0 599.5 635.7">
+<rect width="599.5" height="635.7" fill="none" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.node-label { font-size: 15px; font-weight: 600; }
+.branch-label { font-size: 18px; font-weight: 600; letter-spacing: 0.4px; }
+</style>
+<g id="branch_1">
+<g>
+<title>ENTREPRENEURIAL MARKETING AND ORGANIZATIONAL ENTREPRENEURSHIP PERFORMANCE OF SMALL AND MEDIUM ENTERPRISES: A SYSTEMATIC REVIEW
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 0.40
+Core score: 0.845</title>
+<circle cx="72.7" cy="505.0" r="36.73" fill="#A98F78" stroke="#A98F78" stroke-width="3" />
+</g>
+<g>
+<title>HOW ENTREPRENEURIAL MARKETING FACILITATES DIRECT SELLERS&#x27; ENTREPRENEURIAL PROCESS: A DYNAMIC ADJUSTMENT PERSPECTIVE
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.786</title>
+<circle cx="142.7" cy="453.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>A CONCEPTUAL REVIEW ON ENTREPRENEURIAL MARKETING AND BUSINESS SUSTAINABILITY IN SMALL AND MEDIUM ENTERPRISES
+Branch: branch_1
+Role: core
+Citations: 5
+Citation velocity: 1.25
+Core score: 0.780</title>
+<circle cx="212.7" cy="401.0" r="43.76" fill="#84634C" stroke="#84634C" stroke-width="3" />
+</g>
+<g>
+<title>THE INNOVATIVE ENTREPRENEURIAL MARKETING JOURNEY AND SUSTAINABLE DEVELOPMENT OF SOUTHEAST ASIAN IMMIGRANTS
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.832</title>
+<circle cx="282.7" cy="349.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>MARKETING AND ENTREPRENEURSHIP: CHALLENGES AND OPPORTUNITIES
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.832</title>
+<circle cx="352.7" cy="297.0" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>COOPETITION AND THE MARKETING/ENTREPRENEURSHIP INTERFACE IN AN INTERNATIONAL ARENA
+Branch: branch_1
+Role: core
+Citations: 8
+Citation velocity: 4.00
+Core score: 0.803</title>
+<circle cx="422.7" cy="245.0" r="47.24" fill="#441A03" stroke="#441A03" stroke-width="3" />
+</g>
+<g>
+<title>EXAMINING THE FORMATION OF ENTREPRENEURIAL RESOURCES IN EMERGING MARKET INTERNATIONAL NEW VENTURES
+Branch: branch_1
+Role: peripheral
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.670</title>
+<circle cx="176.7" cy="548.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+</g>
+<g>
+<title>ANTECEDENTS OF IMMIGRANTS’ ENTREPRENEURIAL INTENTION FORMATION PROCESS: AN EMPIRICAL STUDY OF IMMIGRANT ENTREPRENEURS IN CANADA
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.644</title>
+<circle cx="246.7" cy="339.2" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+</g>
+<g>
+<title>RELATIONAL SELLING: PAST, PRESENT AND FUTURE
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.22
+Core score: 0.388</title>
+<circle cx="316.7" cy="444.0" r="36.73" fill="#B49C85" stroke="#B49C85" stroke-width="3" />
+</g>
+<g>
+<title>THE COMPLEMENTARITY OF STRATEGIC ORIENTATIONS: A META‐ANALYTIC SYNTHESIS AND THEORY EXTENSION
+Branch: branch_1
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.309</title>
+<circle cx="386.7" cy="235.2" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+</g>
+<g>
+<title>QUALITATIVE RESEARCH IN MARKETING: WHAT CAN ACADEMICS DO BETTER?
+Branch: branch_1
+Role: background_methodological
+Citations: 5
+Citation velocity: 0.83
+Core score: 0.430</title>
+<circle cx="246.7" cy="556.0" r="43.76" fill="#94765F" stroke="#94765F" stroke-width="3" />
+</g>
+<g>
+<title>NWANKWO CA, 2022, ACADEMY OF STRATEGIC MANAGEMENT JOURNAL
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.300</title>
+<circle cx="316.7" cy="534.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+</g>
+<g>
+<title>LI E, 2021, SUSTAINABILITY-BASEL
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="386.7" cy="176.7" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>CRESWELL JOHNW, 2018, JOURNAL OF INVESTIGATIVE SURGERY : THE OFFICIAL JOURNAL OF THE ACADEMY OF SURGICAL RESEARCH
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="456.7" cy="430.0" r="39.86" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>REZAEI R, 2017, J AGR SCI TECH-IRAN
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.000</title>
+<circle cx="526.7" cy="72.7" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+</g>
+</svg>

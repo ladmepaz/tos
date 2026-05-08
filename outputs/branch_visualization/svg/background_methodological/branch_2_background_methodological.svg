@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 2</text>
+<g>
+<title>MODEL SETTING AND INTERPRETATION OF RESULTS IN RESEARCH USING STRUCTURAL EQUATION MODELING: A CHECKLIST WITH GUIDING QUESTIONS FOR REPORTING
+Branch: branch_2
+Role: background_methodological
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.185</title>
+<circle cx="210.0" cy="260.0" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+<text class="core-label" x="259.7" y="266.0">KANG H 2021</text>
+</g>
+<g>
+<title>FACTORS AFFECTING TRUST IN HIGH-VULNERABILITY HUMAN-ROBOT INTERACTION CONTEXTS: A STRUCTURAL EQUATION MODELLING APPROACH
+Branch: branch_2
+Role: background_methodological
+Citations: 4
+Citation velocity: 0.57
+Core score: 0.115</title>
+<circle cx="455.0" cy="360.0" r="42.07" fill="#A0846D" stroke="#A0846D" stroke-width="3" />
+<text class="core-label" x="510.1" y="366.0">KIM W 2020</text>
+</g>
+<text class="core-footer" x="48" y="595">Background papers</text>
+</svg>

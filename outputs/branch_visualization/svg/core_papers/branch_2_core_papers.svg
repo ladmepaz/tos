@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 2</text>
+<g>
+<title>DOES ETHICAL CLIMATE OF THE ORGANIZATION FOSTER ENTREPRENEURIAL MARKETING? THE ROLE OF WORK ENGAGEMENT AND EFFECTIVE KNOWLEDGE TRANSFER
+Branch: branch_2
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.898</title>
+<circle cx="250.0" cy="160.0" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+<text class="core-label" x="299.7" y="166.0">KHASMAFKAN-NEZAM MH 2025</text>
+</g>
+<g>
+<title>THE INTERSECTION OF RESPONSIBLE LEADERSHIP AND ENTREPRENEURIAL MARKETING: THE ROLES OF ETHICAL CLIMATE, EFFECTIVE KNOWLEDGE TRANSFER AND PERSON-ORGANIZATION FIT
+Branch: branch_2
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.758</title>
+<circle cx="105.0" cy="335.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+<text class="core-label" x="129.3" y="341.0">KHASMAFKAN-NEZAM MH 2025</text>
+</g>
+<g>
+<title>MEDIATING EFFECT OF ABSORPTIVE CAPACITY ON THE RELATIONSHIP BETWEEN KNOWLEDGE SHARING AND ENTREPRENEURIAL ORIENTATION AND THE MODERATING ROLE OF OPPORTUNITY RECOGNITION
+Branch: branch_2
+Role: core
+Citations: 3
+Citation velocity: 1.00
+Core score: 0.660</title>
+<circle cx="430.0" cy="305.0" r="39.86" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+<text class="core-label" x="482.9" y="311.0">MAKHLOUFI L 2024</text>
+</g>
+<g>
+<title>ENTREPRENEURIAL MARKETING LEARNING STYLES USED BY ENTREPRENEURIAL TEAMS
+Branch: branch_2
+Role: core
+Citations: 1
+Citation velocity: 0.17
+Core score: 0.200</title>
+<circle cx="250.0" cy="485.0" r="31.51" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+<text class="core-label" x="294.5" y="491.0">PETRYLAITE E 2021</text>
+</g>
+<text class="core-footer" x="48" y="595">Core papers</text>
+</svg>

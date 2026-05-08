@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768.2" height="676.2" viewBox="0 0 768.2 676.2">
+<rect width="768.2" height="676.2" fill="none" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.node-label { font-size: 15px; font-weight: 600; }
+.branch-label { font-size: 18px; font-weight: 600; letter-spacing: 0.4px; }
+</style>
+<g id="branch_2">
+<g>
+<title>ENTREPRENEURIAL MARKETING LEARNING STYLES USED BY ENTREPRENEURIAL TEAMS
+Branch: branch_2
+Role: core
+Citations: 1
+Citation velocity: 0.17
+Core score: 0.200</title>
+<circle cx="67.5" cy="608.7" r="31.51" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>MEDIATING EFFECT OF ABSORPTIVE CAPACITY ON THE RELATIONSHIP BETWEEN KNOWLEDGE SHARING AND ENTREPRENEURIAL ORIENTATION AND THE MODERATING ROLE OF OPPORTUNITY RECOGNITION
+Branch: branch_2
+Role: core
+Citations: 3
+Citation velocity: 1.00
+Core score: 0.660</title>
+<circle cx="133.5" cy="559.7" r="39.86" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>DOES ETHICAL CLIMATE OF THE ORGANIZATION FOSTER ENTREPRENEURIAL MARKETING? THE ROLE OF WORK ENGAGEMENT AND EFFECTIVE KNOWLEDGE TRANSFER
+Branch: branch_2
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.898</title>
+<circle cx="199.5" cy="510.7" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>THE INTERSECTION OF RESPONSIBLE LEADERSHIP AND ENTREPRENEURIAL MARKETING: THE ROLES OF ETHICAL CLIMATE, EFFECTIVE KNOWLEDGE TRANSFER AND PERSON-ORGANIZATION FIT
+Branch: branch_2
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.758</title>
+<circle cx="265.5" cy="461.7" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND TURNOVER INTENTIONS IN HEALTH-CARE PROFESSIONALS: THE MEDIATING ROLE OF BURNOUT
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.613</title>
+<circle cx="167.5" cy="464.7" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+</g>
+<g>
+<title>PEER KNOWLEDGE SHARING AND ORGANIZATIONAL PERFORMANCE: THE ROLE OF LEADERSHIP SUPPORT AND KNOWLEDGE MANAGEMENT SUCCESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.513</title>
+<circle cx="233.5" cy="572.5" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>SOCIAL DILEMMAS IN KNOWLEDGE SHARING: AN EXAMINATION OF THE INTERPLAY BETWEEN KNOWLEDGE SHARING CULTURE AND PERFORMANCE CLIMATE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.466</title>
+<circle cx="299.5" cy="366.7" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>INFORMATION SYSTEMS CAPABILITIES VALUE CREATION THROUGH CIRCULAR ECONOMY PRACTICES IN UNCERTAIN ENVIRONMENTS: A CONDITIONAL MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.67
+Core score: 0.423</title>
+<circle cx="365.5" cy="474.5" r="36.73" fill="#9B7F68" stroke="#9B7F68" stroke-width="3" />
+</g>
+<g>
+<title>ARTIFICIAL INTELLIGENCE (AI) AND ITS IMPLICATIONS FOR MARKET KNOWLEDGE IN B2B MARKETING
+Branch: branch_2
+Role: peripheral
+Citations: 3
+Citation velocity: 0.38
+Core score: 0.347</title>
+<circle cx="431.5" cy="268.7" r="39.86" fill="#AB917A" stroke="#AB917A" stroke-width="3" />
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND EMPLOYEES’ TURNOVER INTENTION. EXPLORE THE MEDIATING ROLES OF ETHICAL CLIMATE AND CORPORATE IMAGE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.337</title>
+<circle cx="497.5" cy="376.5" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>JOINT IMPACT OF ETHICAL CLIMATE AND EXTERNAL WORK LOCUS OF CONTROL ON JOB MEANINGFULNESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.288</title>
+<circle cx="563.5" cy="170.7" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+</g>
+<g>
+<title>PSYCHOSOCIAL WORK ENVIRONMENT, WORK ENGAGEMENT, AND EMPLOYEE COMMITMENT: A MODERATED, MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.271</title>
+<circle cx="629.5" cy="278.5" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>THE IMPACT OF TIME PRESSURE ON KNOWLEDGE TRANSFER EFFECTIVENESS IN TEAMS: TRUST AS A CRITICAL BUT FRAGILE MEDIATOR
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.260</title>
+<circle cx="695.5" cy="72.7" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>MODEL SETTING AND INTERPRETATION OF RESULTS IN RESEARCH USING STRUCTURAL EQUATION MODELING: A CHECKLIST WITH GUIDING QUESTIONS FOR REPORTING
+Branch: branch_2
+Role: background_methodological
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.185</title>
+<circle cx="233.5" cy="355.7" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+</g>
+<g>
+<title>FACTORS AFFECTING TRUST IN HIGH-VULNERABILITY HUMAN-ROBOT INTERACTION CONTEXTS: A STRUCTURAL EQUATION MODELLING APPROACH
+Branch: branch_2
+Role: background_methodological
+Citations: 4
+Citation velocity: 0.57
+Core score: 0.115</title>
+<circle cx="299.5" cy="562.5" r="42.07" fill="#A0846D" stroke="#A0846D" stroke-width="3" />
+</g>
+</g>
+</svg>

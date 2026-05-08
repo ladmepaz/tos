@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="535.7" height="524.7" viewBox="0 0 535.7 524.7">
+<rect width="535.7" height="524.7" fill="none" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.node-label { font-size: 15px; font-weight: 600; }
+.branch-label { font-size: 18px; font-weight: 600; letter-spacing: 0.4px; }
+</style>
+<g id="branch_3">
+<g>
+<title>ENTREPRENEURIAL MARKETING OF NONPROFIT ARTS ORGANISATIONS
+Branch: branch_3
+Role: core
+Citations: 3
+Citation velocity: 0.21
+Core score: 0.471</title>
+<circle cx="75.9" cy="401.0" r="39.86" fill="#B59C85" stroke="#B59C85" stroke-width="3" />
+</g>
+<g>
+<title>THE ART OF ENTREPRENEURIAL MARKET CREATION
+Branch: branch_3
+Role: core
+Citations: 8
+Citation velocity: 0.62
+Core score: 0.527</title>
+<circle cx="145.9" cy="349.0" r="47.24" fill="#9E826B" stroke="#9E826B" stroke-width="3" />
+</g>
+<g>
+<title>THE ARTIST AS MARKETER AND ENTREPRENEUR
+Branch: branch_3
+Role: core
+Citations: 2
+Citation velocity: 0.17
+Core score: 0.231</title>
+<circle cx="215.9" cy="297.0" r="36.73" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>THE MUSEUM OF OLD AND NEW ART: LEVERAGING ENTREPRENEURIAL MARKETING TO CREATE A UNIQUE ARTS AND VACATION VENTURE
+Branch: branch_3
+Role: core
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.630</title>
+<circle cx="285.9" cy="245.0" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+<g>
+<title>ART COLLECTING AS CONSUMPTION AND ENTREPRENEURIAL MARKETING AS STRATEGY
+Branch: branch_3
+Role: core
+Citations: 1
+Citation velocity: 0.17
+Core score: 0.443</title>
+<circle cx="355.9" cy="193.0" r="31.51" fill="#B8A089" stroke="#B8A089" stroke-width="3" />
+</g>
+<g>
+<title>ASSESSING THE NOTION OF ART AS A PRODUCT: ENTREPRENEURIAL MARKETING INSIGHTS FROM THE VISUAL ARTS
+Branch: branch_3
+Role: core
+Citations: 4
+Citation velocity: 1.00
+Core score: 0.807</title>
+<circle cx="425.9" cy="141.0" r="42.07" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+</g>
+<g>
+<title>THE SYSTEMIC CREATION OF VALUE THROUGH CIRCULATION IN COLLABORATIVE CONSUMER NETWORKS
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.18
+Core score: 0.394</title>
+<circle cx="179.9" cy="444.0" r="36.73" fill="#B79F88" stroke="#B79F88" stroke-width="3" />
+</g>
+<g>
+<title>UNDER CONSTRUCTION: TOWARDS A FRAMEWORK FOR CULTURAL VALUE
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.15
+Core score: 0.361</title>
+<circle cx="249.9" cy="235.2" r="36.73" fill="#B9A18A" stroke="#B9A18A" stroke-width="3" />
+</g>
+<g>
+<title>IT&#x27;S A MUSEUM, BUT NOT AS WE KNOW IT: ISSUES FOR LOCAL RESIDENTS ACCESSING THE MUSEUM OF OLD AND NEW ART
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.353</title>
+<circle cx="319.9" cy="340.0" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+</g>
+<g>
+<title>CROWDFUNDING ACTS AS A FUNDING SUBSTITUTE AND A LEGITIMATING SIGNAL FOR NONPROFIT PERFORMING ARTS ORGANIZATIONS
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.350</title>
+<circle cx="389.9" cy="131.2" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>EFFECTS OF FORMAL INSTITUTIONS ON THE PERFORMANCE OF THE TOURISM SECTOR IN THE PHILIPPINES: THE MEDIATING ROLE OF ENTREPRENEURIAL ORIENTATION
+Branch: branch_3
+Role: peripheral
+Citations: 2
+Citation velocity: 0.14
+Core score: 0.338</title>
+<circle cx="459.9" cy="236.0" r="36.73" fill="#B9A28B" stroke="#B9A28B" stroke-width="3" />
+</g>
+<g>
+<title>THE PLACE IDENTITY – PERFORMANCE RELATIONSHIP AMONG TOURISM ENTREPRENEURS: A STRUCTURAL EQUATION MODELLING ANALYSIS
+Branch: branch_3
+Role: background_methodological
+Citations: 2
+Citation velocity: 0.13
+Core score: 0.311</title>
+<circle cx="249.9" cy="452.0" r="36.73" fill="#BAA28B" stroke="#BAA28B" stroke-width="3" />
+</g>
+<g>
+<title>LEHMAN K, 2020, HDB ENTREPRENEURSHIP
+Branch: branch_3
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.000</title>
+<circle cx="319.9" cy="430.0" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+</g>
+<g>
+<title>FROST V, 2014, THEGUARDIAN
+Branch: branch_3
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.15
+Core score: 0.000</title>
+<circle cx="389.9" cy="72.7" r="36.73" fill="#B9A18A" stroke="#B9A18A" stroke-width="3" />
+</g>
+<g>
+<title>KIRCHNER TA, 2013, SOCIAL BUSINESS
+Branch: branch_3
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.21
+Core score: 0.000</title>
+<circle cx="459.9" cy="326.0" r="39.86" fill="#B59C85" stroke="#B59C85" stroke-width="3" />
+</g>
+</g>
+</svg>

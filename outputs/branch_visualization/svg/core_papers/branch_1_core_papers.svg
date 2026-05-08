@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 1</text>
+<g>
+<title>COOPETITION AND THE MARKETING/ENTREPRENEURSHIP INTERFACE IN AN INTERNATIONAL ARENA
+Branch: branch_1
+Role: core
+Citations: 8
+Citation velocity: 4.00
+Core score: 0.803</title>
+<circle cx="230.0" cy="135.0" r="47.24" fill="#441A03" stroke="#441A03" stroke-width="3" />
+<text class="core-label" x="290.2" y="141.0">CRICK JM 2025</text>
+</g>
+<g>
+<title>THE INNOVATIVE ENTREPRENEURIAL MARKETING JOURNEY AND SUSTAINABLE DEVELOPMENT OF SOUTHEAST ASIAN IMMIGRANTS
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.832</title>
+<circle cx="100.0" cy="245.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+<text class="core-label" x="124.3" y="251.0">CHEN YH 2024</text>
+</g>
+<g>
+<title>MARKETING AND ENTREPRENEURSHIP: CHALLENGES AND OPPORTUNITIES
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 1.00
+Core score: 0.832</title>
+<circle cx="50.0" cy="375.0" r="36.73" fill="#8D6E57" stroke="#8D6E57" stroke-width="3" />
+<text class="core-label" x="99.7" y="381.0">ALAREENI B 2025</text>
+</g>
+<g>
+<title>HOW ENTREPRENEURIAL MARKETING FACILITATES DIRECT SELLERS&#x27; ENTREPRENEURIAL PROCESS: A DYNAMIC ADJUSTMENT PERSPECTIVE
+Branch: branch_1
+Role: core
+Citations: 0
+Citation velocity: 0.00
+Core score: 0.786</title>
+<circle cx="200.0" cy="500.0" r="11.34" fill="#C4AE97" stroke="#C4AE97" stroke-width="3" />
+<text class="core-label" x="224.3" y="506.0">CHOU WC 2023</text>
+</g>
+<g>
+<title>A CONCEPTUAL REVIEW ON ENTREPRENEURIAL MARKETING AND BUSINESS SUSTAINABILITY IN SMALL AND MEDIUM ENTERPRISES
+Branch: branch_1
+Role: core
+Citations: 5
+Citation velocity: 1.25
+Core score: 0.780</title>
+<circle cx="430.0" cy="430.0" r="43.76" fill="#84634C" stroke="#84634C" stroke-width="3" />
+<text class="core-label" x="486.8" y="436.0">AL-SHAIKH ME 2023</text>
+</g>
+<g>
+<title>ENTREPRENEURIAL MARKETING AND ORGANIZATIONAL ENTREPRENEURSHIP PERFORMANCE OF SMALL AND MEDIUM ENTERPRISES: A SYSTEMATIC REVIEW
+Branch: branch_1
+Role: core
+Citations: 2
+Citation velocity: 0.40
+Core score: 0.845</title>
+<circle cx="450.0" cy="285.0" r="36.73" fill="#A98F78" stroke="#A98F78" stroke-width="3" />
+<text class="core-label" x="499.7" y="291.0">SHAHMOHAMMADI B 2022</text>
+</g>
+<text class="core-footer" x="48" y="595">Core papers</text>
+</svg>
