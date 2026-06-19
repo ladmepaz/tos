@@ -1,0 +1,2 @@
+target_leaves,sap_leaf_count,frontier_candidate_count,selected_frontier_leaf_count,combined_leaf_count,recent_window_years,selected_frontier_min_year,selected_frontier_max_year,selected_frontier_min_outdegree,selected_frontier_max_outdegree
+100,51,3,3,54,5,2025,2026,6,17
