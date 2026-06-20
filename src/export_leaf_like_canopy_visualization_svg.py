@@ -23,7 +23,10 @@ DEFAULT_SHAPE = Path("outputs/leaf_visualization/svg/leaves_shape.svg")
 DEFAULT_OUTPUT = Path("outputs/leaf_visualization/svg/leaves_canopy_shape_121.svg")
 DEFAULT_DEBUG_OUTPUT = Path("outputs/leaf_visualization/svg/leaves_canopy_shape_121_debug.svg")
 DEFAULT_METRICS_OUTPUT = Path("outputs/leaf_visualization/leaves_canopy_shape_121_metrics.csv")
+RECENT_WINDOW_YEARS = 5
+DORMANT_OLD_LEAF_COLOR = "#5B3A24"
 DORMANT_LEAF_COLOR = "#8A5F3E"
+DARK_GREEN_LEAF_COLOR = "#244F1C"
 ACTIVE_LEAF_COLOR = "#D7F22A"
 
 
@@ -56,6 +59,53 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def assign_leaf_temporal_colors(df: pd.DataFrame) -> pd.DataFrame:
+    """Color leaves by age: bright green when newest, dark green by year five, brown after."""
+    colored_df = df.copy()
+    newest_year = float(colored_df["year"].max())
+    oldest_year = float(colored_df["year"].min())
+    dormant_year_span = max(1.0, newest_year - RECENT_WINDOW_YEARS - oldest_year)
+
+    def temporal_color(year: float) -> tuple[float, str, str]:
+        if pd.isna(year):
+            return float("nan"), DORMANT_OLD_LEAF_COLOR, "unknown_year_leaf"
+
+        leaf_age = newest_year - float(year)
+        if leaf_age <= RECENT_WINDOW_YEARS:
+            freshness_score = 1.0 - (leaf_age / RECENT_WINDOW_YEARS)
+            color = interpolate_color(
+                DARK_GREEN_LEAF_COLOR,
+                ACTIVE_LEAF_COLOR,
+                freshness_score,
+            )
+            temporal_class = (
+                "fresh_frontier_leaf"
+                if leaf_age == 0
+                else "recent_dark_green_leaf"
+            )
+            return leaf_age, color, temporal_class
+
+        dormant_score = max(
+            0.0,
+            min(
+                1.0,
+                (float(year) - oldest_year) / dormant_year_span,
+            ),
+        )
+        color = interpolate_color(
+            DORMANT_OLD_LEAF_COLOR,
+            DORMANT_LEAF_COLOR,
+            dormant_score,
+        )
+        return leaf_age, color, "dormant_leaf"
+
+    temporal_values = colored_df["year"].apply(temporal_color)
+    colored_df["leaf_age"] = temporal_values.apply(lambda value: value[0])
+    colored_df["leaf_color"] = temporal_values.apply(lambda value: value[1])
+    colored_df["leaf_temporal_class"] = temporal_values.apply(lambda value: value[2])
+    return colored_df
+
+
 def prepare_leaf_like_metrics(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
     year_col = "effective_year" if "effective_year" in df.columns else "year"
@@ -72,11 +122,8 @@ def prepare_leaf_like_metrics(path: Path) -> pd.DataFrame:
     df["title"] = df.get("title", "").fillna("")
     df["node_id"] = df["node_id"].astype(str)
 
-    df["year_score"] = normalize_series(df["year"].fillna(df["year"].min()))
     df["citation_size_score"] = normalize_series(df["internal_outdegree"].clip(lower=0))
-    df["leaf_color"] = df["year_score"].apply(
-        lambda score: interpolate_color(DORMANT_LEAF_COLOR, ACTIVE_LEAF_COLOR, score)
-    )
+    df = assign_leaf_temporal_colors(df)
     df["leaf_type"] = df["ToS"].fillna("").apply(
         lambda value: "sap_leaf" if str(value) == "leaf" else "dormant_or_frontier_leaf"
     )

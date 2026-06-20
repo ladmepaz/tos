@@ -302,7 +302,7 @@ def layout_leaves_in_canopy(
     for index, row in positioned_df.iterrows():
         leaf_score = float(row.get("citation_size_score", 0.0))
         length = MIN_LEAF_LENGTH + (leaf_score * (MAX_LEAF_LENGTH - MIN_LEAF_LENGTH))
-        width = length * 0.43
+        width = length * 0.559
         min_distance = length * 1.18
         accepted = None
 
