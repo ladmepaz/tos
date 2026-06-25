@@ -7,6 +7,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from fruit_symbol_svg import build_fruit_symbol
+
 
 DEFAULT_INPUT = Path("outputs/fruits/fruit_candidates_underabsorbed.csv")
 DEFAULT_OUTPUT = Path("outputs/fruit_visualization/svg/fruits_top3.svg")
@@ -15,8 +17,6 @@ CANVAS_WIDTH = 900
 CANVAS_HEIGHT = 420
 LABEL_COLOR = "#4A413B"
 TITLE_COLOR = "#1F130B"
-STEM_COLOR = "#6A3A16"
-LEAF_COLOR = "#7D932D"
 FRUIT_COLOR_LOW = "#E9A195"
 FRUIT_COLOR_HIGH = "#A32314"
 MIN_FRUIT_RADIUS = 20.0
@@ -141,31 +141,6 @@ def fruit_positions(member_count: int) -> list[tuple[float, float]]:
     return positions
 
 
-def build_apple_symbol(cx: float, cy: float, radius: float, fill_color: str) -> list[str]:
-    scale = radius
-    return [
-        (
-            f'<path d="M 0 -0.58 C -0.28 -0.92 -0.88 -0.78 -1.02 -0.18 '
-            f'C -1.18 0.52 -0.58 1.04 0 0.92 '
-            f'C 0.58 1.04 1.18 0.52 1.02 -0.18 '
-            f'C 0.88 -0.78 0.28 -0.92 0 -0.58 Z" '
-            f'transform="translate({cx:.1f} {cy:.1f}) scale({scale:.2f})" '
-            f'fill="{html.escape(fill_color)}" stroke="{html.escape(fill_color)}" stroke-width="1.5" />'
-        ),
-        (
-            f'<rect x="{cx - (radius * 0.08):.1f}" y="{cy - (radius * 1.18):.1f}" '
-            f'width="{radius * 0.16:.1f}" height="{radius * 0.42:.1f}" '
-            f'rx="{radius * 0.05:.1f}" fill="{STEM_COLOR}" '
-            f'transform="rotate(-18 {cx:.1f} {cy - radius:.1f})" />'
-        ),
-        (
-            f'<ellipse cx="{cx + (radius * 0.34):.1f}" cy="{cy - (radius * 1.05):.1f}" '
-            f'rx="{radius * 0.30:.1f}" ry="{radius * 0.14:.1f}" fill="{LEAF_COLOR}" '
-            f'transform="rotate(-28 {cx + (radius * 0.34):.1f} {cy - (radius * 1.05):.1f})" />'
-        ),
-    ]
-
-
 def build_svg(fruits_df: pd.DataFrame, background: str) -> str:
     positions = fruit_positions(len(fruits_df))
     lines = [
@@ -192,7 +167,7 @@ def build_svg(fruits_df: pd.DataFrame, background: str) -> str:
         radius = float(row.fruit_radius)
         lines.append("<g>")
         lines.append(f"<title>{html.escape(tooltip)}</title>")
-        lines.extend(build_apple_symbol(cx, cy, radius, str(row.fruit_color)))
+        lines.extend(build_fruit_symbol(cx, cy, radius, str(row.fruit_color)))
         label_x = cx + radius + 17.0
         lines.append(
             f'<text class="fruit-label" x="{label_x:.1f}" y="{cy - 4:.1f}">{html.escape(label)}</text>'
