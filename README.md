@@ -91,13 +91,33 @@ Run commands from the repository root:
 cd F:\tos_3\tos
 ```
 
+The pipeline is organized into numbered stage scripts:
+
+```powershell
+python src\01_tidy_data.py
+python src\02_build_citation_network.py
+python src\03_apply_sap.py
+python src\04_roots_analysis.py
+python src\05_trunk_analysis.py
+python src\06_branches_analysis.py
+python src\07_leaves_fruits.py
+python src\08_export_visualizations.py
+```
+
+Each stage is a thin wrapper around the underlying research scripts. To inspect the commands without running them, use:
+
+```powershell
+python src\04_roots_analysis.py --dry-run
+```
+
+Important implementation note: in the current codebase, SAP is applied inside `src/build_citation_network.py` when the citation graph is created. Therefore, `src\03_apply_sap.py` currently validates and summarizes the ToS labels already written to `outputs/graphs/citation_network.gexf`.
+
 ### 1. Clean BibFusion Data
 
 These scripts create the tidy citation and article files used by the graph builder.
 
 ```powershell
-python src\tidy_citations.py
-python src\tidy_articles.py
+python src\01_tidy_data.py
 ```
 
 Outputs:
@@ -110,7 +130,8 @@ data/processed/bibfusion/All_Articles_tidy.csv
 ### 2. Build The Citation Network
 
 ```powershell
-python src\build_citation_network.py
+python src\02_build_citation_network.py
+python src\03_apply_sap.py
 ```
 
 Output:
@@ -126,13 +147,7 @@ This graph is directed. It removes self-loops, applies graph cleaning, enriches 
 The roots workflow estimates thematic similarity using text, co-citation, and structural signals, then exports root visualization metrics.
 
 ```powershell
-python src\root_tfidf_similarity.py
-python src\root_cocitation_similarity.py
-python src\root_structural_similarity.py
-python src\root_combined_similarity.py
-python src\root_cluster_metrics.py
-python src\root_visualization_metrics.py
-python src\export_root_visualization_svg.py
+python src\04_roots_analysis.py
 ```
 
 Main outputs:
@@ -145,9 +160,7 @@ outputs/root_visualization/
 ### 4. Analyze Trunk
 
 ```powershell
-python src\trunk_combined_similarity.py
-python src\trunk_visualization_metrics.py
-python src\export_trunk_visualization_svg.py
+python src\05_trunk_analysis.py
 ```
 
 Main outputs:
@@ -162,11 +175,7 @@ outputs/trunk_visualization/
 The branch workflow identifies recent thematic conversations, evaluates community structure, assigns branch roles, and exports branch SVG files.
 
 ```powershell
-python src\branch_leiden_comparison.py
-python src\branch_trunk_assignment.py
-python src\branch_member_roles.py
-python src\branch_visualization_metrics.py
-python src\export_branch_visualization_svg.py
+python src\06_branches_analysis.py
 ```
 
 Main outputs:
@@ -183,10 +192,7 @@ outputs/branch_visualization/
 Leaves are identified as papers with internal indegree equal to zero and internal outdegree greater than or equal to one. Fruits are selected from recent papers using external citation attention and local-network absorption signals.
 
 ```powershell
-python src\export_leaf_like_nodes_from_gexf.py
-python src\fruit_candidates.py
-python src\export_fruit_visualization_svg.py
-python src\export_leaf_like_canopy_visualization_svg.py
+python src\07_leaves_fruits.py
 ```
 
 Main outputs:
@@ -201,7 +207,7 @@ outputs/fruit_visualization/
 ### 7. Export Paper Figures
 
 ```powershell
-python src\export_paper_figures.py
+python src\08_export_visualizations.py
 ```
 
 Main outputs:
@@ -231,7 +237,7 @@ outputs/paper_figures/figure_1_tos3_visualization.jpg
 To refresh the paper figure copies from the current final visualization files, run:
 
 ```powershell
-python src\export_paper_figures.py
+python src\08_export_visualizations.py
 ```
 
 Important note: the final Figure 1 layout includes a designer-adjusted SVG composition. The analytical scripts generate the component data and visual assets, while the final figure file preserves the publication-ready layout.
@@ -281,4 +287,3 @@ This repository is article reproducibility code. The next recommended cleanup st
 - Move parameters into a configuration file.
 - Expand `requirements.txt` to include all optional visualization dependencies.
 - Add a short data dictionary for the main CSV outputs.
-
