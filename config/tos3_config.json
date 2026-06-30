@@ -1,0 +1,225 @@
+{
+  "project": {
+    "name": "Tree of Science 3",
+    "case_study": "Entrepreneurial Marketing",
+    "purpose": "Article reproducibility configuration for the ToS 3 analysis and visualization."
+  },
+  "inputs": {
+    "raw_bibfusion_dir": "data/raw/bibfusion",
+    "processed_bibfusion_dir": "data/processed/bibfusion",
+    "citations": "data/processed/bibfusion/All_Citation_tidy.csv",
+    "articles": "data/processed/bibfusion/All_Articles_tidy.csv"
+  },
+  "outputs": {
+    "citation_network": "outputs/graphs/citation_network.gexf",
+    "paper_figures": "outputs/paper_figures",
+    "interactive_html": "outputs/html/tos3_interactive.html"
+  },
+  "sap": {
+    "max_roots": 20,
+    "max_trunk": 20,
+    "max_leaves": 50,
+    "max_branch_size": 15,
+    "min_leaf_connections": 3,
+    "max_leaf_age_years": 7
+  },
+  "roots": {
+    "displayed_clusters": 3,
+    "similarity_edge_threshold": 0.35,
+    "similarity_weights": {
+      "text": 0.45,
+      "co_citation": 0.35,
+      "structural": 0.20,
+      "ntf_optional": 0.0
+    },
+    "cluster_quality_weights": {
+      "cohesion": 0.45,
+      "separation": 0.25,
+      "support": 0.30
+    },
+    "size": {
+      "min": 14.0,
+      "max": 22.0
+    }
+  },
+  "trunk": {
+    "similarity_edge_threshold": 0.18,
+    "similarity_weights": {
+      "text": 0.40,
+      "references": 0.35,
+      "citers": 0.25
+    },
+    "size": {
+      "min": 6.0,
+      "max": 25.0
+    }
+  },
+  "branches": {
+    "max_branches": 3,
+    "max_branch_size": 15,
+    "recency_window_years": 5,
+    "community_seed": 0,
+    "trunk_assignment_weights": {
+      "citation_path_proximity": 0.40,
+      "text_similarity": 0.35,
+      "reference_overlap": 0.25
+    },
+    "max_path_depth": 3,
+    "core_paper_weights": {
+      "semantic": 0.50,
+      "recency": 0.30,
+      "trunk_connection": 0.20
+    },
+    "core_paper_threshold": 0.55,
+    "size": {
+      "min": 6.0,
+      "max": 25.0
+    }
+  },
+  "leaves": {
+    "definition": "internal indegree == 0 and internal outdegree >= 1",
+    "recent_window_years": 5,
+    "canopy_seed": 121,
+    "size_signal": "internal_outdegree",
+    "size_note": "Leaf size represents references from the leaf paper to papers in the local tree, not citations received."
+  },
+  "fruits": {
+    "recent_years": 5,
+    "candidate_top_n": 30,
+    "display_top_n": 3,
+    "field_distance_cutoff": 3,
+    "score_weights": {
+      "external_citation_velocity": 0.35,
+      "external_attention_gap": 0.35,
+      "network_proximity": 0.20,
+      "text_relevance": 0.10
+    },
+    "category_thresholds": {
+      "underabsorbed_fruit": {
+        "internal_indegree_max": 1,
+        "normalized_external_attention_gap_min": 0.40,
+        "requires_local_graph_match": true,
+        "requires_external_citation_eligibility": true
+      },
+      "already_absorbing_into_tree": {
+        "internal_indegree_min": 5,
+        "normalized_external_attention_gap_max": 0.15
+      }
+    },
+    "size_signal": "external_citation_velocity",
+    "color_signal": "fruit_score"
+  },
+  "colors": {
+    "structural_brown_low": "#C4AE97",
+    "structural_brown_high": "#441A03",
+    "leaf_active_recent": "#D7F22A",
+    "leaf_active_old": "#244F1C",
+    "leaf_dormant_low": "#5B3A24",
+    "leaf_dormant_high": "#8A5F3E",
+    "fruit_low": "#E9A195",
+    "fruit_high": "#A32314"
+  },
+  "visualization": {
+    "root_size": {
+      "min": 14.0,
+      "max": 22.0
+    },
+    "trunk_size": {
+      "min": 6.0,
+      "max": 25.0
+    },
+    "branch_size": {
+      "min": 6.0,
+      "max": 25.0
+    },
+    "fruit_radius": {
+      "min": 20.0,
+      "max": 34.0
+    },
+    "leaf_shape": {
+      "width_scale": 1.30,
+      "size_scale": 0.75
+    }
+  },
+  "script_arguments": {
+    "build_citation_network.py": {
+      "max-roots": 20,
+      "max-leaves": 50,
+      "max-trunk": 20,
+      "max-branch-size": 15
+    },
+    "root_combined_similarity.py": {
+      "w-text": 0.45,
+      "w-cocitation": 0.35,
+      "w-structural": 0.20,
+      "w-ntf": 0.0,
+      "min-similarity": 0.35
+    },
+    "root_visualization_metrics.py": {
+      "w-text": 0.45,
+      "w-cocitation": 0.35,
+      "w-structural": 0.20,
+      "w-ntf": 0.0,
+      "cohesion-weight": 0.45,
+      "separation-weight": 0.25,
+      "support-weight": 0.30,
+      "min-similarity": 0.35,
+      "max-clusters": 3,
+      "local-weight": 0.70,
+      "global-weight": 0.30,
+      "min-size": 14.0,
+      "max-size": 22.0
+    },
+    "trunk_combined_similarity.py": {
+      "w-text": 0.40,
+      "w-references": 0.35,
+      "w-citers": 0.25,
+      "min-similarity": 0.18
+    },
+    "trunk_visualization_metrics.py": {
+      "w-text": 0.40,
+      "w-references": 0.35,
+      "w-citers": 0.25,
+      "min-similarity": 0.18,
+      "min-size": 6.0,
+      "max-size": 25.0
+    },
+    "branch_leiden_comparison.py": {
+      "seed": 0,
+      "max-branches": 3,
+      "max-branch-size": 15
+    },
+    "branch_trunk_assignment.py": {
+      "w-path": 0.40,
+      "w-text": 0.35,
+      "w-references": 0.25,
+      "max-path-depth": 3
+    },
+    "branch_member_roles.py": {
+      "recent-window-years": 5,
+      "semantic-weight": 0.50,
+      "recency-weight": 0.30,
+      "trunk-weight": 0.20,
+      "core-score-threshold": 0.55
+    },
+    "branch_visualization_metrics.py": {
+      "min-size": 6.0,
+      "max-size": 25.0
+    },
+    "fruit_candidates.py": {
+      "recent-years": 5,
+      "top-n": 30,
+      "field-distance-cutoff": 3,
+      "w-external-velocity": 0.35,
+      "w-attention-gap": 0.35,
+      "w-network-proximity": 0.20,
+      "w-text-relevance": 0.10
+    },
+    "export_fruit_visualization_svg.py": {
+      "top-n": 3
+    },
+    "export_leaf_like_canopy_visualization_svg.py": {
+      "seed": 121
+    }
+  }
+}

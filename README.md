@@ -91,6 +91,14 @@ Run commands from the repository root:
 cd F:\tos_3\tos
 ```
 
+The main parameter file is:
+
+```text
+config/tos3_config.json
+```
+
+It records the current paper settings, including SAP counts, similarity weights, branch recency rules, fruit selection rules, color palettes, and visualization sizes.
+
 The pipeline is organized into numbered stage scripts:
 
 ```powershell
@@ -110,7 +118,28 @@ Each stage is a thin wrapper around the underlying research scripts. To inspect 
 python src\04_roots_analysis.py --dry-run
 ```
 
+The stage scripts use `config/tos3_config.json` by default. To run with a different configuration file:
+
+```powershell
+python src\04_roots_analysis.py --config config\my_config.json
+```
+
 Important implementation note: in the current codebase, SAP is applied inside `src/build_citation_network.py` when the citation graph is created. Therefore, `src\03_apply_sap.py` currently validates and summarizes the ToS labels already written to `outputs/graphs/citation_network.gexf`.
+
+## Main Parameters
+
+The current configuration uses these core values:
+
+- SAP selection: 20 roots, 20 trunk papers, 50 SAP leaves, and a maximum branch size of 15.
+- Root similarity: text `0.45`, co-citation `0.35`, structural `0.20`, optional NTF `0.00`, with similarity threshold `0.35`.
+- Trunk similarity: text `0.40`, references `0.35`, citers `0.25`, with similarity threshold `0.18`.
+- Branches: three branches, five-year recency window, citation-path proximity `0.40`, text similarity `0.35`, reference overlap `0.25`.
+- Branch core papers: semantic score `0.50`, recency `0.30`, trunk connection `0.20`, with core-paper threshold `0.55`.
+- Leaves: internal indegree equal to zero and internal outdegree greater than or equal to one; visual leaf colors use a five-year recent frontier window.
+- Fruits: five-year recent window, top 30 candidates evaluated, top three displayed.
+- Fruit score: external citation velocity `0.35`, external attention gap `0.35`, network proximity `0.20`, text relevance `0.10`.
+- Structural color gradient: `#C4AE97` to `#441A03`.
+- Fruit color gradient: `#E9A195` to `#A32314`.
 
 ### 1. Clean BibFusion Data
 

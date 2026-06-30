@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 
-from pipeline_utils import add_dry_run_argument, run_stage
+from pipeline_utils import add_stage_arguments, run_stage
 
 
 def parse_args() -> argparse.Namespace:
@@ -12,15 +12,14 @@ def parse_args() -> argparse.Namespace:
             "also applies SAP and writes ToS node attributes."
         )
     )
-    add_dry_run_argument(parser)
+    add_stage_arguments(parser)
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    run_stage(["build_citation_network.py"], dry_run=args.dry_run)
+    run_stage(["build_citation_network.py"], dry_run=args.dry_run, config_path=args.config)
 
 
 if __name__ == "__main__":
     main()
-

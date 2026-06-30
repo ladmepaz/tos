@@ -6,6 +6,8 @@ from pathlib import Path
 import networkx as nx
 import pandas as pd
 
+from pipeline_utils import DEFAULT_CONFIG
+
 
 DEFAULT_GRAPH = Path("outputs/graphs/citation_network.gexf")
 DEFAULT_OUTPUT = Path("outputs/graphs/tos_classification_summary.csv")
@@ -20,6 +22,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--graph", type=Path, default=DEFAULT_GRAPH)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=DEFAULT_CONFIG,
+        help="Accepted for numbered-stage consistency. SAP is already applied in stage 02.",
+    )
     return parser.parse_args()
 
 
@@ -52,4 +60,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

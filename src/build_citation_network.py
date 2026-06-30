@@ -129,9 +129,20 @@ def keep_giant_component(graph: nx.DiGraph) -> nx.DiGraph:
     return graph.subgraph(giant_component_nodes).copy()
 
 
-def apply_sap_baseline(graph: nx.DiGraph) -> nx.DiGraph:
+def apply_sap_baseline(
+    graph: nx.DiGraph,
+    max_roots: int = 20,
+    max_leaves: int = 50,
+    max_trunk: int = 20,
+    max_branch_size: int = 15,
+) -> nx.DiGraph:
     """Apply baseline SAP and keep only user-facing ToS outputs."""
-    sap = Sap()
+    sap = Sap(
+        max_roots=max_roots,
+        max_leaves=max_leaves,
+        max_trunk=max_trunk,
+        max_branch_size=max_branch_size,
+    )
     sap_graph = sap.tree(graph)
 
     for node, attrs in sap_graph.nodes(data=True):
@@ -195,6 +206,10 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_OUTPUT,
         help="Path to the exported GEXF file for Gephi",
     )
+    parser.add_argument("--max-roots", type=int, default=20)
+    parser.add_argument("--max-leaves", type=int, default=50)
+    parser.add_argument("--max-trunk", type=int, default=20)
+    parser.add_argument("--max-branch-size", type=int, default=15)
     return parser.parse_args()
 
 
@@ -206,7 +221,13 @@ def main() -> None:
     graph_without_self_loops = remove_self_loops(raw_graph)
     cleaned_graph = Sap.clean_graph(graph_without_self_loops)
     graph = enrich_network_with_article_data(cleaned_graph, article_df)
-    graph = apply_sap_baseline(graph)
+    graph = apply_sap_baseline(
+        graph,
+        max_roots=args.max_roots,
+        max_leaves=args.max_leaves,
+        max_trunk=args.max_trunk,
+        max_branch_size=args.max_branch_size,
+    )
     export_graph = sanitize_graph_for_gexf(graph)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     nx.write_gexf(export_graph, args.output)
