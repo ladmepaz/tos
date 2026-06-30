@@ -19,7 +19,7 @@ from sap import BRANCH, LEAF, ROOT, SAP, TRUNK, Sap
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_FRUITS_TOP = Path("outputs/fruit_visualization/fruits_top3.csv")
-DEFAULT_OUTPUT_DIR = Path("outputs/frontier_leaf_experiment")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/frontier_leaf_experiment")
 
 
 def parse_args() -> argparse.Namespace:

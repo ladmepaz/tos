@@ -22,7 +22,7 @@ from trunk_visualization_metrics import normalize_series
 
 DEFAULT_OUTPUT_DIR = Path("outputs/branch_member_roles")
 DEFAULT_REFERENCE_NOVELTY_MEMBERS = Path(
-    "outputs/branch_reference_novelty/branch_reference_novelty_members.csv"
+    "outputs/experiments/branch_reference_novelty/branch_reference_novelty_members.csv"
 )
 
 METHOD_BACKGROUND_TERMS = {

@@ -19,7 +19,7 @@ from root_tfidf_similarity import build_sap_graph
 from trunk_visualization_metrics import normalize_series
 
 
-DEFAULT_OUTPUT_DIR = Path("outputs/branch_reference_novelty")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/branch_reference_novelty")
 YEAR_PATTERN = re.compile(r"\b(19|20)\d{2}\b")
 
 

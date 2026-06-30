@@ -12,7 +12,7 @@ import networkx as nx
 
 
 DEFAULT_INPUT = Path("outputs/root_tfidf/root_papers.csv")
-DEFAULT_OUTPUT_DIR = Path("outputs/root_ntf")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/root_ntf")
 TOKEN_PATTERN = re.compile(r"[a-z][a-z]+")
 STOPWORDS = {
     "about",

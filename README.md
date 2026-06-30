@@ -298,21 +298,22 @@ This prototype is intended as a faithful interactive version of the final figure
 Important output folders:
 
 - `outputs/graphs/`: citation network files for Gephi and downstream analysis.
+- `outputs/paper_figures/`: paper-ready figure assets.
+- `outputs/html/`: interactive HTML prototype.
 - `outputs/root_visualization/`: root metrics and root SVG/GEXF visualization files.
 - `outputs/trunk_visualization/`: trunk metrics and SVG exports.
 - `outputs/branch_visualization/`: branch metrics and SVG exports.
 - `outputs/leaf_visualization/`: leaf metrics and canopy SVG exports.
 - `outputs/fruits/`: fruit candidate tables.
 - `outputs/fruit_visualization/`: fruit SVG exports and top fruit table.
-- `outputs/paper_figures/`: paper-ready figure assets.
-- `outputs/html/`: interactive HTML prototype.
+- `outputs/experiments/`: exploratory analyses that are useful for transparency but not required to reproduce the main ToS 3 pipeline or Figure 1.
+
+The top-level `outputs/` folder is reserved for the documented reproducibility workflow and final paper assets. Experimental threshold tests, optional NTF runs, branch trend/novelty experiments, and leaf-count experiments are kept under `outputs/experiments/`.
 
 ## Current Status
 
 This repository is article reproducibility code. The next recommended cleanup steps are:
 
 - Add a single `src/run_pipeline.py` command that runs the main workflow in order.
-- Move exploratory outputs into an `outputs/experiments/` folder.
-- Move parameters into a configuration file.
 - Expand `requirements.txt` to include all optional visualization dependencies.
 - Add a short data dictionary for the main CSV outputs.

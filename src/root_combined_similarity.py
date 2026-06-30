@@ -19,7 +19,7 @@ from root_tfidf_similarity import (
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 DEFAULT_OUTPUT_DIR = Path("outputs/root_combined")
-DEFAULT_NTF_SIMILARITY = Path("outputs/root_ntf/root_ntf_similarity_pairs.csv")
+DEFAULT_NTF_SIMILARITY = Path("outputs/experiments/root_ntf/root_ntf_similarity_pairs.csv")
 
 
 def normalize_weights(*weights: float) -> list[float]:

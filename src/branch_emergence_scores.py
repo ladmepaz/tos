@@ -23,9 +23,9 @@ from root_tfidf_similarity import build_sap_graph
 from trunk_visualization_metrics import normalize_series
 
 
-DEFAULT_OUTPUT_DIR = Path("outputs/branch_emergence")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/branch_emergence")
 DEFAULT_REFERENCE_NOVELTY = Path(
-    "outputs/branch_reference_novelty/branch_reference_novelty_scores.csv"
+    "outputs/experiments/branch_reference_novelty/branch_reference_novelty_scores.csv"
 )
 
 

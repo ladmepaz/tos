@@ -17,7 +17,7 @@ from sap import LEAF, SAP, Sap
 
 DEFAULT_CITATIONS = Path("data/processed/bibfusion/All_Citation_tidy.csv")
 DEFAULT_ARTICLES = Path("data/processed/bibfusion/All_Articles_tidy.csv")
-DEFAULT_OUTPUT_DIR = Path("outputs/leaf_count_experiment")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/leaf_count_experiment")
 
 
 def parse_args() -> argparse.Namespace:

@@ -19,9 +19,9 @@ DEFAULT_BRANCH_MEMBERS = Path(
     "outputs/branch_leiden_comparison/leiden_cohesive_branch_members.csv"
 )
 DEFAULT_BRANCH_ASSIGNMENTS = Path(
-    "outputs/branch_assignment_leiden_cohesive/branch_trunk_assignments.csv"
+    "outputs/experiments/branch_assignment_leiden_cohesive/branch_trunk_assignments.csv"
 )
-DEFAULT_OUTPUT_DIR = Path("outputs/branch_trends")
+DEFAULT_OUTPUT_DIR = Path("outputs/experiments/branch_trends")
 
 
 def branch_id_from_member(row) -> str:
