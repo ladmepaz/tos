@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430">
+<rect width="1500" height="430" fill="#FFFFFF" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #2C2118; }
+.title { font-size: 38px; font-weight: 700; }
+.box-title { font-size: 24px; font-weight: 700; }
+.box-text { font-size: 18px; fill: #5D5147; }
+</style>
+<text class="title" x="48" y="62">Tree of Science 3 Workflow</text>
+<rect x="48" y="132" width="245" height="170" rx="24" fill="#F6F1EA" stroke="#8D6448" stroke-width="2" />
+<text class="box-title" x="72" y="180">Data</text>
+<text class="box-text" x="72" y="220">Scopus + WoS records</text>
+<text class="box-text" x="72" y="248">BibFusion harmonization</text>
+<path d="M 303 217 H 325" stroke="#5C2609" stroke-width="4" stroke-linecap="round" />
+<path d="M 325 207 L 343 217 L 325 227 Z" fill="#5C2609" />
+<rect x="338" y="132" width="245" height="170" rx="24" fill="#F6F1EA" stroke="#8D6448" stroke-width="2" />
+<text class="box-title" x="362" y="180">Citation Network</text>
+<text class="box-text" x="362" y="220">Directed local network</text>
+<text class="box-text" x="362" y="248">3,183 nodes; 12,481 edges</text>
+<path d="M 593 217 H 615" stroke="#5C2609" stroke-width="4" stroke-linecap="round" />
+<path d="M 615 207 L 633 217 L 615 227 Z" fill="#5C2609" />
+<rect x="628" y="132" width="245" height="170" rx="24" fill="#F6F1EA" stroke="#8D6448" stroke-width="2" />
+<text class="box-title" x="652" y="180">SAP Structure</text>
+<text class="box-text" x="652" y="220">Roots and trunk</text>
+<text class="box-text" x="652" y="248">selective SAP leaves</text>
+<path d="M 883 217 H 905" stroke="#5C2609" stroke-width="4" stroke-linecap="round" />
+<path d="M 905 207 L 923 217 L 905 227 Z" fill="#5C2609" />
+<rect x="918" y="132" width="245" height="170" rx="24" fill="#F6F1EA" stroke="#8D6448" stroke-width="2" />
+<text class="box-title" x="942" y="180">Enhancements</text>
+<text class="box-text" x="942" y="220">Root/trunk subtopics</text>
+<text class="box-text" x="942" y="248">branches, leaves, fruits</text>
+<path d="M 1173 217 H 1195" stroke="#5C2609" stroke-width="4" stroke-linecap="round" />
+<path d="M 1195 207 L 1213 217 L 1195 227 Z" fill="#5C2609" />
+<rect x="1208" y="132" width="245" height="170" rx="24" fill="#F6F1EA" stroke="#8D6448" stroke-width="2" />
+<text class="box-title" x="1232" y="180">Visualization</text>
+<text class="box-text" x="1232" y="220">Role-specific shapes</text>
+<text class="box-text" x="1232" y="248">size, color, and temporal signals</text>
+</svg>

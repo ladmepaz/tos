@@ -21,7 +21,7 @@ MAX_LEAF_AGE_YEARS = 7
 
 def _limit(attribute: list[tuple[Any, int | float]], _max: int) -> list[tuple[Any, int | float]]:
     if _max is not None:
-        sorted_attribute = sorted(attribute, key=lambda x: x[1], reverse=True)
+        sorted_attribute = sorted(attribute, key=lambda x: (x[1], str(x[0])), reverse=True)
         attribute = sorted_attribute[:_max]
     return attribute
 
@@ -202,8 +202,8 @@ class Sap:
     def _compute_branches(self, graph: nx.DiGraph) -> nx.DiGraph:
         g = graph.copy()
         undirected = g.to_undirected()
-        communities = louvain_communities(undirected)
-        branches = sorted(communities, key=len)[:3]
+        communities = louvain_communities(undirected, seed=0)
+        branches = sorted(communities, key=lambda community: (len(community), sorted(community)[0]))[:3]
         nx.set_node_attributes(g, 0, BRANCH)
 
         for branch_index, branch in enumerate(branches, start=1):

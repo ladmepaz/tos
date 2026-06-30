@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 1</text>
+<g>
+<title>NWANKWO CA, 2022, ACADEMY OF STRATEGIC MANAGEMENT JOURNAL
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.60
+Core score: 0.300</title>
+<circle cx="250.0" cy="160.0" r="39.86" fill="#9F836C" stroke="#9F836C" stroke-width="3" />
+<text class="core-label" x="302.9" y="166.0">NWANKWO CA 2022</text>
+</g>
+<g>
+<title>LI E, 2021, SUSTAINABILITY-BASEL
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="105.0" cy="335.0" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+<text class="core-label" x="154.7" y="341.0">LI E 2021</text>
+</g>
+<g>
+<title>CRESWELL JOHNW, 2018, JOURNAL OF INVESTIGATIVE SURGERY : THE OFFICIAL JOURNAL OF THE ACADEMY OF SURGICAL RESEARCH
+Branch: branch_1
+Role: missing_metadata
+Citations: 3
+Citation velocity: 0.33
+Core score: 0.000</title>
+<circle cx="430.0" cy="305.0" r="39.86" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+<text class="core-label" x="482.9" y="311.0">CRESWELL JOHNW 2018</text>
+</g>
+<g>
+<title>REZAEI R, 2017, J AGR SCI TECH-IRAN
+Branch: branch_1
+Role: missing_metadata
+Citations: 2
+Citation velocity: 0.20
+Core score: 0.000</title>
+<circle cx="250.0" cy="485.0" r="36.73" fill="#B59D86" stroke="#B59D86" stroke-width="3" />
+<text class="core-label" x="299.7" y="491.0">REZAEI R 2017</text>
+</g>
+<text class="core-footer" x="48" y="595">Missing metadata</text>
+</svg>

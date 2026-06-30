@@ -1,0 +1,67 @@
+node_id,louvain_branch,leiden_branch,same_branch_label
+"AL-SHAIKH ME, 2023, WORLD DEVELOPMENT SUSTAINABILITY",,branch_1,False
+"ALAREENI B, 2025, J STRATEG MARK",branch_1,branch_1,True
+"ALEXIOU K, 2020, NONPROF VOLUNT SEC Q",,branch_3,False
+"ALI S, 2023, EUR J INNOV MANAG",branch_3,,False
+"ALQAHTANI N, 2022, J STRATEG MARK",branch_1,,False
+"ARLI D, 2018, IND MARKET MANAG",,branch_1,False
+"ASLAM H, 2018, INT J OPER PROD MAN",branch_3,,False
+"BJORVATN T, 2020, J KNOWL MANAG",branch_2,branch_2,True
+"BOOTH K, 2017, VISIT STUD",,branch_3,False
+"BUCCIERI D, 2022, IND MARKET MANAG",branch_1,branch_1,True
+"CHEN YH, 2024, SUSTAINABILITY-BASEL",branch_1,branch_1,True
+"CHOU WC, 2023, NTU MANAG REV",branch_1,branch_1,True
+"CRESWELL JOHNW, 2018, JOURNAL OF INVESTIGATIVE SURGERY : THE OFFICIAL JOURNAL OF THE ACADEMY OF SURGICAL RESEARCH",,branch_1,False
+"CRICK JM, 2021, J STRATEG MARK",branch_1,branch_1,True
+"CRICK JM, 2025, INT J ENTREP BEHAV R",branch_1,branch_1,True
+"CROSSICK G, 2014, CULT TRENDS",,branch_3,False
+"EAPEN A, 2019, ORGAN SCI",branch_2,,False
+"FIGUEIREDO B, 2016, J CONSUM RES",,branch_3,False
+"FILLIS I, 2015",,branch_3,False
+"FILLIS I, 2017, J VACAT MARK",,branch_3,False
+"FILLIS I, 2021, ARTS MARK",,branch_3,False
+"FILLIS I, 2023, J RES MARK ENTREP",,branch_3,False
+"FROST V, 2014, THEGUARDIAN",,branch_3,False
+"GOLGECI I, 2017, J BUS IND MARK",branch_3,,False
+"GUO HL, 2018, J BUS RES",branch_3,,False
+"HAGEN B, 2019, INT MARKET REV",branch_3,,False
+"HALISAH A, 2021, J KNOWL MANAG",branch_2,branch_2,True
+"HALLAK R, 2012, TOURISM MANAGE",,branch_3,False
+"JONES O, 2017, ENTREP REGION DEV",branch_3,,False
+"KANG H, 2021, ASIAN NURS RES",branch_2,branch_2,True
+"KHAN H, 2020, INT BUS REV",branch_3,,False
+"KHAN H, 2021, INT BUS REV",branch_3,,False
+"KHAN H, 2025, INT J ENTREP BEHAV R",branch_3,,False
+"KHASMAFKAN-NEZAM MH, 2025, SOC RESPONSIB J",branch_2,branch_2,True
+"KHASMAFKAN-NEZAM MH, 2025, VINE J INF KNOWL MAN",branch_2,branch_2,True
+"KIM W, 2020, APPL ERGON",branch_2,branch_2,True
+"KIRCHNER T, 2013",,branch_3,False
+"KIRCHNER TA, 2013, SOCIAL BUSINESS",,branch_3,False
+"LEHMAN K, 2014, J RES MARK ENTREP",,branch_3,False
+"LEHMAN K, 2020, HDB ENTREPRENEURSHIP",,branch_3,False
+"LEI H, 2019, CHIN MANAG STUD",branch_2,,False
+"LI E, 2021, SUSTAINABILITY-BASEL",branch_1,branch_1,True
+"LI Y, 2017, J PROD INNOVAT MANAG",branch_3,,False
+"MAKHLOUFI L, 2024, J RES MARK ENTREP",branch_2,branch_2,True
+"MARQUES T, 2023, LEADERSH HEALTH SERV",branch_2,branch_2,True
+"MAYUTO R, 2023, FRONT PSYCHOL",branch_1,branch_1,True
+"MU JF, 2018, IND MARKET MANAG",branch_3,,False
+"MUHAMMED S, 2020, J KNOWL MANAG",branch_2,branch_2,True
+"MULKI J, 2019, J BUS RES",branch_2,branch_2,True
+"NWANKWO CA, 2022, ACADEMY OF STRATEGIC MANAGEMENT JOURNAL",branch_1,branch_1,True
+"PASCHEN J, 2019, J BUS IND MARK",,branch_2,False
+"PETRYLAITE E, 2021, J RES MARK ENTREP",,branch_2,False
+"QUINTERO-ARANGO LF, 2024, CLIO AM",branch_1,,False
+"REZAEI R, 2017, J AGR SCI TECH-IRAN",,branch_1,False
+"RIGGS R, 2024, J BUS RES",branch_2,branch_2,True
+"ROBLEDO S, 2022, J SCIENTOMETR RES",branch_1,,False
+"ROXAS B, 2013, TOURISM MANAGE",,branch_3,False
+"RUST RT, 2020, IND MARKET MANAG",branch_3,,False
+"SCHWEIGER SA, 2019, STRATEGIC MANAGE J",branch_1,branch_1,True
+"SHAHMOHAMMADI B, 2022, JOURNAL OF MANAGEMENT AND ENTREPRENEURSHIP RESEARCH",branch_1,branch_1,True
+"SHENG ML, 2017, IND MARKET MANAG",branch_3,,False
+"TEO STT, 2020, INT J HOSP MANAG",branch_2,branch_2,True
+"WALES WJ, 2021, J BUS RES",branch_1,,False
+"WELTER C, 2018, J BUS VENTURING",branch_3,,False
+"YANG Z, 2024, INT J ENTREP BEHAV R",branch_3,,False
+"YASIN R, 2021, J KNOWL MANAG",branch_2,branch_2,True

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+<rect x="1" y="1" width="758" height="618" fill="#FFFFFF" stroke="#CFCFCF" stroke-width="2" />
+<style>
+text { font-family: Georgia, "Times New Roman", serif; fill: #4A413B; }
+.core-title { font-size: 58px; fill: #1F130B; }
+.core-footer { font-size: 58px; fill: #1F130B; }
+.core-label { font-size: 19px; font-weight: 600; }
+</style>
+<text class="core-title" x="18" y="70">Branch 2</text>
+<g>
+<title>INFORMATION SYSTEMS CAPABILITIES VALUE CREATION THROUGH CIRCULAR ECONOMY PRACTICES IN UNCERTAIN ENVIRONMENTS: A CONDITIONAL MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.67
+Core score: 0.423</title>
+<circle cx="615.0" cy="310.0" r="36.73" fill="#9B7F68" stroke="#9B7F68" stroke-width="3" />
+<text class="core-label" x="664.7" y="316.0">RIGGS R 2024</text>
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND TURNOVER INTENTIONS IN HEALTH-CARE PROFESSIONALS: THE MEDIATING ROLE OF BURNOUT
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.50
+Core score: 0.613</title>
+<circle cx="560.0" cy="422.5" r="36.73" fill="#A48972" stroke="#A48972" stroke-width="3" />
+<text class="core-label" x="609.7" y="428.5">MARQUES T 2023</text>
+</g>
+<g>
+<title>RESPONSIBLE LEADERSHIP AND EMPLOYEES’ TURNOVER INTENTION. EXPLORE THE MEDIATING ROLES OF ETHICAL CLIMATE AND CORPORATE IMAGE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.337</title>
+<circle cx="420.8" cy="482.3" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+<text class="core-label" x="470.5" y="488.3">YASIN R 2021</text>
+</g>
+<g>
+<title>SOCIAL DILEMMAS IN KNOWLEDGE SHARING: AN EXAMINATION OF THE INTERPLAY BETWEEN KNOWLEDGE SHARING CULTURE AND PERFORMANCE CLIMATE
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.33
+Core score: 0.466</title>
+<circle cx="262.5" cy="461.6" r="36.73" fill="#AD947D" stroke="#AD947D" stroke-width="3" />
+<text class="core-label" x="312.2" y="467.6">HALISAH A 2021</text>
+</g>
+<g>
+<title>PSYCHOSOCIAL WORK ENVIRONMENT, WORK ENGAGEMENT, AND EMPLOYEE COMMITMENT: A MODERATED, MEDIATION MODEL
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.271</title>
+<circle cx="159.2" cy="369.9" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+<text class="core-label" x="208.9" y="375.9">TEO STT 2020</text>
+</g>
+<g>
+<title>PEER KNOWLEDGE SHARING AND ORGANIZATIONAL PERFORMANCE: THE ROLE OF LEADERSHIP SUPPORT AND KNOWLEDGE MANAGEMENT SUCCESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.513</title>
+<circle cx="159.2" cy="250.1" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+<text class="core-label" x="208.9" y="256.1">MUHAMMED S 2020</text>
+</g>
+<g>
+<title>THE IMPACT OF TIME PRESSURE ON KNOWLEDGE TRANSFER EFFECTIVENESS IN TEAMS: TRUST AS A CRITICAL BUT FRAGILE MEDIATOR
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.29
+Core score: 0.260</title>
+<circle cx="262.5" cy="158.4" r="36.73" fill="#B09780" stroke="#B09780" stroke-width="3" />
+<text class="core-label" x="312.2" y="164.4">BJORVATN T 2020</text>
+</g>
+<g>
+<title>ARTIFICIAL INTELLIGENCE (AI) AND ITS IMPLICATIONS FOR MARKET KNOWLEDGE IN B2B MARKETING
+Branch: branch_2
+Role: peripheral
+Citations: 3
+Citation velocity: 0.38
+Core score: 0.347</title>
+<circle cx="420.8" cy="137.7" r="39.86" fill="#AB917A" stroke="#AB917A" stroke-width="3" />
+<text class="core-label" x="473.7" y="143.7">PASCHEN J 2019</text>
+</g>
+<g>
+<title>JOINT IMPACT OF ETHICAL CLIMATE AND EXTERNAL WORK LOCUS OF CONTROL ON JOB MEANINGFULNESS
+Branch: branch_2
+Role: peripheral
+Citations: 2
+Citation velocity: 0.25
+Core score: 0.288</title>
+<circle cx="560.0" cy="197.5" r="36.73" fill="#B29982" stroke="#B29982" stroke-width="3" />
+<text class="core-label" x="609.7" y="203.5">MULKI J 2019</text>
+</g>
+<text class="core-footer" x="48" y="595">Peripheral papers</text>
+</svg>
