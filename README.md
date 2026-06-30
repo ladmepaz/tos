@@ -4,6 +4,12 @@ Tree of Science 3 (ToS 3) is research code for building and visualizing an enhan
 
 The current case study is Entrepreneurial Marketing. The code starts from BibFusion CSV files, builds a directed citation network, applies the SAP-based Tree of Science classification, enriches the graph with article metadata, and exports analytical outputs and publication-ready visualizations.
 
+## Research Code Notice
+
+This repository is article reproducibility code. It is not a Python package, not a stable software API, and not a deployed application. The scripts are organized to make the Tree of Science 3 workflow transparent and reproducible for the paper.
+
+For details, see [docs/research_code.md](docs/research_code.md).
+
 ## What ToS 3 Does
 
 ToS 3 organizes a local citation network into interpretable reading and writing roles:
