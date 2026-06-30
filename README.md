@@ -101,6 +101,26 @@ It records the current paper settings, including SAP counts, similarity weights,
 
 The pipeline is organized into numbered stage scripts:
 
+To run the full reproducibility pipeline:
+
+```powershell
+python src\run_pipeline.py
+```
+
+To preview the full pipeline without changing files:
+
+```powershell
+python src\run_pipeline.py --dry-run
+```
+
+To run only part of the pipeline:
+
+```powershell
+python src\run_pipeline.py --start-stage 4 --end-stage 8
+```
+
+The numbered stages can also be run individually:
+
 ```powershell
 python src\01_tidy_data.py
 python src\02_build_citation_network.py
