@@ -7,7 +7,7 @@
    viewBox="0 0 1309.1325 779.34628"
    version="1.1"
    id="svg5"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="Figure 1 ToS 3 new algorithm.svg"
    xml:space="preserve"
    inkscape:export-filename="Figure 1 ToS 3 new algorithm.png"
@@ -31,11 +31,11 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.16"
-     inkscape:cx="2543.75"
-     inkscape:cy="1506.25"
-     inkscape:window-width="958"
+     inkscape:cx="2696.875"
+     inkscape:cy="1553.125"
+     inkscape:window-width="1559"
      inkscape:window-height="1000"
-     inkscape:window-x="-7"
+     inkscape:window-x="90"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
@@ -2382,7 +2382,7 @@ Size: 24.8</title><circle
          stroke-width="3"
          id="circle1390" /></g><g
        id="g29"
-       transform="matrix(0.26458333,0,0,0.26458333,5952.8012,105.65192)"><title
+       transform="matrix(0.26458333,0,0,0.26458333,5952.8012,86.601878)"><title
          id="title29">EXPLORING ENTREPRENEURIAL MARKETING
 Subtopic: trunk_subtopic_2
 Citations: 80
@@ -2508,7 +2508,7 @@ Size: 24.8</title><circle
        stroke-width="1.5875"
        id="circle1406" /><circle
        cx="5941.4741"
-       cy="327.61563"
+       cy="332.90738"
        r="12.498917"
        fill="#9a7d66"
        stroke="#9a7d66"
@@ -2842,13 +2842,18 @@ SAP rank: 0</title><g
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="5957.2285"
-       y="-177.22087"
+       y="-185.68742"
        id="text24"><tspan
          sodipodi:role="line"
          id="tspan24"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="5957.2285"
-         y="-177.22087">Brown circles: structural papers</tspan></text><text
+         y="-185.68742">Circular nodes: roots, trunk papers, and </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
+         x="5957.2285"
+         y="-157.46518"
+         id="tspan3624">branch core papers</tspan></text><text
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="5957.2285"
@@ -2883,7 +2888,7 @@ SAP rank: 0</title><g
        d="m 5903.2446,34.104119 h 434.8539"
        id="path29" /><g
        id="g32"
-       transform="rotate(58.294714,3272.4822,5061.6564)"><title
+       transform="rotate(58.294714,3281.0214,5056.8936)"><title
          id="title30">BACHMANN J, 2021, IND MARK MANAGE
 Year: 2021
 Internal citations: 0
@@ -2934,7 +2939,7 @@ SAP rank: 0</title><g
          fill="#54040f"
          id="path42" /></g><g
        id="g43"
-       transform="matrix(0.26458333,0,0,0.26458333,5954.8683,307.14879)"><title
+       transform="matrix(0.26458333,0,0,0.26458333,5954.8683,312.44049)"><title
          id="title42">EXPLORING ENTREPRENEURIAL MARKETING
 Subtopic: trunk_subtopic_2
 Citations: 80
@@ -3001,57 +3006,68 @@ SAP rank: 0</title><g
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="6020.7266"
-       y="129.69577"
+       y="110.64579"
        id="text56"><tspan
          sodipodi:role="line"
-         id="tspan56"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="129.69577">Circle size: local citation </tspan><tspan
+         y="110.64579"
+         id="tspan124">Circle size: internal citation </tspan><tspan
          sodipodi:role="line"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="157.91801"
-         id="tspan124">received</tspan></text><text
+         y="138.86804"
+         id="tspan5128">prominence</tspan></text><text
        xml:space="preserve"
-       style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
+       style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;inline-size:292.817;fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="6020.7266"
        y="198.4875"
-       id="text57"><tspan
-         sodipodi:role="line"
-         id="tspan57"
-         style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
+       id="text57"
+       transform="translate(0,-15.875004)"><tspan
          x="6020.7266"
-         y="198.4875">Leaf size: number of references to </tspan><tspan
-         sodipodi:role="line"
-         style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
+         y="198.4875"
+         id="tspan10616"><tspan
+           style="fill:#000000;stroke:#000000"
+           id="tspan10614">Leaf size: Internal outdegree </tspan></tspan><tspan
          x="6020.7266"
          y="226.70975"
-         id="tspan125">papers in the tree</tspan></text><text
+         id="tspan10620"><tspan
+           style="fill:#000000;stroke:#000000"
+           id="tspan10618">(number of references to papers </tspan></tspan><tspan
+         x="6020.7266"
+         y="254.93201"
+         id="tspan10624"><tspan
+           style="fill:#000000;stroke:#000000"
+           id="tspan10622">in the local tree/network)</tspan></tspan></text><text
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="6020.7266"
        y="279.45013"
        id="text58"><tspan
          sodipodi:role="line"
-         id="tspan58"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="279.45013">Fruit size: external citation velocity</tspan></text><text
+         y="279.45013"
+         id="tspan7394">Fruit size: Age-adjusted external </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
+         x="6020.7266"
+         y="307.67239"
+         id="tspan7396">citation velocity</tspan></text><text
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
        x="6020.7266"
-       y="336.07074"
+       y="341.36249"
        id="text59"><tspan
          sodipodi:role="line"
          id="tspan59"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="336.07074">Brown intensity: age-adjusted </tspan><tspan
+         y="341.36249">Brown intensity: age-adjusted </tspan><tspan
          sodipodi:role="line"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="364.293"
+         y="369.58475"
          id="tspan126">citation velocity</tspan></text><text
        xml:space="preserve"
        style="font-size:22.5778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#e9a195;stroke:#ffffff;stroke-width:0.264583"
@@ -3074,17 +3090,12 @@ SAP rank: 0</title><g
        y="489.52878"
        id="text61"><tspan
          sodipodi:role="line"
-         id="tspan61"
          style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
          x="6020.7266"
-         y="489.52878">Red intensity: external-attention </tspan><tspan
-         sodipodi:role="line"
-         style="font-size:22.5778px;fill:#000000;stroke:#000000;stroke-width:0.264583"
-         x="6020.7266"
-         y="517.75098"
-         id="tspan128">score</tspan></text><g
+         y="489.52878"
+         id="tspan128">Red intensity: composite fruit score</tspan></text><g
        id="g61"
-       transform="matrix(0.26458333,0,0,0.26458333,5921.051,105.65192)"><title
+       transform="matrix(0.26458333,0,0,0.26458333,5921.051,86.601878)"><title
          id="title61">EXPLORING ENTREPRENEURIAL MARKETING
 Subtopic: trunk_subtopic_2
 Citations: 80
@@ -3098,7 +3109,7 @@ Size: 24.8</title><circle
          stroke-width="2.26305"
          id="circle61" /></g><g
        id="g62"
-       transform="matrix(0.14366252,0,0,0.14366252,5894.9418,120.20474)"><title
+       transform="matrix(0.14366252,0,0,0.14366252,5894.9418,101.15462)"><title
          id="title62">EXPLORING ENTREPRENEURIAL MARKETING
 Subtopic: trunk_subtopic_2
 Citations: 80
@@ -3112,7 +3123,7 @@ Size: 24.8</title><circle
          stroke-width="3"
          id="circle62" /></g><g
        id="g65"
-       transform="matrix(0.42571822,0.68915432,-0.68915432,0.42571822,5841.9681,-269.92241)"><title
+       transform="matrix(0.42571822,0.68915432,-0.68915432,0.42571822,5841.9681,-279.44747)"><title
          id="title63">BACHMANN J, 2021, IND MARK MANAGE
 Year: 2021
 Internal citations: 0
@@ -3127,7 +3138,7 @@ SAP rank: 0</title><g
              stroke="none"
              id="path63" /></g></g></g><g
        id="g68"
-       transform="matrix(0.31895078,0.51631878,-0.51631878,0.31895078,5829.6125,-149.41231)"><title
+       transform="matrix(0.31895078,0.51631878,-0.51631878,0.31895078,5829.6125,-158.93737)"><title
          id="title65">BACHMANN J, 2021, IND MARK MANAGE
 Year: 2021
 Internal citations: 0
@@ -3214,7 +3225,7 @@ SAP rank: 0</title><g
          fill="#54040f"
          id="path89" /></g><g
        id="g90"
-       transform="matrix(1.037315,0,0,1.037315,5430.1079,284.01463)"><title
+       transform="matrix(1.037315,0,0,1.037315,5430.1079,289.30633)"><title
          id="title89">BUILDING SALES THROUGH CONNECTIONS: HOW NETWORK CAPABILITIES AND TIE STRENGTH FOSTER ENTREPRENEURIAL MARKETING
 Subtopic: trunk_subtopic_1
 Citations: 1
