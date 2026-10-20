@@ -1,0 +1,44 @@
+{
+  "reference_year": 2026,
+  "citation_export_date": "2026-03-07",
+  "population": 120,
+  "recovered_records": 10,
+  "weights": [
+    0.35,
+    0.35,
+    0.2,
+    0.1
+  ],
+  "baseline_max_errors": {
+    "years_since_publication": 0.0,
+    "external_citation_velocity": 4.440892098500626e-16,
+    "external_citation_score": 5.551115123125783e-17,
+    "internal_citation_score": 0.0,
+    "external_attention_gap_raw": 9.71445146547012e-17,
+    "external_attention_gap_score": 9.020562075079397e-17,
+    "fruit_score": 3.3306690738754696e-16
+  },
+  "underabsorbed_original": 11,
+  "underabsorbed_recalculated": 11,
+  "top3_original": [
+    "SULAIMAN MABA, 2024, DISCOV SUSTAIN",
+    "KAKEESH DF, 2025, J MARK ANAL",
+    "HANAYSHA JR, 2022, SUSTAINABILITY-BASEL"
+  ],
+  "top3_recalculated": [
+    "SULAIMAN MABA, 2024, DISCOV SUSTAIN",
+    "KAKEESH DF, 2025, J MARK ANAL",
+    "HANAYSHA JR, 2022, SUSTAINABILITY-BASEL"
+  ],
+  "scope": "Fixed saved candidate population and graph/text features; recover ten missing counts only.",
+  "limitations": "Mixed WoS Z9 and Scopus coverage retained; not a full pipeline rebuild or validation.",
+  "baseline_sha256": "326ae50d1788e520a976b17e2048c922692625046f98827becb21e18dd4a1e3d",
+  "canonical_file_sha256_at_replay": {
+    "data\\processed\\bibfusion\\All_Articles_tidy.csv": "f227e291fc67876d4a23f6225cf48a4e323a97dc89d0ff72b5508a939127ce33",
+    "outputs\\fruits\\fruit_candidates.csv": "6666ac15c966568c4ea9d22f32afa8d9efefc7704db6b2fd1e71ed8880a01fe3",
+    "outputs\\fruits\\fruit_candidates_top.csv": "b6147adc02395c2b08de6088533f938a59072cdaa8d55c2fcb88c506e7443bd9",
+    "outputs\\fruits\\fruit_candidates_underabsorbed.csv": "b38ceb1b734cae8cf8385abbbd10d4b57298e43aaaaebad6f160104d270de97b",
+    "outputs\\fruit_visualization\\fruits_top3.csv": "27099aa9194c3942d728e47814880e453299ebff40cd27fa7967daef2fe68fdc"
+  },
+  "original_outputs_unchanged": true
+}

@@ -32,6 +32,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-output", type=Path, default=DEFAULT_TOP_OUTPUT)
     parser.add_argument("--top-n", type=int, default=3)
     parser.add_argument(
+        "--tables-only", action="store_true",
+        help="Refresh the top-fruits CSV without regenerating the SVG.",
+    )
+    parser.add_argument(
         "--background",
         default="none",
         help="SVG background fill. Use 'none' for a transparent asset.",
@@ -186,14 +190,16 @@ def main() -> None:
     fruit_df = pd.read_csv(args.input)
     selected_df = add_visual_metrics(select_top_fruits(fruit_df, args.top_n))
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.top_output.parent.mkdir(parents=True, exist_ok=True)
     selected_df.to_csv(args.top_output, index=False)
-    args.output.write_text(build_svg(selected_df, args.background), encoding="utf-8")
+    if not args.tables_only:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(build_svg(selected_df, args.background), encoding="utf-8")
 
     print(f"Fruits selected: {len(selected_df):,}")
     print(f"Saved fruits CSV: {args.top_output.resolve()}")
-    print(f"Saved fruits SVG: {args.output.resolve()}")
+    if not args.tables_only:
+        print(f"Saved fruits SVG: {args.output.resolve()}")
 
 
 if __name__ == "__main__":

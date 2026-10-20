@@ -244,6 +244,13 @@ outputs/branch_visualization/
 
 ### 6. Analyze Leaves And Fruits
 
+The reviewer revision recovers ten missing external citation counts from the
+7 March 2026 Scopus export. The configured tidy stage applies these corrections
+without changing raw exports. Fruit scoring is pinned to 2026 (2021-2026 inclusive).
+See [fruit citation revision](docs/fruit_citation_revision.md) for provenance,
+corrected scores, tests, and commands that refresh the tables without redrawing
+the paper figure.
+
 Leaves are identified as papers with internal indegree equal to zero and internal outdegree greater than or equal to one. Fruits are selected from recent papers using external citation attention and local-network absorption signals.
 
 ```powershell

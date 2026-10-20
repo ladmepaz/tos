@@ -142,6 +142,9 @@
     }
   },
   "script_arguments": {
+    "tidy_articles.py": {
+      "citation-corrections": "data/corrections/fruit_citation_recovery_2026.json"
+    },
     "build_citation_network.py": {
       "max-roots": 20,
       "max-leaves": 50,
@@ -207,6 +210,7 @@
       "max-size": 25.0
     },
     "fruit_candidates.py": {
+      "current-year": 2026,
       "recent-years": 5,
       "top-n": 30,
       "field-distance-cutoff": 3,

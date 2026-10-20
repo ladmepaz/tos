@@ -195,7 +195,7 @@ def add_fruit_scores(
     source_df["cited_by"] = pd.to_numeric(source_df["cited_by"], errors="coerce").fillna(0)
     source_df = source_df[source_df["year"].notna()].copy()
     cutoff_year = current_year - recent_years
-    source_df = source_df[source_df["year"] >= cutoff_year].copy()
+    source_df = source_df[source_df["year"].between(cutoff_year, current_year)].copy()
     source_df = source_df.sort_values("cited_by", ascending=False)
     source_df = source_df.drop_duplicates(subset=["SR"], keep="first").copy()
 
@@ -277,6 +277,7 @@ def add_fruit_scores(
         "years_since_publication",
         "external_citation_velocity",
         "external_citation_score",
+        "external_velocity_score",
         "internal_citation_score",
         "external_attention_gap_raw",
         "external_attention_gap_score",

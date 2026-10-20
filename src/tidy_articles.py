@@ -6,6 +6,8 @@ from typing import Any
 
 import pandas as pd
 
+from citation_corrections import apply_citation_corrections
+
 DEFAULT_INPUT = Path("data/raw/bibfusion/All_Articles.csv")
 DEFAULT_OUTPUT = Path("data/processed/bibfusion/All_Articles_tidy.csv")
 
@@ -442,6 +444,10 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--citation-corrections", type=Path,
+        help="Optional DOI-verified missing-count corrections for this dataset.",
+    )
     return parser.parse_args()
 
 
@@ -449,6 +455,8 @@ def main() -> None:
     args = parse_args()
     article_df = pd.read_csv(args.input)
     tidy_df = tidy_article_metadata(article_df)
+    if args.citation_corrections is not None:
+        tidy_df = apply_citation_corrections(tidy_df, args.citation_corrections)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     tidy_df.to_csv(args.output, index=False)
